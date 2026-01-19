@@ -1,0 +1,18 @@
+{
+  "Group": "dev.hytalemodding",
+  "Name": "Zelda Gear",
+  "Version": "${version}",
+  "Description": "Adds Items from the Legend of Zelda",
+  "Authors": [
+    {
+      "Name": "LOEVI",
+      "Url": "www.loevi.net"
+    }
+  ],
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": true,
+  "Main": "dev.hytalemodding.ExamplePlugin"
+}
