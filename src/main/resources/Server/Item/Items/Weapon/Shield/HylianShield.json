@@ -4,7 +4,7 @@
     "Name": "Hylian Shield"
   },
   "Categories": [
-    "Items.Weapons"
+    "ZeldaGear.Gear"
   ],
   "Model": "Items/Weapons/Shield/HylianShield.blockymodel",
   "Texture": "Items/Weapons/Shield/HylianShield.png",
@@ -32,13 +32,13 @@
         "Categories": [
           "Weapon_Shield"
         ],
-        "RequiredTierLevel": 3
+        "RequiredTierLevel": 2
       }
     ],
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Mithril",
-        "Quantity": 3
+        "ItemId": "Ingredient_Bar_Cobalt",
+        "Quantity": 10
       }
     ]
   }

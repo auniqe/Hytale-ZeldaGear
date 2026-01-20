@@ -62,5 +62,8 @@
   "ItemSoundSetId": "ISS_Armor_Cloth",
   "ClipsGeometry": false,
   "UsePlayerAnimations": false,
-  "Quality": "Uncommon"
+  "Quality": "Uncommon",
+  "Categories": [
+    "ZeldaGear.Gear"
+  ]
 }

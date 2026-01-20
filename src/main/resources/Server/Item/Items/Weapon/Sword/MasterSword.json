@@ -12,16 +12,16 @@
     "KnowledgeRequired": false,
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Mithril",
-        "Quantity": 6
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 15
       },
       {
-        "ItemId": "Ingredient_Leather_Storm",
-        "Quantity": 3
+        "ItemId": "GoddessSword",
+        "Quantity": 1
       },
       {
         "ItemId": "Ingredient_Voidheart",
-        "Quantity": 1
+        "Quantity": 6
       }
     ],
     "BenchRequirement": [
@@ -54,7 +54,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 18
+              "Physical": 20
             }
           },
           "DamageEffects": {
@@ -70,7 +70,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 21
+              "Physical": 22
             }
           },
           "DamageEffects": {
@@ -86,7 +86,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 34
+              "Physical": 36
             }
           },
           "DamageEffects": {
@@ -102,7 +102,7 @@
           "Parent": "Weapon_Sword_Primary_Thrust_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 51
+              "Physical": 52
             }
           },
           "EntityStatsOnHit": [
@@ -170,5 +170,8 @@
     "Color": "#056",
     "Radius": 1
   },
-  "ItemLevel": 200
+  "ItemLevel": 200,
+  "Categories": [
+    "ZeldaGear.Gear"
+  ]
 }

@@ -3,10 +3,10 @@
     "Name": "Biggoron's Sword"
   },
   "Categories": [
-    "Items.Weapons"
+    "ZeldaGear.Gear"
   ],
   "Quality": "Epic",
-  "ItemLevel": 220,
+  "ItemLevel": 100,
   "Model": "Items/Weapons/Sword/BiggoronsSword.blockymodel",
   "Texture": "Items/Weapons/Sword/BiggoronsSword.png",
   "PlayerAnimationsId": "Longsword",
@@ -31,7 +31,7 @@
           "DamageCalculator": {
             "Type": "Absolute",
             "BaseDamage": {
-              "Physical": 70
+              "Physical": 16
             },
             "RandomPercentageModifier": 0.15
           },
@@ -58,7 +58,7 @@
           "DamageCalculator": {
             "Type": "Absolute",
             "BaseDamage": {
-              "Physical": 70
+              "Physical": 16
             },
             "RandomPercentageModifier": 0.15
           },
@@ -85,7 +85,7 @@
           "DamageCalculator": {
             "Type": "Absolute",
             "BaseDamage": {
-              "Physical": 70
+              "Physical": 17
             },
             "RandomPercentageModifier": 0.15
           },
@@ -102,7 +102,7 @@
           "Parent": "Longsword_Stab_Charged_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 210
+              "Physical": 30
             },
             "Type": "Absolute",
             "RandomPercentageModifier": 0.15
@@ -136,11 +136,8 @@
       "Longsword"
     ]
   },
-  "MaxDurability": 250,
+  "MaxDurability": 150,
   "DurabilityLossOnHit": 0.52,
-  "Weapon": {
-    "RenderDualWielded": false
-  },
   "ItemSoundSetId": "ISS_Weapons_Blade_Large",
   "Variant": false,
   "InteractionConfig": {
@@ -151,16 +148,16 @@
     "KnowledgeRequired": false,
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Mithril",
-        "Quantity": 6
+        "ItemId": "Ingredient_Bar_Cobalt",
+        "Quantity": 15
       },
       {
-        "ItemId": "Ingredient_Leather_Storm",
-        "Quantity": 3
+        "Quantity": 10,
+        "ItemId": "Ingredient_Bar_Silver"
       },
       {
-        "ItemId": "Ingredient_Voidheart",
-        "Quantity": 1
+        "ItemId": "Ingredient_Fire_Essence",
+        "Quantity": 30
       }
     ],
     "BenchRequirement": [
@@ -170,8 +167,11 @@
           "Weapon_Sword"
         ],
         "Id": "Weapon_Bench",
-        "RequiredTierLevel": 3
+        "RequiredTierLevel": 2
       }
     ]
+  },
+  "Weapon": {
+    "RenderDualWielded": false
   }
 }

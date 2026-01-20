@@ -12,16 +12,16 @@
     "KnowledgeRequired": false,
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Mithril",
-        "Quantity": 6
+        "ItemId": "Ingredient_Bar_Cobalt",
+        "Quantity": 15
       },
       {
-        "ItemId": "Ingredient_Leather_Storm",
-        "Quantity": 3
+        "ItemId": "Ingredient_Bar_Thorium",
+        "Quantity": 15
       },
       {
         "ItemId": "Ingredient_Voidheart",
-        "Quantity": 1
+        "Quantity": 3
       }
     ],
     "BenchRequirement": [
@@ -31,7 +31,7 @@
           "Weapon_Sword"
         ],
         "Id": "Weapon_Bench",
-        "RequiredTierLevel": 3
+        "RequiredTierLevel": 2
       }
     ]
   },
@@ -54,7 +54,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 18
+              "Physical": 14
             }
           },
           "DamageEffects": {
@@ -70,7 +70,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 21
+              "Physical": 17
             }
           },
           "DamageEffects": {
@@ -86,7 +86,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 34
+              "Physical": 27
             }
           },
           "DamageEffects": {
@@ -102,7 +102,7 @@
           "Parent": "Weapon_Sword_Primary_Thrust_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 51
+              "Physical": 49
             }
           },
           "EntityStatsOnHit": [
@@ -170,5 +170,8 @@
     "Color": "#467",
     "Radius": 1
   },
-  "ItemLevel": 210
+  "ItemLevel": 1,
+  "Categories": [
+    "ZeldaGear.Gear"
+  ]
 }

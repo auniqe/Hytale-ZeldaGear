@@ -1,0 +1,45 @@
+{
+  "Parent": "Template_Weapon_Shield",
+  "TranslationProperties": {
+    "Name": "Hero's Shield"
+  },
+  "Categories": [
+    "ZeldaGear.Gear"
+  ],
+  "Model": "Items/Weapons/Shield/HerosShield.blockymodel",
+  "Texture": "Items/Weapons/Shield/HerosShield.png",
+  "Icon": "Icons/ItemsGenerated/HerosShield.png",
+  "Quality": "Epic",
+  "ItemLevel": 200,
+  "Scale": 1.1,
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      315,
+      270,
+      0
+    ],
+    "Translation": [
+      -26,
+      -27
+    ]
+  },
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Armor_Bench",
+        "Categories": [
+          "Weapon_Shield"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Cobalt",
+        "Quantity": 10
+      }
+    ]
+  }
+}
