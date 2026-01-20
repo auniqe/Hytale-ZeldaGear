@@ -7,17 +7,18 @@ import com.hypixel.hytale.math.vector.Transform;
 import com.hypixel.hytale.math.vector.Vector3d;
 import com.hypixel.hytale.math.vector.Vector3f;
 import com.hypixel.hytale.protocol.*;
-import com.hypixel.hytale.protocol.packets.camera.SetServerCamera;
 import com.hypixel.hytale.server.core.entity.entities.Player;
-import com.hypixel.hytale.server.core.modules.entity.teleport.Teleport;
+import com.hypixel.hytale.server.core.modules.entity.component.EntityScaleComponent;
+import com.hypixel.hytale.server.core.modules.entity.component.HeadRotation;
+import com.hypixel.hytale.server.core.modules.entity.component.TransformComponent;
+import com.hypixel.hytale.server.core.modules.entity.player.PlayerSkinComponent;
+import com.hypixel.hytale.server.core.modules.interaction.interaction.config.selector.RaycastSelector;
 import com.hypixel.hytale.server.core.modules.physics.component.Velocity;
-import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.core.util.TargetUtil;
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.SimpleInteraction;
-import com.hypixel.hytale.server.npc.movement.MovementState;
 
 import javax.annotation.Nonnull;
 
@@ -41,13 +42,24 @@ public class HookshotInteraction extends SimpleInteraction {
         @Nonnull com.hypixel.hytale.server.core.entity.InteractionContext context,
         @Nonnull com.hypixel.hytale.server.core.modules.interaction.interaction.CooldownHandler cooldownHandler
     ) {
+        CommandBuffer<EntityStore> commandBuffer = context.getCommandBuffer();
+        Player player = commandBuffer.getComponent(context.getEntity(), Player.getComponentType());
         InteractionSyncData contextState = context.getState();
         if (firstRun) {
+            Store<EntityStore> playerStore = player.getReference().getStore();
+            Vector3d EyeDir = playerStore.getComponent(player.getReference(), com.hypixel.hytale.server.core.modules.entity.component.HeadRotation.getComponentType()).getDirection();
+            Vector3d EyePos = playerStore.getComponent(player.getReference(), TransformComponent.getComponentType()).getPosition().add();
+            player.getReference().getStore().getComponent(player.getReference(), com.hypixel.hytale.server.core.modules.entity.component.PositionDataComponent.getComponentType()).
+
+
             contextState.state = InteractionState.NotFinished;
             // Raycast
             Ref<EntityStore> ref = context.getEntity();
             Store<EntityStore> store = ref.getStore();
             World world = store.getExternalData().getWorld();
+
+            RaycastSelector r = new RaycastSelector();
+            r.newSelector().selectTargetBlocks();
 
             Transform look = TargetUtil.getLook(ref, context.getCommandBuffer());
             System.out.println(look);
@@ -60,8 +72,7 @@ public class HookshotInteraction extends SimpleInteraction {
             System.out.println(target);
         }
 
-        CommandBuffer<EntityStore> commandBuffer = context.getCommandBuffer();
-        Player player = commandBuffer.getComponent(context.getEntity(), Player.getComponentType());
+        player.getReference().getStore().getComponent()
 
         if (!firstRun) {
             Ref<EntityStore> ref = context.getEntity();
