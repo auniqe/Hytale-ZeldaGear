@@ -1,16 +1,21 @@
 package dev.hytalemodding.interactions;
 
+import com.hypixel.hytale.assetstore.AssetStore;
 import com.hypixel.hytale.codec.builder.BuilderCodec;
 import com.hypixel.hytale.component.CommandBuffer;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.math.vector.Vector3d;
 import com.hypixel.hytale.protocol.*;
+import com.hypixel.hytale.server.core.asset.type.soundevent.config.SoundEvent;
 import com.hypixel.hytale.server.core.entity.InteractionContext;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.meta.MetaKey;
+import com.hypixel.hytale.server.core.modules.entity.EntityModule;
 import com.hypixel.hytale.server.core.modules.entity.component.TransformComponent;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.CooldownHandler;
 import com.hypixel.hytale.server.core.modules.physics.component.Velocity;
+import com.hypixel.hytale.server.core.universe.world.SoundUtil;
+import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.core.util.TargetUtil;
 import com.hypixel.hytale.component.Ref;
@@ -30,6 +35,7 @@ public class HookshotInteraction extends SimpleInteraction {
 
     //set up this functions data
     public static final MetaKey<Vector3d> HIT_LOCATION = CONTEXT_META_REGISTRY.registerMetaObject(data -> null);
+    public static final MetaKey<Double> PREDICTED_TIME_TO_TARGET = CONTEXT_META_REGISTRY.registerMetaObject(data -> null);
 
     @Override
     protected void tick0(
@@ -39,7 +45,6 @@ public class HookshotInteraction extends SimpleInteraction {
         @Nonnull InteractionContext context,
         @Nonnull CooldownHandler cooldownHandler
     ) {
-        float predicted_time_to_target = 1.5f;
 
         //prefunction setup
         CommandBuffer<EntityStore> commandBuffer = context.getCommandBuffer();
@@ -47,29 +52,59 @@ public class HookshotInteraction extends SimpleInteraction {
         Ref<EntityStore> ref = player.getReference();
         Store<EntityStore> playerStore = player.getReference().getStore();
         InteractionSyncData contextState = context.getState();
+        World world = player.getWorld();
+        EntityStore ent_store = world.getEntityStore();
+        TransformComponent transform = ent_store.getStore().getComponent(ref, EntityModule.get().getTransformComponentType());
 
         //initial setup
         if (firstRun) {
+            //first shot sound
+            world.execute(() -> {
+                SoundUtil.playSoundEvent3d(SoundEvent.getAssetMap().getIndex("SFX_WOOD_HIT"), SoundCategory.UI, transform.getPosition(), ent_store.getStore());
+                SoundUtil.playSoundEvent3d(SoundEvent.getAssetMap().getIndex("SFX_COINS_LAND"), SoundCategory.UI, transform.getPosition(), ent_store.getStore());
+            });
+
             //raycast
             Vector3d hitLocation = TargetUtil.getTargetLocation(player.getReference(), blockId -> blockId != 0, 30.0, playerStore);
 
             //cancel if not hit
             if(hitLocation == null) return;
 
-            //set data
+            //store data in meta
             context.getMetaStore().putMetaObject(HIT_LOCATION, hitLocation);
+            context.getMetaStore().putMetaObject(PREDICTED_TIME_TO_TARGET, hitLocation.distanceTo(transform.getPosition()) / pullSpeed);
         }
 
-        //handle pulling
+        //handle state
         contextState.state = InteractionState.NotFinished;
         Vector3d target = context.getMetaStore().getMetaObject(HIT_LOCATION);
-        pullPlayer(player, target);
+        double predicted_time_to_target = context.getMetaStore().getMetaObject(PREDICTED_TIME_TO_TARGET);
+
+        //casting period
+        if(time < predicted_time_to_target) {
+            //per frame sound
+            world.execute(() -> {
+                SoundUtil.playSoundEvent3d(SoundEvent.getAssetMap().getIndex("SFX_COINS_LAND"), SoundCategory.UI, transform.getPosition(), ent_store.getStore());
+            });
+        } else {
+            pullPlayer(player, target);
+
+            //per frame sound
+            world.execute(() -> {
+                SoundUtil.playSoundEvent3d(SoundEvent.getAssetMap().getIndex("SFX_LIGHT_MELEE_T2_BLOCK"), SoundCategory.UI, transform.getPosition(), ent_store.getStore());
+            });
+        }
 
         //end when at target or if predicted time was run out
         Vector3d current = playerStore.getComponent(ref, TransformComponent.getComponentType()).getPosition();
         double distance = target.distanceTo(current);
-        if (distance < 1.5 || time > predicted_time_to_target) {
+        if (distance < 1.5 || time > 2 * predicted_time_to_target) {
             contextState.state = InteractionState.Finished;
+
+            //land sound
+            world.execute(() -> {
+                SoundUtil.playSoundEvent3d(SoundEvent.getAssetMap().getIndex("SFX_WOOD_LAND"), SoundCategory.UI, transform.getPosition(), ent_store.getStore());
+            });
         }
     }
 
@@ -89,6 +124,7 @@ public class HookshotInteraction extends SimpleInteraction {
             Vector3d current = transform.getPosition();
             Vector3d toTarget = target.clone().subtract(current);
             double distance = toTarget.length();
+            double speed = Math.min(pullSpeed, distance / Math.max(0.016, 1/60.0));
             Vector3d step = toTarget.normalize().scale(pullSpeed);
 
             //stop player at destination (avoids launching them off the sides)

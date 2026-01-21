@@ -13,6 +13,7 @@ import dev.hytalemodding.interactions.HookshotInteraction;
 import javax.annotation.Nonnull;
 import java.util.logging.Level;
 
+
 public class ExamplePlugin extends JavaPlugin {
 
     private static ExamplePlugin instance;
@@ -31,7 +32,7 @@ public class ExamplePlugin extends JavaPlugin {
         this.getCommandRegistry().registerCommand(new ExampleCommand("example", "An example command"));
         this.getEventRegistry().registerGlobal(PlayerReadyEvent.class, ExampleEvent::onPlayerReady);
         this.getCodecRegistry(Interaction.CODEC)
-                .register("HookshotInteraction", HookshotInteraction.class, HookshotInteraction.CODEC);
+                .register(HookshotInteraction.INTERACTION_NAME, HookshotInteraction.class, HookshotInteraction.CODEC);
     }
 
     @Override
