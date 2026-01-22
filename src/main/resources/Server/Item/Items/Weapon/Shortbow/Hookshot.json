@@ -27,7 +27,7 @@
   },
   "Interactions": {
     "Primary": "Root_Weapon_Shortbow_Primary_Shoot",
-    "Secondary": "Root_Weapon_Shortbow_Secondary_Guard"
+    "Secondary": "Root_Weapon_Shortbow_Primary_Shoot"
   },
   "InteractionVars": {
     "Primary_Shoot_Charge": {
@@ -38,7 +38,7 @@
           "AllowIndefiniteHold": true,
           "DisplayProgress": true,
           "Effects": {
-            "ItemAnimationId": "ShootCharging",
+            "ItemAnimationId": "ShootCharged",
             "ClearAnimationOnFinish": true,
             "ClearSoundEventOnFinish": true,
             "WorldSoundEventId": "SFX_Axe_Iron_Impact",
