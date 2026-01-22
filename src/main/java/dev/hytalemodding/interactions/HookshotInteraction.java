@@ -1,6 +1,5 @@
 package dev.hytalemodding.interactions;
 
-import com.hypixel.hytale.assetstore.AssetStore;
 import com.hypixel.hytale.codec.builder.BuilderCodec;
 import com.hypixel.hytale.component.CommandBuffer;
 import com.hypixel.hytale.component.Store;
@@ -14,6 +13,7 @@ import com.hypixel.hytale.server.core.modules.entity.EntityModule;
 import com.hypixel.hytale.server.core.modules.entity.component.TransformComponent;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.CooldownHandler;
 import com.hypixel.hytale.server.core.modules.physics.component.Velocity;
+import com.hypixel.hytale.server.core.universe.world.ParticleUtil;
 import com.hypixel.hytale.server.core.universe.world.SoundUtil;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
@@ -30,6 +30,7 @@ public class HookshotInteraction extends SimpleInteraction {
     ).build();
 
     private final double pullSpeed = 25; //blocks per second
+    private final double max_distance = 30.0;
 
     public static final String INTERACTION_NAME = "HookshotInteraction";
 
@@ -65,7 +66,7 @@ public class HookshotInteraction extends SimpleInteraction {
             });
 
             //raycast
-            Vector3d hitLocation = TargetUtil.getTargetLocation(player.getReference(), blockId -> blockId != 0, 30.0, playerStore);
+            Vector3d hitLocation = TargetUtil.getTargetLocation(player.getReference(), blockId -> blockId != 0, max_distance, playerStore);
 
             //cancel if not hit
             if(hitLocation == null) return;
@@ -81,10 +82,22 @@ public class HookshotInteraction extends SimpleInteraction {
         double predicted_time_to_target = context.getMetaStore().getMetaObject(PREDICTED_TIME_TO_TARGET);
 
         //casting period
+        Vector3d player_center = transform.clone().getPosition().add(0,1,0);
         if(time < predicted_time_to_target) {
             //per frame sound
             world.execute(() -> {
                 SoundUtil.playSoundEvent3d(SoundEvent.getAssetMap().getIndex("SFX_COINS_LAND"), SoundCategory.UI, transform.getPosition(), ent_store.getStore());
+
+                    //chain effect
+                    for(int i = 0; i < 50; i++) {
+                        double percent_traveled = (double)i / 50.0d;
+                        Vector3d hook_pos = Vector3d.lerp(player_center, target, percent_traveled * (time / predicted_time_to_target));
+                        ParticleUtil.spawnParticleEffect("Hookshot", hook_pos, ent_store.getStore());
+                    }
+
+                    //tip of hookshot
+                    Vector3d hook_pos = Vector3d.lerp(player_center, target, time / predicted_time_to_target);
+                    ParticleUtil.spawnParticleEffect("Block_Land_Hard_Metal", hook_pos, ent_store.getStore());
             });
         } else {
             pullPlayer(player, target);
@@ -92,6 +105,14 @@ public class HookshotInteraction extends SimpleInteraction {
             //per frame sound
             world.execute(() -> {
                 SoundUtil.playSoundEvent3d(SoundEvent.getAssetMap().getIndex("SFX_LIGHT_MELEE_T2_BLOCK"), SoundCategory.UI, transform.getPosition(), ent_store.getStore());
+
+                //chain effect
+                for(int i = 0; i < 50; i++) {
+                    double percent_traveled = (double)i / 50.0d;
+                    Vector3d hook_pos = Vector3d.lerp(player_center, target, percent_traveled * (time / predicted_time_to_target));
+                    ParticleUtil.spawnParticleEffect("Hookshot", hook_pos, ent_store.getStore());
+                }
+
             });
         }
 
@@ -104,6 +125,7 @@ public class HookshotInteraction extends SimpleInteraction {
             //land sound
             world.execute(() -> {
                 SoundUtil.playSoundEvent3d(SoundEvent.getAssetMap().getIndex("SFX_WOOD_LAND"), SoundCategory.UI, transform.getPosition(), ent_store.getStore());
+                ParticleUtil.spawnParticleEffect("Block_Land_Hard_Metal", transform.getPosition(), ent_store.getStore());
             });
         }
     }
@@ -135,7 +157,6 @@ public class HookshotInteraction extends SimpleInteraction {
             //set velocity
             Velocity velo = store.getComponent(player.getReference(), Velocity.getComponentType());
             velo.addInstruction(step, null, ChangeVelocityType.Set);
-
         });
     }
 }
