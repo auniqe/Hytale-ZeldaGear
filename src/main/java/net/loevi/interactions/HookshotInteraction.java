@@ -1,4 +1,4 @@
-package dev.hytalemodding.interactions;
+package net.loevi.interactions;
 
 import com.hypixel.hytale.codec.builder.BuilderCodec;
 import com.hypixel.hytale.component.CommandBuffer;
@@ -20,7 +20,6 @@ import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.core.util.TargetUtil;
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.SimpleInteraction;
-
 import javax.annotation.Nonnull;
 
 public class HookshotInteraction extends SimpleInteraction {
@@ -29,8 +28,9 @@ public class HookshotInteraction extends SimpleInteraction {
             HookshotInteraction.class, HookshotInteraction::new, SimpleInteraction.CODEC
     ).build();
 
-    private final double pullSpeed = 25; //blocks per second
-    private final double max_distance = 30.0;
+    private double pullSpeed = 25; //blocks per second
+    private double max_distance = 30.0; // block reach
+
 
     public static final String INTERACTION_NAME = "HookshotInteraction";
 
@@ -46,7 +46,6 @@ public class HookshotInteraction extends SimpleInteraction {
         @Nonnull InteractionContext context,
         @Nonnull CooldownHandler cooldownHandler
     ) {
-
         //prefunction setup
         CommandBuffer<EntityStore> commandBuffer = context.getCommandBuffer();
         Player player = commandBuffer.getComponent(context.getEntity(), Player.getComponentType());
@@ -59,6 +58,7 @@ public class HookshotInteraction extends SimpleInteraction {
 
         //initial setup
         if (firstRun) {
+
             //first shot sound
             world.execute(() -> {
                 SoundUtil.playSoundEvent3d(SoundEvent.getAssetMap().getIndex("SFX_WOOD_HIT"), SoundCategory.UI, transform.getPosition(), ent_store.getStore());
@@ -88,16 +88,9 @@ public class HookshotInteraction extends SimpleInteraction {
             world.execute(() -> {
                 SoundUtil.playSoundEvent3d(SoundEvent.getAssetMap().getIndex("SFX_COINS_LAND"), SoundCategory.UI, transform.getPosition(), ent_store.getStore());
 
-                    //chain effect
-                    for(int i = 0; i < 50; i++) {
-                        double percent_traveled = (double)i / 50.0d;
-                        Vector3d hook_pos = Vector3d.lerp(player_center, target, percent_traveled * (time / predicted_time_to_target));
-                        ParticleUtil.spawnParticleEffect("Hookshot", hook_pos, ent_store.getStore());
-                    }
-
-                    //tip of hookshot
-                    Vector3d hook_pos = Vector3d.lerp(player_center, target, time / predicted_time_to_target);
-                    ParticleUtil.spawnParticleEffect("Block_Land_Hard_Metal", hook_pos, ent_store.getStore());
+                //tip of hookshot
+                Vector3d hook_pos = Vector3d.lerp(player_center, target, time / predicted_time_to_target);
+                ParticleUtil.spawnParticleEffect("Block_Land_Hard_Metal", hook_pos, ent_store.getStore());
             });
         } else {
             pullPlayer(player, target);
@@ -105,21 +98,20 @@ public class HookshotInteraction extends SimpleInteraction {
             //per frame sound
             world.execute(() -> {
                 SoundUtil.playSoundEvent3d(SoundEvent.getAssetMap().getIndex("SFX_LIGHT_MELEE_T2_BLOCK"), SoundCategory.UI, transform.getPosition(), ent_store.getStore());
-
-                //chain effect
-                for(int i = 0; i < 50; i++) {
-                    double percent_traveled = (double)i / 50.0d;
-                    Vector3d hook_pos = Vector3d.lerp(player_center, target, percent_traveled * (time / predicted_time_to_target));
-                    ParticleUtil.spawnParticleEffect("Hookshot", hook_pos, ent_store.getStore());
-                }
-
             });
         }
 
+        // //chain effect
+        // for(int i = 0; i < 50; i++) {
+        //     double percent_traveled = (double)i / 50.0d;
+        //     Vector3d hook_pos = Vector3d.lerp(player_center, target, percent_traveled * (time / predicted_time_to_target));
+        //     ParticleUtil.spawnParticleEffect("Hookshot", hook_pos, ent_store.getStore());
+        // }
+
         //end when at target or if predicted time was run out
-        Vector3d current = playerStore.getComponent(ref, TransformComponent.getComponentType()).getPosition();
+        Vector3d current = playerStore.getComponent(ref, TransformComponent.getComponentType()).getPosition().clone().add(0,1,0);
         double distance = target.distanceTo(current);
-        if (distance < 1.5 || time > 2 * predicted_time_to_target) {
+        if (distance < 1.5 || time > (2.5 * predicted_time_to_target)) {
             contextState.state = InteractionState.Finished;
 
             //land sound
