@@ -1,0 +1,100 @@
+{
+  "TranslationProperties": {
+    "Name": "Goron Tunic"
+  },
+  "Parent": "Armor_Iron_Chest",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bolt_Wool",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Fire_Essence",
+        "Quantity": 50
+      },
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 15
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Armor_Bench",
+        "Type": "Crafting",
+        "Categories": [
+          "Armor_Chest"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "ItemLevel": 15,
+  "Icon": "Icons/Items/GoronTunic.png",
+  "IconProperties": {
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Scale": 0.5,
+    "Translation": [
+      -0.6,
+      -19.2
+    ]
+  },
+  "Model": "Items/Armor/Tunic.blockymodel",
+  "Texture": "Items/Armor/GoronTunic/GoronTunic.png",
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 17,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.09,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.09,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Fire": [
+        {
+          "Target": "Max",
+          "CalculationType": "Multiplicative",
+          "Amount": 0.4
+        }
+      ]
+    },
+    "CosmeticsToHide": [
+      "Overtop",
+      "Undertop"
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Kweebec"
+    ]
+  },
+  "MaxDurability": 40,
+  "Quality": "Legendary",
+  "Categories": [
+    "ZeldaGear.Gear"
+  ]
+}

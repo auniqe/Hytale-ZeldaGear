@@ -173,5 +173,6 @@
   "ItemLevel": 200,
   "Categories": [
     "ZeldaGear.Gear"
-  ]
+  ],
+  "Weapon": {}
 }

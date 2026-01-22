@@ -28,8 +28,8 @@ public class LongshotInteraction extends SimpleInteraction {
             LongshotInteraction.class, LongshotInteraction::new, SimpleInteraction.CODEC
     ).build();
 
-    private final double pullSpeed = 45; //blocks per second
-    private final double max_distance = 60.0; // block reach
+    private final double pullSpeed = 37; //blocks per second
+    private final double max_distance = 50; // block reach
 
     public static final String INTERACTION_NAME = "LongshotInteraction";
 
@@ -65,6 +65,7 @@ public class LongshotInteraction extends SimpleInteraction {
 
             //raycast
             Vector3d hitLocation = TargetUtil.getTargetLocation(player.getReference(), blockId -> blockId != 0, max_distance, playerStore);
+
 
             //cancel if not hit
             if(hitLocation == null) return;
@@ -147,6 +148,7 @@ public class LongshotInteraction extends SimpleInteraction {
             //set velocity
             Velocity velo = store.getComponent(player.getReference(), Velocity.getComponentType());
             velo.addInstruction(step, null, ChangeVelocityType.Set);
+            player.setCurrentFallDistance(0);
         });
     }
 }

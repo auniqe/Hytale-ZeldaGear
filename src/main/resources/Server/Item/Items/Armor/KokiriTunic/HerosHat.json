@@ -1,0 +1,79 @@
+{
+  "TranslationProperties": {
+    "Name": "Hero's Cap"
+  },
+  "Parent": "Armor_Cloth_Wool_Head",
+  "ItemLevel": 200,
+  "Icon": "Icons/Items/HerosHat.png",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      32,
+      51,
+      15
+    ],
+    "Translation": [
+      -14,
+      -95
+    ]
+  },
+  "Model": "Items/Armor/Hat.blockymodel",
+  "Texture": "Items/Armor/KokiriTunic/HerosHat.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bolt_Wool",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 5
+      },
+      {
+        "ItemId": "Ingredient_Leather_Medium",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Armor_Bench",
+        "Type": "Crafting",
+        "Categories": [
+          "Armor_Head"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 7,
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 17,
+          "CalculationType": "Additive"
+        }
+      ],
+      "Stamina": []
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Cloth_Wool"
+    ]
+  },
+  "MaxDurability": 640,
+  "ItemSoundSetId": "ISS_Armor_Cloth",
+  "ClipsGeometry": false,
+  "UsePlayerAnimations": false,
+  "Quality": "Uncommon",
+  "Categories": [
+    "ZeldaGear.Gear"
+  ]
+}

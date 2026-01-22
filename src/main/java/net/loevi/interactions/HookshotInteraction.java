@@ -28,8 +28,8 @@ public class HookshotInteraction extends SimpleInteraction {
             HookshotInteraction.class, HookshotInteraction::new, SimpleInteraction.CODEC
     ).build();
 
-    private double pullSpeed = 25; //blocks per second
-    private double max_distance = 30.0; // block reach
+    private double pullSpeed = 26; //blocks per second
+    private double max_distance = 26; // block reach
 
 
     public static final String INTERACTION_NAME = "HookshotInteraction";
@@ -149,6 +149,7 @@ public class HookshotInteraction extends SimpleInteraction {
             //set velocity
             Velocity velo = store.getComponent(player.getReference(), Velocity.getComponentType());
             velo.addInstruction(step, null, ChangeVelocityType.Set);
+            player.setCurrentFallDistance(0);
         });
     }
 }
