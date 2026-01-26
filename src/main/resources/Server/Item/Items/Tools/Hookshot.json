@@ -8,57 +8,26 @@
   "Icon": "Icons/ItemsGenerated/Hookshot.png",
   "ItemLevel": 35,
   "Recipe": {
-    "TimeSeconds": 4,
+    "TimeSeconds": 3,
     "KnowledgeRequired": false,
     "Input": [
-      {
-        "ItemId": "Ingredient_Bar_Cobalt",
-        "Quantity": 20
-      },
-      {
-        "ItemId": "Ingredient_Bar_Iron",
-        "Quantity": 10
-      },
-      {
-        "ItemId": "Ingredient_Leather_Heavy",
-        "Quantity": 2
-      }
+      { "ItemId": "Ingredient_Bar_Cobalt", "Quantity": 25 },
+      { "ItemId": "Ingredient_Bar_Iron", "Quantity": 10 },
+      { "ItemId": "Ingredient_Leather_Heavy", "Quantity": 5 }
     ],
     "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Categories": [
-          "Weapon_Bow"
-        ],
-        "Id": "Weapon_Bench",
-        "RequiredTierLevel": 2
-      },
-      {
-        "Type": "DiagramCrafting",
-        "Categories": [
-          "Weapons.Bow"
-        ],
-        "Id": "Armory"
-      }
+      { "Type": "Crafting", "Categories": ["Weapon_Bow"], "Id": "Weapon_Bench", "RequiredTierLevel": 2 },
+      { "Type": "DiagramCrafting", "Categories": ["Weapons.Bow"], "Id": "Armory" }
     ]
   },
-  "MaxDurability": 150,
-  "DurabilityLossOnHit": 0.58,
+  "MaxDurability": 250,
+  "DurabilityLossOnHit": 0,
   "IconProperties": {
     "Scale": 0.6,
-    "Rotation": [
-      315,
-      90,
-      0
-    ],
-    "Translation": [
-      18,
-      -46
-    ]
+    "Rotation": [315, 90, 0],
+    "Translation": [18, -46]
   },
-  "Categories": [
-    "ZeldaGear.Gear"
-  ],
+  "Categories": ["ZeldaGear.Gear"],
   "PlayerAnimationsId": "Crossbow",
   "Interactions": {
     "Secondary": "Root_Weapon_Shortbow_Primary_Shoot"
@@ -77,20 +46,30 @@
             "ClearSoundEventOnFinish": true,
             "WorldSoundEventId": "SFX_Daggers_T2_Guard",
             "LocalSoundEventId": "SFX_Daggers_T2_Guard_Local",
-            "ItemPlayerAnimationsId": {
-              "UseFirstPersonOverrides": false
-            }
+            "ItemPlayerAnimationsId": { "UseFirstPersonOverrides": false }
           },
           "Next": {
             "0.01": {
-              "Type": "HookshotInteraction"
+              "Type": "StatsCondition",
+              "Costs": { "Stamina": 1 },
+              "Next": {
+                "Type": "ChangeStat",
+                "StatModifiers": { "Stamina": -3 },
+                "Next": {
+                  "Type": "HookshotInteraction",
+                  "PullSpeed": 26.0,
+                  "MaxDistance": 26.0
+                }
+              },
+              "Lenient": true,
+              "LessThan": false,
+              "Effects": { "WaitForAnimationToFinish": true }
             }
           },
-          "Failed": {
-            "Type": "Simple"
-          }
+          "Failed": { "Type": "Simple" }
         }
-      ]
+      ],
+      "RequireNewClick": true
     }
   },
   "MaxStack": 1

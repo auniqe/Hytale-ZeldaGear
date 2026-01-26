@@ -4,7 +4,6 @@ import com.hypixel.hytale.server.core.modules.interaction.interaction.config.Int
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import net.loevi.interactions.HookshotInteraction;
-import net.loevi.interactions.LongshotInteraction;
 
 import javax.annotation.Nonnull;
 import java.util.logging.Level;
@@ -25,8 +24,6 @@ public class ZeldaGear extends JavaPlugin {
     protected void setup() {
         this.getCodecRegistry(Interaction.CODEC)
                 .register(HookshotInteraction.INTERACTION_NAME, HookshotInteraction.class, HookshotInteraction.CODEC);
-        this.getCodecRegistry(Interaction.CODEC)
-                .register(LongshotInteraction.INTERACTION_NAME, LongshotInteraction.class, LongshotInteraction.CODEC);
     }
 
     @Override
