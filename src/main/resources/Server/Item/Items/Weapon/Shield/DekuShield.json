@@ -1,0 +1,99 @@
+{
+  "Parent": "Template_Weapon_Shield",
+  "TranslationProperties": {
+    "Name": "Deku Shield"
+  },
+  "Categories": [
+    "ZeldaGear.Gear",
+    "Items.Weapons"
+  ],
+  "Model": "Items/Weapons/Shield/DekuShield.blockymodel",
+  "Texture": "Items/Weapons/Shield/DekuShield.png",
+  "Icon": "Icons/ItemsGenerated/DekuShield.png",
+  "Quality": "Common",
+  "ItemLevel": 50,
+  "Scale": 1.1,
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      315,
+      270,
+      0
+    ],
+    "Translation": [
+      -26,
+      -27
+    ]
+  },
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Armor_Bench",
+        "Categories": [
+          "Weapon_Shield"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "Input": [
+      {
+        "ResourceTypeId": "Wood_Trunk",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 3
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "$Comment": "Actively guarding with the weapon",
+          "Parent": "Weapon_Shield_Secondary_Guard_Wield",
+          "Effects": {
+            "WorldSoundEventId": "SFX_Shield_T1_Raise",
+            "LocalSoundEventId": "SFX_Shield_T1_Raise_Local"
+          },
+          "StaminaCost": {
+            "Value": 10.44,
+            "CostType": "Damage"
+          },
+          "BlockedEffects": {
+            "WorldSoundEventId": "SFX_Shield_T1_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Bash": {
+      "Interactions": [
+        {
+          "$Comment": "Effects and stamina consumed upon a guard bash",
+          "Parent": "Weapon_Shield_Secondary_Guard_Bash",
+          "Effects": {
+            "WorldSoundEventId": "SFX_Shield_T1_Swing",
+            "LocalSoundEventId": "SFX_Shield_T1_Swing_Local"
+          },
+          "StatModifiers": {
+            "Stamina": -1
+          }
+        }
+      ]
+    },
+    "Guard_Bash_Damage": {
+      "Interactions": [
+        {
+          "$Comment": "Damage & Effects on a successful hit with the guard shove attack",
+          "Parent": "Weapon_Shield_Secondary_Guard_Bash_Damage",
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Shield_T1_Impact",
+            "LocalSoundEventId": "SFX_Shield_T1_Impact"
+          }
+        }
+      ]
+    }
+  },
+  "Set": "D_Shield"
+}

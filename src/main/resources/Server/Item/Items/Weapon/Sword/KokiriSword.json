@@ -128,7 +128,8 @@
     ]
   },
   "Categories": [
-    "ZeldaGear.Gear"
+    "ZeldaGear.Gear",
+    "Items.Weapons"
   ],
   "Recipe": {
     "TimeSeconds": 5,
@@ -157,5 +158,19 @@
         "RequiredTierLevel": 2
       }
     ]
+  },
+  "Set": "A_Sword",
+  "Weapon": {
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ],
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "Amount": 20,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
   }
 }

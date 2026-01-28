@@ -1,0 +1,81 @@
+{
+  "TranslationProperties": {
+    "Name": "Purple Cap"
+  },
+  "Parent": "Armor_Cloth_Wool_Head",
+  "ItemLevel": 200,
+  "Icon": "Icons/Items/PurpleHat.png",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      32,
+      51,
+      15
+    ],
+    "Translation": [
+      -14,
+      -95
+    ]
+  },
+  "Model": "Items/Armor/Hat.blockymodel",
+  "Texture": "Items/Armor/PurpleTunic/PurpleCap.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bolt_Wool",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Void_Essence",
+        "Quantity": 50
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Armor_Bench",
+        "Type": "Crafting",
+        "Categories": [
+          "Armor_Head"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 7,
+    "DamageResistance": {},
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 17,
+          "CalculationType": "Additive"
+        }
+      ],
+      "Stamina": []
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Cloth_Wool"
+    ]
+  },
+  "MaxDurability": 640,
+  "ItemSoundSetId": "ISS_Armor_Cloth",
+  "ClipsGeometry": false,
+  "UsePlayerAnimations": false,
+  "Quality": "Epic",
+  "Categories": [
+    "ZeldaGear.Gear"
+  ],
+  "Set": "PurpleSet"
+}

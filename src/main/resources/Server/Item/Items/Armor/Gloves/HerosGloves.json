@@ -18,7 +18,7 @@
       3
     ]
   },
-  "Model": "Items/Armor/Gloves/HerosGloves.blockymodel",
+  "Model": "Items/Armor/Gloves.blockymodel",
   "Texture": "Items/Armor/Gloves/HerosGloves.png",
   "Recipe": {
     "Input": [
@@ -72,7 +72,10 @@
           "CalculationType": "Multiplicative"
         }
       ]
-    }
+    },
+    "CosmeticsToHide": [
+      "Gloves"
+    ]
   },
   "MaxDurability": 120,
   "Tags": {
@@ -87,5 +90,6 @@
   "DurabilityLossOnHit": 0.5,
   "Categories": [
     "ZeldaGear.Gear"
-  ]
+  ],
+  "Set": "HerosSet"
 }

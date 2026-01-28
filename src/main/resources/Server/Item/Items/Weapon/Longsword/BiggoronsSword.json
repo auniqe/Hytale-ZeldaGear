@@ -3,7 +3,8 @@
     "Name": "Biggoron's Sword"
   },
   "Categories": [
-    "ZeldaGear.Gear"
+    "ZeldaGear.Gear",
+    "Items.Weapons"
   ],
   "Quality": "Epic",
   "ItemLevel": 100,
@@ -171,7 +172,18 @@
       }
     ]
   },
+  "Set": "A_Sword",
   "Weapon": {
-    "RenderDualWielded": false
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ],
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "Amount": 5,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
   }
 }

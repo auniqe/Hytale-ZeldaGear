@@ -93,5 +93,6 @@
   "DurabilityLossOnHit": 0.5,
   "Categories": [
     "ZeldaGear.Gear"
-  ]
+  ],
+  "Set": "Gauntlets"
 }

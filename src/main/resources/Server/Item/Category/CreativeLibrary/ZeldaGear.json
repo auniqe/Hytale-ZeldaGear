@@ -1,16 +1,24 @@
 {
   "Icon": "Icons/ItemCategories/Zelda.png",
-  "Order": 2,
+  "Order": 3,
   "Children": [
     {
       "Id": "Gear",
       "Name": "Gear",
-      "Icon": "Icons/ItemCategories/Items-Weapons.png"
+      "Icon": "Icons/ItemCategories/Items-Weapons.png",
+      "Order": 0,
+      "InfoDisplayMode": "Tooltip"
     },
     {
       "Id": "Misc",
       "Name": "Misc",
       "Icon": "Icons/ItemCategories/Items-Tools.png"
+    },
+    {
+      "Id": "Cosmetics",
+      "Name": "Cosmetics",
+      "Icon": "Icons/ItemCategories/Items-Clothes.png",
+      "InfoDisplayMode": "Tooltip"
     }
   ]
 }

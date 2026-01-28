@@ -172,7 +172,29 @@
   },
   "ItemLevel": 200,
   "Categories": [
-    "ZeldaGear.Gear"
+    "ZeldaGear.Gear",
+    "Items.Weapons"
   ],
-  "Weapon": {}
+  "Set": "A_Sword",
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "sword"
+    ]
+  },
+  "Weapon": {
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ],
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "Amount": 5,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  }
 }

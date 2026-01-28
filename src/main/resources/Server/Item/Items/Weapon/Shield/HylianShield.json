@@ -4,7 +4,8 @@
     "Name": "Hylian Shield"
   },
   "Categories": [
-    "ZeldaGear.Gear"
+    "ZeldaGear.Gear",
+    "Items.Weapons"
   ],
   "Model": "Items/Weapons/Shield/HylianShield.blockymodel",
   "Texture": "Items/Weapons/Shield/HylianShield.png",
@@ -41,5 +42,6 @@
         "Quantity": 10
       }
     ]
-  }
+  },
+  "Set": "D_Shield"
 }

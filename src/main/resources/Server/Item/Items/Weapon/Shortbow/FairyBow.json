@@ -298,6 +298,8 @@
     ]
   },
   "Categories": [
-    "ZeldaGear.Gear"
-  ]
+    "ZeldaGear.Gear",
+    "Items.Weapons"
+  ],
+  "Set": "B_Bow"
 }

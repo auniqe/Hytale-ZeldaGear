@@ -14,7 +14,8 @@ public class ZeldaGear extends JavaPlugin {
     //initialize plugin
     public ZeldaGear(@Nonnull JavaPluginInit init) {
         super(init);
-        instance = this;    }
+        instance = this;
+    }
 
     public static ZeldaGear get() {
         return instance;
