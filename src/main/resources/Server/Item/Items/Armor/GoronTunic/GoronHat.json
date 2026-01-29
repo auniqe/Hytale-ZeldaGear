@@ -62,11 +62,16 @@
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 17,
+          "Amount": 8,
           "CalculationType": "Additive"
         }
       ],
-      "Stamina": []
+      "Stamina": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 3
+        }
+      ]
     }
   },
   "Tags": {

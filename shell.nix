@@ -11,8 +11,7 @@ mkShell {
     export PATH=$JAVA_HOME/bin:$PATH
 
     build() {
-        # local dest="$1"
-        local dest="/home/loevi/.var/app/com.hypixel.HytaleLauncher/data/Hytale/UserData/Mods"
+        local dest="$HOME/.var/app/com.hypixel.HytaleLauncher/data/Hytale/UserData/Mods"
 
         echo "Building project..."
         mvn clean package
@@ -26,7 +25,7 @@ mkShell {
 
 
     debug() {
-        local dest="/home/loevi/.var/app/com.hypixel.HytaleLauncher/data/Hytale/UserData/Mods"
+        local dest="$HOME/.var/app/com.hypixel.HytaleLauncher/data/Hytale/UserData/Mods"
 
         echo "Building project with debug profile..."
         mvn clean package -P debug

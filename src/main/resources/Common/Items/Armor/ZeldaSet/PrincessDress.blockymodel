@@ -35,7 +35,7 @@
             },
             "textureLayout": {
               "front": {
-                "offset": {"x": 0, "y": 198},
+                "offset": {"x": 106, "y": 196},
                 "mirror": {"x": false, "y": false},
                 "angle": 0
               }
@@ -89,7 +89,7 @@
                 },
                 "textureLayout": {
                   "front": {
-                    "offset": {"x": 0, "y": 216},
+                    "offset": {"x": 106, "y": 216},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   }

@@ -12,7 +12,7 @@
     "KnowledgeRequired": false,
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Adamantite",
+        "ItemId": "Ingredient_Bar_Cobalt",
         "Quantity": 15
       },
       {
@@ -27,7 +27,7 @@
           "Weapon_Sword"
         ],
         "Id": "Weapon_Bench",
-        "RequiredTierLevel": 3
+        "RequiredTierLevel": 2
       }
     ]
   },
@@ -44,121 +44,77 @@
     ]
   },
   "InteractionVars": {
-    "Swing_Left_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 20
-            }
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+      "Swing_Left_Damage": {
+          "Interactions": [ {
+              "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+              "DamageCalculator": { "BaseDamage": { "Physical": 14 } },
+              "DamageEffects": {
+                  "WorldSoundEventId": "SFX_Sword_T2_Impact",
+                  "LocalSoundEventId": "SFX_Sword_T2_Impact"
+              }
           }
-        }
-      ]
-    },
-    "Swing_Right_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 22
-            }
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          ]
+      },
+      "Swing_Right_Damage": {
+          "Interactions": [ {
+              "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
+              "DamageCalculator": { "BaseDamage": { "Physical": 14 } },
+              "DamageEffects": {
+                  "WorldSoundEventId": "SFX_Sword_T2_Impact",
+                  "LocalSoundEventId": "SFX_Sword_T2_Impact"
+              }
           }
-        }
-      ]
-    },
-    "Swing_Down_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 36
-            }
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          ]
+      },
+      "Swing_Down_Damage": {
+          "Interactions": [ {
+              "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
+              "DamageCalculator": { "BaseDamage": { "Physical": 23 } },
+              "DamageEffects": {
+                  "WorldSoundEventId": "SFX_Sword_T2_Impact",
+                  "LocalSoundEventId": "SFX_Sword_T2_Impact"
+              }
           }
-        }
-      ]
-    },
-    "Thrust_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 52
-            }
-          },
-          "EntityStatsOnHit": [
-            {
-              "EntityStatId": "SignatureEnergy",
-              "Amount": 3
-            }
-          ],
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          ]
+      },
+      "Thrust_Damage": {
+          "Interactions": [ {
+              "Parent": "Weapon_Sword_Primary_Thrust_Damage",
+              "DamageCalculator": { "BaseDamage": { "Physical": 41 } },
+              "EntityStatsOnHit": [ { "EntityStatId": "SignatureEnergy", "Amount": 3 } ],
+              "DamageEffects": {
+                  "WorldSoundEventId": "SFX_Sword_T2_Impact",
+                  "LocalSoundEventId": "SFX_Sword_T2_Impact"
+              }
           }
-        }
-      ]
-    },
-    "Vortexstrike_Spin_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 37
-            }
-          },
-          "EntityStatsOnHit": [],
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
-          }
-        }
-      ]
-    },
-    "Vortexstrike_Stab_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 110
-            }
-          },
-          "EntityStatsOnHit": [],
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
-          }
-        }
-      ]
-    },
-    "Guard_Wield": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Secondary_Guard_Wield",
-          "StaminaCost": {
-            "Value": 20,
-            "CostType": "Damage"
-          }
-        }
-      ]
-    }
+          ]
+      },
+      "Vortexstrike_Spin_Damage": {
+          "Interactions": [
+              {
+                  "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+                  "DamageCalculator": { "BaseDamage": { "Physical": 30 } },
+                  "EntityStatsOnHit": [],
+                  "DamageEffects": {
+                      "WorldSoundEventId": "SFX_Sword_T2_Impact",
+                      "LocalSoundEventId": "SFX_Sword_T2_Impact"
+                  }
+              }
+          ]
+      },
+      "Vortexstrike_Stab_Damage": {
+          "Interactions": [
+              {
+                  "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
+                  "DamageCalculator": { "BaseDamage": { "Physical": 80 } },
+                  "EntityStatsOnHit": [],
+                  "DamageEffects": {
+                      "WorldSoundEventId": "SFX_Sword_T2_Impact",
+                      "LocalSoundEventId": "SFX_Sword_T2_Impact"
+                  }
+              }
+          ]
+      }
   },
   "MaxDurability": 220,
   "DurabilityLossOnHit": 0.21,

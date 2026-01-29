@@ -176,8 +176,6 @@
           100
         ],
         "ConditionValueType": "Percent",
-        "Model": "Items/Weapons/Bow/Cobalt_Triple.blockymodel",
-        "Texture": "Items/Weapons/Bow/Cobalt_Texture.png",
         "LocalSoundEventId": "SFX_Bow_T2_Signature_Loop_Local",
         "WorldSoundEventId": "SFX_Bow_T2_Signature_Loop",
         "Particles": [

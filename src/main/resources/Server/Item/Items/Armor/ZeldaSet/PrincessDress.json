@@ -8,15 +8,11 @@
     "Input": [
       {
         "ItemId": "Ingredient_Bolt_Wool",
-        "Quantity": 10
-      },
-      {
-        "ItemId": "Ingredient_Void_Essence",
-        "Quantity": 50
-      },
-      {
-        "ItemId": "Ingredient_Bar_Iron",
         "Quantity": 15
+      },
+      {
+        "ItemId": "Ingredient_Bar_Gold",
+        "Quantity": 3
       }
     ],
     "BenchRequirement": [

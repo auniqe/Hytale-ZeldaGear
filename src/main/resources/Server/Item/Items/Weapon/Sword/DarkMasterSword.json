@@ -1,12 +1,12 @@
 {
   "Parent": "Template_Weapon_Sword",
   "TranslationProperties": {
-    "Name": "Master Sword"
+    "Name": "Dark Master Sword"
   },
   "Model": "Items/Weapons/Sword/MasterSword.blockymodel",
-  "Texture": "Items/Weapons/Sword/MasterSword.png",
+  "Texture": "Items/Weapons/Sword/DarkMasterSword.png",
   "Quality": "Epic",
-  "Icon": "Icons/ItemsGenerated/MasterSword.png",
+  "Icon": "Icons/ItemsGenerated/DarkMasterSword.png",
   "Recipe": {
     "TimeSeconds": 5,
     "KnowledgeRequired": false,
@@ -166,10 +166,6 @@
   },
   "MaxDurability": 220,
   "DurabilityLossOnHit": 0.21,
-  "Light": {
-    "Color": "#056",
-    "Radius": 1
-  },
   "ItemLevel": 200,
   "Categories": [
     "ZeldaGear.Gear",
@@ -197,5 +193,5 @@
       ]
     }
   },
-  "Variant": false
+  "Variant": true
 }

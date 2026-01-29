@@ -23,16 +23,12 @@
   "Recipe": {
     "Input": [
       {
-        "ItemId": "Ingredient_Leather_Medium",
-        "Quantity": 3
-      },
-      {
         "ItemId": "Ingredient_Fabric_Scrap_Linen",
-        "Quantity": 3
+        "Quantity": 10
       },
       {
         "ItemId": "Ingredient_Fibre",
-        "Quantity": 1
+        "Quantity": 10
       }
     ],
     "BenchRequirement": [
