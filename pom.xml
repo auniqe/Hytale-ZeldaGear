@@ -24,35 +24,44 @@
     </dependency>
 </dependencies>
 
+<!-- Default build -->
 <build>
     <resources>
         <resource>
             <directory>src/main/resources</directory>
             <includes>
                 <include>manifest.json</include>
-                <include>Common/</include>
-                <include>Server/</include>
             </includes>
             <filtering>true</filtering>
         </resource>
     </resources>
 </build>
 
-<!-- Debug Build Without Assets -->
+<!-- Profiles -->
 <profiles>
+    <!-- Release build: includes assets -->
     <profile>
-        <id>debug</id>
+        <id>release</id>
         <build>
-            <resources>
+            <resources combine.self="override">
                 <resource>
                     <directory>src/main/resources</directory>
                     <includes>
                         <include>manifest.json</include>
+                        <include>Common/**</include>
+                        <include>Server/**</include>
                     </includes>
                     <filtering>true</filtering>
                 </resource>
             </resources>
         </build>
     </profile>
+
+    <!-- Explicit debug profile (same as default, but clear intent) -->
+    <profile>
+        <id>debug</id>
+        <!-- uses base build: manifest only -->
+    </profile>
+
 </profiles>
 </project>

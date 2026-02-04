@@ -4,6 +4,7 @@ mkShell {
   buildInputs = [
     maven
     jdk25_headless
+    jetbrains.idea-community
   ];
 
   shellHook = ''
@@ -14,7 +15,7 @@ mkShell {
         local dest="$HOME/.var/app/com.hypixel.HytaleLauncher/data/Hytale/UserData/Mods"
 
         echo "Building project..."
-        mvn clean package
+        mvn clean package -P release
 
         echo "Copying JAR to $dest"
         mkdir -p "$dest"
