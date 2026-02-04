@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "R-Forearm",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": -23, "y": 12, "z": -2},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -129,7 +129,7 @@
     {
       "id": "4",
       "name": "R-Hand",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": -23, "y": -1, "z": -2},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -307,7 +307,7 @@
     {
       "id": "8",
       "name": "L-Forearm",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": 18, "y": 12, "z": -2},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -433,7 +433,7 @@
     {
       "id": "11",
       "name": "L-Hand",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": 18, "y": -1, "z": -2},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -504,7 +504,7 @@
               "id": "13",
               "name": "R-Glove2--C1",
               "position": {"x": 6.10255, "y": 1.24596, "z": -0.27914},
-              "orientation": {"x": -0.37217, "y": 0, "z": 0, "w": 0.92817},
+              "orientation": {"x": -0.37217, "y": 0, "z": 0, "w": 0.92816},
               "shape": {
                 "type": "box",
                 "offset": {"x": -0.71817, "y": 0.01343, "z": 0.03216},

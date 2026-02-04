@@ -1,0 +1,29 @@
+Content:
+    Midna's Helmet
+    Fierce Deity
+    Fiece Deity Sword
+    Windwaker Heros Sword
+    Ordon Sword
+    Gilded Sword
+    Razor Sword
+    Deku Stick
+
+    Working sword pedestal
+
+    Majoras Mask
+    Outset Pajamas
+
+    BotW Set
+    
+    Variants to items
+
+    Goddess Statue
+    OoT Torch
+    Pots
+
+Functionality:
+    Zora Armor Functionality
+    Crafting Table
+
+Other:
+    Fix Models

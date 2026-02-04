@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Pelvis",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": -9, "y": 61, "z": 11},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -96,7 +96,7 @@
     {
       "id": "4",
       "name": "R-Thigh",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": -2, "y": 45, "z": 11},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -168,7 +168,7 @@
     {
       "id": "6",
       "name": "R-Calf",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": -2, "y": 22, "z": 11},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -240,7 +240,7 @@
     {
       "id": "8",
       "name": "L-Thigh",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": -16, "y": 45, "z": 11},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -312,7 +312,7 @@
     {
       "id": "10",
       "name": "L-Calf",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": -16, "y": 22, "z": 11},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -384,7 +384,7 @@
     {
       "id": "12",
       "name": "L-Foot",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": -16, "y": 6, "z": 13},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -431,8 +431,8 @@
               },
               "left": {
                 "offset": {"x": 62, "y": 98},
-                "mirror": {"x": true, "y": true},
-                "angle": 270
+                "mirror": {"x": false, "y": false},
+                "angle": 90
               },
               "top": {
                 "offset": {"x": 62, "y": 98},
@@ -456,7 +456,7 @@
     {
       "id": "14",
       "name": "R-Calf",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": -2, "y": 22, "z": 11},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -574,7 +574,7 @@
     {
       "id": "17",
       "name": "L-Calf",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": -16, "y": 22, "z": 11},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -692,7 +692,7 @@
     {
       "id": "20",
       "name": "R-Foot",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": -2, "y": 6, "z": 13},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -739,8 +739,8 @@
               },
               "left": {
                 "offset": {"x": 62, "y": 98},
-                "mirror": {"x": true, "y": true},
-                "angle": 270
+                "mirror": {"x": false, "y": false},
+                "angle": 90
               },
               "top": {
                 "offset": {"x": 62, "y": 98},

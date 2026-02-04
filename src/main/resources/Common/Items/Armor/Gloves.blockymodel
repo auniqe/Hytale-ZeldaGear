@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "R-Forearm",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": -21, "y": 15, "z": -1},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -22,11 +22,11 @@
         {
           "id": "2",
           "name": "R-Glove2",
-          "position": {"x": 0, "y": 1.00161, "z": 0},
+          "position": {"x": -4, "y": 1.00161, "z": -2},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
-            "offset": {"x": 0, "y": -5, "z": 0},
+            "offset": {"x": 4, "y": -5, "z": 2},
             "stretch": {"x": 1.24775, "y": 1.1, "z": 1.18085},
             "settings": {
               "isPiece": false,
@@ -75,7 +75,7 @@
     {
       "id": "3",
       "name": "R-Hand",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": -21, "y": 1, "z": -1},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -94,11 +94,11 @@
         {
           "id": "4",
           "name": "R-Glove",
-          "position": {"x": 0, "y": 5, "z": 0},
+          "position": {"x": -4, "y": 5, "z": -2},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
-            "offset": {"x": 0, "y": -5, "z": 0.16451},
+            "offset": {"x": 4, "y": -5, "z": 2.16451},
             "stretch": {"x": -1.04997, "y": 1.04025, "z": 1.05976},
             "settings": {
               "isPiece": false,
@@ -147,7 +147,7 @@
     {
       "id": "5",
       "name": "L-Forearm",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": 20, "y": 15, "z": -1},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -166,11 +166,11 @@
         {
           "id": "6",
           "name": "L-Glove2",
-          "position": {"x": 0, "y": 1.00161, "z": 0},
+          "position": {"x": -4, "y": 1.00161, "z": -2},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
-            "offset": {"x": 0, "y": -5, "z": 0},
+            "offset": {"x": 4, "y": -5, "z": 2},
             "stretch": {"x": -1.24775, "y": 1.1, "z": 1.18085},
             "settings": {
               "isPiece": false,
@@ -219,7 +219,7 @@
     {
       "id": "7",
       "name": "L-Hand",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": 20, "y": 1, "z": -1},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -238,11 +238,11 @@
         {
           "id": "8",
           "name": "L-Glove",
-          "position": {"x": 0, "y": 5, "z": 0},
+          "position": {"x": -4, "y": 5, "z": -2},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
-            "offset": {"x": 0, "y": -5, "z": 0.16451},
+            "offset": {"x": 4, "y": -5, "z": 2.16451},
             "stretch": {"x": 1.04997, "y": 1.04025, "z": 1.05976},
             "settings": {
               "isPiece": false,
