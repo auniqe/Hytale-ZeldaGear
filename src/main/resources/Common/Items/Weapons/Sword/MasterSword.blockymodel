@@ -100,16 +100,17 @@
                   "children": [
                     {
                       "id": "5",
-                      "name": "Handle2",
-                      "position": {"x": 10, "y": 0, "z": 0},
+                      "name": "Handle2--C1",
+                      "position": {"x": 10.5, "y": 0, "z": 0},
                       "orientation": {"x": 0.5, "y": 0.5, "z": -0.5, "w": 0.5},
                       "shape": {
                         "type": "box",
-                        "offset": {"x": 0, "y": 0.5, "z": 0},
+                        "offset": {"x": 0, "y": 0, "z": 0},
                         "stretch": {"x": -1, "y": 1, "z": 1},
                         "settings": {
                           "isPiece": false,
-                          "size": {"x": 8, "y": 5, "z": 8}
+                          "size": {"x": 8, "y": 5, "z": 8},
+                          "isStaticBox": true
                         },
                         "textureLayout": {
                           "back": {
@@ -164,7 +165,7 @@
                         },
                         "textureLayout": {
                           "back": {
-                            "offset": {"x": 1, "y": 89},
+                            "offset": {"x": 48, "y": 33},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
@@ -174,7 +175,7 @@
                             "angle": 0
                           },
                           "front": {
-                            "offset": {"x": 1, "y": 89},
+                            "offset": {"x": 48, "y": 33},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
@@ -184,7 +185,7 @@
                             "angle": 0
                           },
                           "top": {
-                            "offset": {"x": 16, "y": 71},
+                            "offset": {"x": 64, "y": 39},
                             "mirror": {"x": true, "y": true},
                             "angle": 270
                           },
@@ -207,8 +208,8 @@
                           "orientation": {"x": -0.38268, "y": 0, "z": 0, "w": 0.92388},
                           "shape": {
                             "type": "box",
-                            "offset": {"x": 0, "y": -1.27279, "z": -1.27279},
-                            "stretch": {"x": -0.8375, "y": 1, "z": 1},
+                            "offset": {"x": 0, "y": -1.62634, "z": -1.62634},
+                            "stretch": {"x": -0.8375, "y": 0.875, "z": 0.875},
                             "settings": {
                               "isPiece": false,
                               "size": {"x": 6, "y": 6, "z": 6},
@@ -254,46 +255,8 @@
                         },
                         {
                           "id": "8",
-                          "name": "Crossguard",
-                          "position": {"x": 0, "y": 6.5, "z": 5.5},
-                          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                          "shape": {
-                            "type": "none",
-                            "offset": {"x": 0, "y": 0, "z": 0},
-                            "stretch": {"x": 0, "y": 0, "z": 0},
-                            "settings": {
-                              "isPiece": false
-                            },
-                            "textureLayout": {},
-                            "unwrapMode": "custom",
-                            "visible": true,
-                            "doubleSided": false,
-                            "shadingMode": "flat"
-                          }
-                        },
-                        {
-                          "id": "9",
-                          "name": "Crossguard",
-                          "position": {"x": 0, "y": 6.5, "z": -5.5},
-                          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                          "shape": {
-                            "type": "none",
-                            "offset": {"x": 0, "y": 0, "z": 0},
-                            "stretch": {"x": 0, "y": 0, "z": 0},
-                            "settings": {
-                              "isPiece": false
-                            },
-                            "textureLayout": {},
-                            "unwrapMode": "custom",
-                            "visible": true,
-                            "doubleSided": false,
-                            "shadingMode": "flat"
-                          }
-                        },
-                        {
-                          "id": "10",
                           "name": "Crossguard-Wing2",
-                          "position": {"x": 0, "y": 3.5, "z": -9.23486},
+                          "position": {"x": 0, "y": -2.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
                             "type": "none",
@@ -310,13 +273,13 @@
                           },
                           "children": [
                             {
-                              "id": "11",
+                              "id": "9",
                               "name": "Crossguard-Wing--C1",
-                              "position": {"x": 0, "y": -5.21488, "z": 4.51843},
+                              "position": {"x": 0, "y": 0.78512, "z": -4.71643},
                               "orientation": {"x": -0.16274, "y": 0, "z": 0, "w": 0.98667},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 0, "y": 0.39406, "z": -2.35772},
+                                "offset": {"x": 0, "y": 0.10503, "z": -1.50539},
                                 "stretch": {"x": 1, "y": 1, "z": -1},
                                 "settings": {
                                   "isPiece": false,
@@ -330,9 +293,9 @@
                                     "angle": 90
                                   },
                                   "front": {
-                                    "offset": {"x": 48, "y": 29},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 270
+                                    "offset": {"x": 43, "y": 29},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 90
                                   },
                                   "left": {
                                     "offset": {"x": 49, "y": 30},
@@ -348,6 +311,105 @@
                                     "offset": {"x": 49, "y": 30},
                                     "mirror": {"x": false, "y": true},
                                     "angle": 0
+                                  }
+                                },
+                                "unwrapMode": "custom",
+                                "visible": true,
+                                "doubleSided": false,
+                                "shadingMode": "flat"
+                              }
+                            },
+                            {
+                              "id": "10",
+                              "name": "Crossguard-Wing--C2",
+                              "position": {"x": 0, "y": 3.67028, "z": -7.63099},
+                              "orientation": {"x": 0.7251, "y": 0, "z": 0, "w": 0.68864},
+                              "shape": {
+                                "type": "box",
+                                "offset": {"x": 0, "y": -5.0805, "z": -5.67341},
+                                "stretch": {"x": 0.8875, "y": 1, "z": -1},
+                                "settings": {
+                                  "isPiece": false,
+                                  "size": {"x": 3, "y": 8, "z": 3},
+                                  "isStaticBox": true
+                                },
+                                "textureLayout": {
+                                  "back": {
+                                    "offset": {"x": 37, "y": 21},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "right": {
+                                    "offset": {"x": 53, "y": 18},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 270
+                                  },
+                                  "front": {
+                                    "offset": {"x": 53, "y": 31},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 270
+                                  },
+                                  "left": {
+                                    "offset": {"x": 61, "y": 21},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 90
+                                  },
+                                  "top": {
+                                    "offset": {"x": 37, "y": 18},
+                                    "mirror": {"x": true, "y": true},
+                                    "angle": 180
+                                  },
+                                  "bottom": {
+                                    "offset": {"x": 43, "y": 18},
+                                    "mirror": {"x": false, "y": true},
+                                    "angle": 180
+                                  }
+                                },
+                                "unwrapMode": "custom",
+                                "visible": true,
+                                "doubleSided": false,
+                                "shadingMode": "flat"
+                              }
+                            },
+                            {
+                              "id": "11",
+                              "name": "Crossguard-Wing--C3",
+                              "position": {"x": 0, "y": 3.67028, "z": -7.63099},
+                              "orientation": {"x": 0.60845, "y": 0, "z": 0, "w": 0.79359},
+                              "shape": {
+                                "type": "box",
+                                "offset": {"x": 0, "y": -3.26845, "z": -3.71842},
+                                "stretch": {"x": 0.9, "y": 1, "z": -1},
+                                "settings": {
+                                  "isPiece": false,
+                                  "size": {"x": 3, "y": 8, "z": 6},
+                                  "isStaticBox": true
+                                },
+                                "textureLayout": {
+                                  "back": {
+                                    "offset": {"x": 37, "y": 21},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "right": {
+                                    "offset": {"x": 53, "y": 25},
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 270
+                                  },
+                                  "left": {
+                                    "offset": {"x": 61, "y": 27},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 90
+                                  },
+                                  "top": {
+                                    "offset": {"x": 37, "y": 21},
+                                    "mirror": {"x": true, "y": true},
+                                    "angle": 180
+                                  },
+                                  "bottom": {
+                                    "offset": {"x": 43, "y": 21},
+                                    "mirror": {"x": false, "y": true},
+                                    "angle": 180
                                   }
                                 },
                                 "unwrapMode": "custom",
@@ -358,110 +420,16 @@
                             },
                             {
                               "id": "12",
-                              "name": "Crossguard-Wing--C2",
-                              "position": {"x": 0, "y": -2.32972, "z": 1.60387},
-                              "orientation": {"x": 0.7251, "y": 0, "z": 0, "w": 0.68864},
-                              "shape": {
-                                "type": "box",
-                                "offset": {"x": 0, "y": -6.31499, "z": -6.31062},
-                                "stretch": {"x": 1.0375, "y": 1, "z": -1},
-                                "settings": {
-                                  "isPiece": false,
-                                  "size": {"x": 3, "y": 8, "z": 3},
-                                  "isStaticBox": true
-                                },
-                                "textureLayout": {
-                                  "right": {
-                                    "offset": {"x": 53, "y": 21},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 270
-                                  },
-                                  "front": {
-                                    "offset": {"x": 53, "y": 31},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 270
-                                  },
-                                  "left": {
-                                    "offset": {"x": 61, "y": 21},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 90
-                                  },
-                                  "top": {
-                                    "offset": {"x": 46, "y": 18},
-                                    "mirror": {"x": true, "y": true},
-                                    "angle": 180
-                                  },
-                                  "bottom": {
-                                    "offset": {"x": 49, "y": 18},
-                                    "mirror": {"x": false, "y": true},
-                                    "angle": 180
-                                  }
-                                },
-                                "unwrapMode": "custom",
-                                "visible": true,
-                                "doubleSided": false,
-                                "shadingMode": "flat"
-                              }
-                            },
-                            {
-                              "id": "13",
-                              "name": "Crossguard-Wing--C3",
-                              "position": {"x": 0, "y": -2.32972, "z": 1.60387},
-                              "orientation": {"x": 0.60845, "y": 0, "z": 0, "w": 0.79359},
-                              "shape": {
-                                "type": "box",
-                                "offset": {"x": 0, "y": -4.24562, "z": -4.70592},
-                                "stretch": {"x": 1.05, "y": 1, "z": -1},
-                                "settings": {
-                                  "isPiece": false,
-                                  "size": {"x": 3, "y": 8, "z": 6},
-                                  "isStaticBox": true
-                                },
-                                "textureLayout": {
-                                  "back": {
-                                    "offset": {"x": 48, "y": 5},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  },
-                                  "right": {
-                                    "offset": {"x": 53, "y": 24},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 270
-                                  },
-                                  "left": {
-                                    "offset": {"x": 61, "y": 27},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 90
-                                  },
-                                  "top": {
-                                    "offset": {"x": 46, "y": 24},
-                                    "mirror": {"x": true, "y": true},
-                                    "angle": 180
-                                  },
-                                  "bottom": {
-                                    "offset": {"x": 49, "y": 21},
-                                    "mirror": {"x": false, "y": true},
-                                    "angle": 180
-                                  }
-                                },
-                                "unwrapMode": "custom",
-                                "visible": true,
-                                "doubleSided": false,
-                                "shadingMode": "flat"
-                              }
-                            },
-                            {
-                              "id": "14",
                               "name": "Crossguard-Wing--C4",
-                              "position": {"x": 0, "y": 0, "z": 0},
+                              "position": {"x": 0, "y": 6, "z": -9.23486},
                               "orientation": {"x": 0.28364, "y": 0, "z": 0, "w": 0.95893},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 0, "y": -2.71611, "z": 0.20275},
+                                "offset": {"x": 0, "y": -2.90243, "z": 1.25365},
                                 "stretch": {"x": 0.8875, "y": 0.75, "z": -0.875},
                                 "settings": {
                                   "isPiece": false,
-                                  "size": {"x": 3, "y": 8, "z": 10},
+                                  "size": {"x": 3, "y": 8, "z": 9},
                                   "isStaticBox": true
                                 },
                                 "textureLayout": {
@@ -476,17 +444,17 @@
                                     "angle": 0
                                   },
                                   "left": {
-                                    "offset": {"x": 61, "y": 28},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 90
+                                    "offset": {"x": 61, "y": 19},
+                                    "mirror": {"x": true, "y": true},
+                                    "angle": 270
                                   },
                                   "top": {
-                                    "offset": {"x": 46, "y": 18},
+                                    "offset": {"x": 37, "y": 20},
                                     "mirror": {"x": true, "y": true},
                                     "angle": 180
                                   },
                                   "bottom": {
-                                    "offset": {"x": 49, "y": 18},
+                                    "offset": {"x": 43, "y": 21},
                                     "mirror": {"x": false, "y": true},
                                     "angle": 180
                                   }
@@ -500,10 +468,10 @@
                           ]
                         },
                         {
-                          "id": "15",
+                          "id": "13",
                           "name": "Crossguard-Wing3",
-                          "position": {"x": 0, "y": -2.5, "z": -0.23486},
-                          "orientation": {"x": 0, "y": -1, "z": 0, "w": 0},
+                          "position": {"x": 0, "y": -2.5, "z": 0},
+                          "orientation": {"x": 0, "y": 1, "z": 0, "w": 0},
                           "shape": {
                             "type": "none",
                             "offset": {"x": 0, "y": 0, "z": 0},
@@ -519,13 +487,13 @@
                           },
                           "children": [
                             {
-                              "id": "16",
+                              "id": "14",
                               "name": "Crossguard-Wing--C1",
-                              "position": {"x": 0, "y": 0.78512, "z": -4.48157},
+                              "position": {"x": 0, "y": 0.78512, "z": -4.71643},
                               "orientation": {"x": -0.16274, "y": 0, "z": 0, "w": 0.98667},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 0, "y": 0.39406, "z": -2.35772},
+                                "offset": {"x": 0, "y": 0.10503, "z": -1.50539},
                                 "stretch": {"x": 1, "y": 1, "z": -1},
                                 "settings": {
                                   "isPiece": false,
@@ -539,9 +507,9 @@
                                     "angle": 90
                                   },
                                   "front": {
-                                    "offset": {"x": 48, "y": 29},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 270
+                                    "offset": {"x": 43, "y": 24},
+                                    "mirror": {"x": true, "y": false},
+                                    "angle": 90
                                   },
                                   "left": {
                                     "offset": {"x": 49, "y": 30},
@@ -566,23 +534,28 @@
                               }
                             },
                             {
-                              "id": "17",
+                              "id": "15",
                               "name": "Crossguard-Wing--C2",
-                              "position": {"x": 0, "y": 3.67028, "z": -7.39613},
+                              "position": {"x": 0, "y": 3.67028, "z": -7.63099},
                               "orientation": {"x": 0.7251, "y": 0, "z": 0, "w": 0.68864},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 0, "y": -6.31499, "z": -6.31062},
-                                "stretch": {"x": 1.0375, "y": 1, "z": -1},
+                                "offset": {"x": 0, "y": -5.0805, "z": -5.67341},
+                                "stretch": {"x": 0.8875, "y": 1, "z": -1},
                                 "settings": {
                                   "isPiece": false,
                                   "size": {"x": 3, "y": 8, "z": 3},
                                   "isStaticBox": true
                                 },
                                 "textureLayout": {
-                                  "right": {
-                                    "offset": {"x": 53, "y": 21},
+                                  "back": {
+                                    "offset": {"x": 37, "y": 21},
                                     "mirror": {"x": false, "y": false},
+                                    "angle": 0
+                                  },
+                                  "right": {
+                                    "offset": {"x": 53, "y": 18},
+                                    "mirror": {"x": true, "y": false},
                                     "angle": 270
                                   },
                                   "front": {
@@ -596,12 +569,12 @@
                                     "angle": 90
                                   },
                                   "top": {
-                                    "offset": {"x": 46, "y": 18},
+                                    "offset": {"x": 37, "y": 18},
                                     "mirror": {"x": true, "y": true},
                                     "angle": 180
                                   },
                                   "bottom": {
-                                    "offset": {"x": 49, "y": 18},
+                                    "offset": {"x": 43, "y": 18},
                                     "mirror": {"x": false, "y": true},
                                     "angle": 180
                                   }
@@ -613,14 +586,14 @@
                               }
                             },
                             {
-                              "id": "18",
+                              "id": "16",
                               "name": "Crossguard-Wing--C3",
-                              "position": {"x": 0, "y": 3.67028, "z": -7.39613},
+                              "position": {"x": 0, "y": 3.67028, "z": -7.63099},
                               "orientation": {"x": 0.60845, "y": 0, "z": 0, "w": 0.79359},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 0, "y": -4.24562, "z": -4.70592},
-                                "stretch": {"x": 1.05, "y": 1, "z": -1},
+                                "offset": {"x": 0, "y": -3.26845, "z": -3.71842},
+                                "stretch": {"x": 0.9, "y": 1, "z": -1},
                                 "settings": {
                                   "isPiece": false,
                                   "size": {"x": 3, "y": 8, "z": 6},
@@ -628,12 +601,12 @@
                                 },
                                 "textureLayout": {
                                   "back": {
-                                    "offset": {"x": 48, "y": 5},
+                                    "offset": {"x": 37, "y": 21},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "right": {
-                                    "offset": {"x": 53, "y": 24},
+                                    "offset": {"x": 53, "y": 25},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 270
                                   },
@@ -643,12 +616,12 @@
                                     "angle": 90
                                   },
                                   "top": {
-                                    "offset": {"x": 46, "y": 24},
+                                    "offset": {"x": 37, "y": 21},
                                     "mirror": {"x": true, "y": true},
                                     "angle": 180
                                   },
                                   "bottom": {
-                                    "offset": {"x": 49, "y": 21},
+                                    "offset": {"x": 43, "y": 21},
                                     "mirror": {"x": false, "y": true},
                                     "angle": 180
                                   }
@@ -660,17 +633,17 @@
                               }
                             },
                             {
-                              "id": "19",
+                              "id": "17",
                               "name": "Crossguard-Wing--C4",
-                              "position": {"x": 0, "y": 6, "z": -9},
+                              "position": {"x": 0, "y": 6, "z": -9.23486},
                               "orientation": {"x": 0.28364, "y": 0, "z": 0, "w": 0.95893},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 0, "y": -2.71611, "z": 0.20275},
+                                "offset": {"x": 0, "y": -2.90243, "z": 1.25365},
                                 "stretch": {"x": 0.8875, "y": 0.75, "z": -0.875},
                                 "settings": {
                                   "isPiece": false,
-                                  "size": {"x": 3, "y": 8, "z": 10},
+                                  "size": {"x": 3, "y": 8, "z": 9},
                                   "isStaticBox": true
                                 },
                                 "textureLayout": {
@@ -685,17 +658,17 @@
                                     "angle": 0
                                   },
                                   "left": {
-                                    "offset": {"x": 61, "y": 28},
+                                    "offset": {"x": 61, "y": 27},
                                     "mirror": {"x": true, "y": false},
                                     "angle": 90
                                   },
                                   "top": {
-                                    "offset": {"x": 46, "y": 18},
+                                    "offset": {"x": 37, "y": 20},
                                     "mirror": {"x": true, "y": true},
                                     "angle": 180
                                   },
                                   "bottom": {
-                                    "offset": {"x": 49, "y": 18},
+                                    "offset": {"x": 43, "y": 21},
                                     "mirror": {"x": false, "y": true},
                                     "angle": 180
                                   }
@@ -709,7 +682,7 @@
                           ]
                         },
                         {
-                          "id": "20",
+                          "id": "18",
                           "name": "Crossguard-Wing",
                           "position": {"x": 0, "y": 3.5, "z": 9.23486},
                           "orientation": {"x": -0.09111, "y": 0, "z": 0, "w": 0.99584},
@@ -728,7 +701,7 @@
                           },
                           "children": [
                             {
-                              "id": "21",
+                              "id": "19",
                               "name": "Crossguard-Wing",
                               "position": {"x": 0, "y": -2.70477, "z": -1.96133},
                               "orientation": {"x": 0.09955, "y": 0, "z": 0, "w": 0.99503},
@@ -747,7 +720,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "22",
+                                  "id": "20",
                                   "name": "Crossguard-Wing",
                                   "position": {"x": 0, "y": -2.25104, "z": -3.04273},
                                   "orientation": {"x": 0.15437, "y": 0, "z": 0, "w": 0.98801},
@@ -772,7 +745,7 @@
                       ]
                     },
                     {
-                      "id": "23",
+                      "id": "21",
                       "name": "Pommel",
                       "position": {"x": -11, "y": 0, "z": 0},
                       "orientation": {"x": 0.2706, "y": 0.65328, "z": 0.2706, "w": 0.65328},
@@ -799,7 +772,7 @@
                       },
                       "children": [
                         {
-                          "id": "24",
+                          "id": "22",
                           "name": "Pommel",
                           "position": {"x": 0, "y": 0, "z": 0},
                           "orientation": {"x": 0.5, "y": -0.5, "z": -0.5, "w": 0.5},
@@ -826,7 +799,7 @@
                           }
                         },
                         {
-                          "id": "25",
+                          "id": "23",
                           "name": "Pommel",
                           "position": {"x": 0, "y": 0, "z": 0},
                           "orientation": {"x": 0.70711, "y": 0, "z": 0, "w": 0.70711},
@@ -855,7 +828,7 @@
                       ]
                     },
                     {
-                      "id": "26",
+                      "id": "24",
                       "name": "BladeBottom",
                       "position": {"x": 19, "y": 0, "z": 0},
                       "orientation": {"x": 0.5, "y": 0.5, "z": -0.5, "w": 0.5},
@@ -901,7 +874,7 @@
                       },
                       "children": [
                         {
-                          "id": "27",
+                          "id": "25",
                           "name": "BladeMiddle",
                           "position": {"x": 0, "y": 13.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -947,14 +920,14 @@
                           },
                           "children": [
                             {
-                              "id": "28",
+                              "id": "26",
                               "name": "BladeTop",
                               "position": {"x": 0, "y": 16, "z": 0},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                               "shape": {
                                 "type": "quad",
                                 "offset": {"x": 0, "y": 20, "z": 0},
-                                "stretch": {"x": 1, "y": 1, "z": 1},
+                                "stretch": {"x": 1, "y": 1.125, "z": 1},
                                 "settings": {
                                   "isPiece": false,
                                   "size": {"x": 10, "y": 11},
@@ -974,7 +947,7 @@
                               },
                               "children": [
                                 {
-                                  "id": "29",
+                                  "id": "27",
                                   "name": "BladeTop--C1",
                                   "position": {"x": 0, "y": -15, "z": 0},
                                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},

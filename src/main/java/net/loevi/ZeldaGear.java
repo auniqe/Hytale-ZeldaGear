@@ -3,7 +3,6 @@ package net.loevi;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.Interaction;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
-import net.loevi.interactions.GrapplingHookInteraction;
 import net.loevi.interactions.HookshotInteraction;
 
 import javax.annotation.Nonnull;
@@ -28,9 +27,6 @@ public class ZeldaGear extends JavaPlugin {
 
         this.getCodecRegistry(Interaction.CODEC)
                 .register(HookshotInteraction.INTERACTION_NAME, HookshotInteraction.class, HookshotInteraction.CODEC);
-        this.getCodecRegistry(Interaction.CODEC)
-                .register(GrapplingHookInteraction.INTERACTION_NAME, GrapplingHookInteraction.class, GrapplingHookInteraction.CODEC);
-
 
         getLogger().at(Level.INFO).log("Zelda Gear setup complete");
     }
