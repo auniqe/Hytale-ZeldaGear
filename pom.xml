@@ -1,67 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-<modelVersion>4.0.0</modelVersion>
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-<groupId>net.loevi</groupId>
-<artifactId>ZeldaGear</artifactId>
-<version>1.7</version>
+    <modelVersion>4.0.0</modelVersion>
 
-<properties>
-    <maven.compiler.source>25</maven.compiler.source>
-    <maven.compiler.target>25</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-</properties>
+    <groupId>net.loevi</groupId>
+    <artifactId>ZeldaGear</artifactId>
+    <version>1.7</version>
 
-<dependencies>
-    <dependency>
-        <groupId>com.hypixel.hytale</groupId>
-        <artifactId>HytaleServer</artifactId>
-        <version>1.2</version>
-        <scope>system</scope>
-        <systemPath>${project.basedir}/deps/HytaleServer.jar</systemPath>
-    </dependency>
-</dependencies>
+    <properties>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <hytale.version>2026.01.28-87d03be09</hytale.version>
+    </properties>
 
-<!-- Default build -->
-<build>
-    <resources>
-        <resource>
-            <directory>src/main/resources</directory>
-            <includes>
-                <include>manifest.json</include>
-            </includes>
-            <filtering>true</filtering>
-        </resource>
-    </resources>
-</build>
+    <repositories>
+        <repository>
+            <id>hytale-release</id>
+            <url>https://maven.hytale.com/release</url>
+        </repository>
+    </repositories>
 
-<!-- Profiles -->
-<profiles>
-    <!-- Release build: includes assets -->
-    <profile>
-        <id>release</id>
-        <build>
-            <resources combine.self="override">
-                <resource>
-                    <directory>src/main/resources</directory>
-                    <includes>
-                        <include>manifest.json</include>
-                        <include>Common/**</include>
-                        <include>Server/**</include>
-                    </includes>
-                    <filtering>true</filtering>
-                </resource>
-            </resources>
-        </build>
-    </profile>
+    <dependencies>
+        <dependency>
+            <groupId>com.hypixel.hytale</groupId>
+            <artifactId>Server</artifactId>
+            <version>${hytale.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
-    <!-- Explicit debug profile (same as default, but clear intent) -->
-    <profile>
-        <id>debug</id>
-        <!-- uses base build: manifest only -->
-    </profile>
+    <!-- build -->
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>manifest.json</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
 
-</profiles>
+    <!-- profiles -->
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <resources>
+                    <resource>
+                        <directory>src/main/resources</directory>
+                        <includes>
+                            <include>manifest.json</include>
+                            <include>Common/**</include>
+                            <include>Server/**</include>
+                        </includes>
+                        <filtering>true</filtering>
+                    </resource>
+                </resources>
+            </build>
+        </profile>
+
+        <profile>
+            <id>debug</id>
+        </profile>
+
+    </profiles>
 </project>
