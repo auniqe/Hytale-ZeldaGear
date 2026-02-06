@@ -1,7 +1,6 @@
 {
   "Type": "Simple",
   "$Comment": "Length of Effect",
-  "RunTime": 0.583,
   "Effects": {
     "Trails": [
       {
@@ -35,5 +34,6 @@
       }
     ],
     "CameraEffect": "Sword_Spin"
-  }
+  },
+  "RunTime": 0.583
 }

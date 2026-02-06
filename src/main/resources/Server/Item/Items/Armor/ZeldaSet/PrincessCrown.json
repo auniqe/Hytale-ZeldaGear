@@ -4,17 +4,17 @@
   },
   "Parent": "HerosHat",
   "ItemLevel": 4,
-  "Icon": "Icons/Items/PrincessCrown.png",
+  "Icon": "Icons/ItemsGenerated/PrincessCrown.png",
   "IconProperties": {
-    "Scale": 0.4,
+    "Scale": 0.7,
     "Rotation": [
-      32,
-      51,
-      15
+      22.5,
+      45,
+      22.5
     ],
     "Translation": [
-      -14,
-      -95
+      -3,
+      -19
     ]
   },
   "Model": "Items/Armor/ZeldaSet/PrincessCrown.blockymodel",

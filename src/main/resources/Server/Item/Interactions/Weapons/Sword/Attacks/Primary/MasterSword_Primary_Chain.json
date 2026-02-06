@@ -1,6 +1,6 @@
 {
   "Type": "Chaining",
-  "ChainingAllowance": 2,
+  "ChainingAllowance": 1.2,
   "ChainId": "Sword_Swings",
   "Next": [
     {

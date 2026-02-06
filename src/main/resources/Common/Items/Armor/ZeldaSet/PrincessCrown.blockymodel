@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Head",
-      "position": {"x": -60, "y": 150, "z": 24.7},
+      "position": {"x": 0, "y": 16, "z": -4.3},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -111,18 +111,18 @@
                     "textureLayout": {
                       "right": {
                         "offset": {"x": 13, "y": 1},
-                        "mirror": {"x": true, "y": true},
-                        "angle": 90
+                        "mirror": {"x": false, "y": false},
+                        "angle": 270
                       },
                       "front": {
                         "offset": {"x": 13, "y": 6},
-                        "mirror": {"x": true, "y": true},
-                        "angle": 90
+                        "mirror": {"x": false, "y": false},
+                        "angle": 270
                       },
                       "left": {
                         "offset": {"x": 13, "y": 7},
-                        "mirror": {"x": true, "y": true},
-                        "angle": 90
+                        "mirror": {"x": false, "y": false},
+                        "angle": 270
                       },
                       "top": {
                         "offset": {"x": 19, "y": 0},

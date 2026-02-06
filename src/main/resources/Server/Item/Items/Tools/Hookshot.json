@@ -11,21 +11,50 @@
     "TimeSeconds": 3,
     "KnowledgeRequired": false,
     "Input": [
-      { "ItemId": "Ingredient_Bar_Cobalt", "Quantity": 25 },
-      { "ItemId": "Ingredient_Bar_Iron", "Quantity": 10 },
-      { "ItemId": "Ingredient_Leather_Heavy", "Quantity": 5 }
+      {
+        "ItemId": "Ingredient_Bar_Cobalt",
+        "Quantity": 25
+      },
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 5
+      }
     ],
     "BenchRequirement": [
-      { "Type": "Crafting", "Categories": ["Weapon_Bow"], "Id": "Weapon_Bench", "RequiredTierLevel": 2 },
-      { "Type": "DiagramCrafting", "Categories": ["Weapons.Bow"], "Id": "Armory" }
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Weapon_Bow"
+        ],
+        "Id": "Weapon_Bench",
+        "RequiredTierLevel": 2
+      },
+      {
+        "Type": "DiagramCrafting",
+        "Categories": [
+          "Weapons.Bow"
+        ],
+        "Id": "Armory"
+      }
     ]
   },
   "MaxDurability": 250,
   "DurabilityLossOnHit": 0,
   "IconProperties": {
-      "Scale": 0.6,
-      "Rotation": [315, 90, 0],
-      "Translation": [18, -46]
+    "Scale": 0.6,
+    "Rotation": [
+      315,
+      90,
+      0
+    ],
+    "Translation": [
+      18,
+      -46
+    ]
   },
   "Categories": [
     "ZeldaGear.Gear"
@@ -35,44 +64,54 @@
     "Secondary": "Root_Weapon_Shortbow_Primary_Shoot"
   },
   "InteractionVars": {
-      "Primary_Shoot_Charge": {
-          "Interactions": [
-              {
-                  "$Comment": "Charging up the hookshot",
-                  "Type": "Charging",
-                  "AllowIndefiniteHold": true,
-                  "DisplayProgress": false,
-                  "Effects": {
-                      "ItemAnimationId": "ShootCharged",
-                      "ClearAnimationOnFinish": true,
-                      "ClearSoundEventOnFinish": true,
-                      "WorldSoundEventId": "SFX_Daggers_T2_Guard",
-                      "LocalSoundEventId": "SFX_Daggers_T2_Guard_Local",
-                      "ItemPlayerAnimationsId": { "UseFirstPersonOverrides": false }
-                  },
-                  "Next": {
-                      "0.01": {
-                          "Type": "StatsCondition",
-                          "Costs": { "Stamina": 1 },
-                          "Next": {
-                              "Type": "ChangeStat",
-                              "StatModifiers": { "Stamina": -2 },
-                              "Next": {
-                                  "Type": "HookshotInteraction",
-                                  "PullSpeed": 23.0,
-                                  "MaxDistance": 20.0
-                              }
-                          },
-                          "Lenient": true,
-                          "LessThan": false,
-                          "Effects": { "WaitForAnimationToFinish": true }
-                      }
-                  },
-                  "Failed": { "Type": "Simple" }
+    "Primary_Shoot_Charge": {
+      "Interactions": [
+        {
+          "$Comment": "Charging up the hookshot",
+          "Type": "Charging",
+          "AllowIndefiniteHold": true,
+          "DisplayProgress": false,
+          "Effects": {
+            "ItemAnimationId": "Ready",
+            "ClearAnimationOnFinish": true,
+            "ClearSoundEventOnFinish": true,
+            "WorldSoundEventId": "SFX_Daggers_T2_Guard",
+            "LocalSoundEventId": "SFX_Daggers_T2_Guard_Local",
+            "ItemPlayerAnimationsId": {
+              "UseFirstPersonOverrides": false
+            }
+          },
+          "Next": {
+            "0.01": {
+              "Type": "StatsCondition",
+              "Costs": {
+                "Stamina": 1
+              },
+              "Next": {
+                "Type": "ChangeStat",
+                "StatModifiers": {
+                  "Stamina": -2
+                },
+                "Next": {
+                  "Type": "HookshotInteraction",
+                  "PullSpeed": 23.0,
+                  "MaxDistance": 20.0
+                }
+              },
+              "Lenient": true,
+              "LessThan": false,
+              "Effects": {
+                "WaitForAnimationToFinish": true
               }
-          ],
-          "RequireNewClick": true
-      }
+            }
+          },
+          "Failed": {
+            "Type": "Simple"
+          }
+        }
+      ],
+      "RequireNewClick": true
+    }
   },
   "MaxStack": 1,
   "Set": "C_Hookshot"

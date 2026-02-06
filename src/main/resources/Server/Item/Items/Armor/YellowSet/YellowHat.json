@@ -4,7 +4,6 @@
   },
   "Parent": "HerosHat",
   "ItemLevel": 200,
-  "Icon": "Icons/ItemsGenerated/YellowHat.png",
   "Model": "Items/Armor/Hat.blockymodel",
   "Texture": "Items/Armor/YellowSet/YellowHat.png",
   "Recipe": {
@@ -40,13 +39,14 @@
   "IconProperties": {
     "Scale": 0.5,
     "Rotation": [
-      32,
-      51,
-      15
+      37,
+      66,
+      27
     ],
     "Translation": [
-      -18,
-      -97
+      12,
+      -11
     ]
-  }
+  },
+  "Icon": "Icons/ItemsGenerated/YellowHat.png"
 }
