@@ -17,9 +17,23 @@
           "Interactions": [
             "Weapon_Sword_Primary_Swing_Down_Selector",
             {
-              "Parent": "Sword_Swing_Left_Spin_Jump",
+              "Parent": "Melee_Root",
               "Interactions": [
-                "MasterSwordLaunchBeam"
+                {
+                  "Type": "StatsCondition",
+                  "Failed": "MasterSwordLaunchBeam",
+                  "ValueType": "Percent",
+                  "Parent": "Stat_Check",
+                  "Costs": {
+                    "Health": 100
+                  },
+                  "LessThan": true,
+                  "RunTime": 0,
+                  "Next": {
+                    "Type": "Simple",
+                    "RunTime": 0.388
+                  }
+                }
               ]
             }
           ]
