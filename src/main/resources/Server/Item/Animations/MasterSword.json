@@ -1,0 +1,28 @@
+{
+  "Parent": "Handgun",
+  "Animations": {
+    "SpinReady": {
+      "ThirdPerson": "Characters/Animations/Items/Main_Handed/MasterSword/SpinReady/SpinReady.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Main_Handed/MasterSword/SpinReady/SpinReady_FPS.blockyanim",
+      "Speed": 2,
+      "Looping": false,
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim",
+      "BlendingDuration": 0.4,
+      "ClipsGeometry": false,
+      "KeepPreviousFirstPersonAnimation": false,
+      "ThirdPersonMoving": "Characters/Animations/Items/Main_Handed/MasterSword/SpinReady/SpinReady_Moving.blockyanim"
+    }
+  },
+  "WiggleWeights": {
+    "Pitch": 1,
+    "PitchDeceleration": 0.2,
+    "Roll": 0.1,
+    "RollDeceleration": 0.2,
+    "X": 1,
+    "XDeceleration": 0.2,
+    "Y": 0.1,
+    "YDeceleration": 0.2,
+    "Z": 0.1,
+    "ZDeceleration": 0.2
+  }
+}

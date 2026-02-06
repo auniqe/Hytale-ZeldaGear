@@ -3,7 +3,7 @@
   "DisplayProgress": false,
   "Next": {
     "0": "MasterSword_Primary_Chain",
-    "0.2": {
+    "0.7": {
       "Type": "Replace",
       "Var": "Thrust_Stamina",
       "DefaultOk": true,
@@ -13,8 +13,38 @@
             "Parent": "MasterSwordSpinAttack"
           }
         ]
-      }
+      },
+      "Effects": {}
     }
   },
-  "AllowIndefiniteHold": true
+  "AllowIndefiniteHold": true,
+  "Effects": {
+    "ItemPlayerAnimationsId": "MasterSword",
+    "ItemAnimationId": "SpinReady",
+    "WaitForAnimationToFinish": false,
+    "StartDelay": 0.3,
+    "ClearAnimationOnFinish": false
+  },
+  "Camera": {
+    "ThirdPerson": [
+      {
+        "Position": {
+          "X": 0,
+          "Y": -0.1,
+          "Z": 0
+        },
+        "Time": 0.5
+      }
+    ],
+    "FirstPerson": [
+      {
+        "Position": {
+          "Y": -0.05
+        },
+        "Time": 0.5
+      }
+    ]
+  },
+  "CancelOnItemChange": true,
+  "HorizontalSpeedMultiplier": 0.9
 }
