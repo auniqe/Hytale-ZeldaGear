@@ -2,21 +2,9 @@
   "TranslationProperties": {
     "Name": "Zora Cap"
   },
-  "Parent": "Armor_Cloth_Wool_Head",
+  "Parent": "HerosHat",
   "ItemLevel": 200,
-  "Icon": "Icons/Items/ZoraHat.png",
-  "IconProperties": {
-    "Scale": 0.4,
-    "Rotation": [
-      32,
-      51,
-      15
-    ],
-    "Translation": [
-      -14,
-      -95
-    ]
-  },
+  "Icon": "Icons/ItemsGenerated/ZoraHat.png",
   "Model": "Items/Armor/Hat.blockymodel",
   "Texture": "Items/Armor/ZoraTunic/ZoraCap.png",
   "Recipe": {
@@ -63,23 +51,23 @@
           "Amount": 3
         }
       ]
-    }
-  },
-  "Tags": {
-    "Type": [
-      "Armor"
-    ],
-    "Family": [
-      "Cloth_Wool"
+    },
+    "CosmeticsToHide": [
+      "HeadAccessory"
     ]
   },
-  "MaxDurability": 640,
-  "ItemSoundSetId": "ISS_Armor_Cloth",
-  "ClipsGeometry": false,
-  "UsePlayerAnimations": false,
   "Quality": "Rare",
-  "Categories": [
-    "ZeldaGear.Gear"
-  ],
-  "Set": "ZoraSet"
+  "Set": "ZoraSet",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      32,
+      51,
+      15
+    ],
+    "Translation": [
+      -18,
+      -97
+    ]
+  }
 }

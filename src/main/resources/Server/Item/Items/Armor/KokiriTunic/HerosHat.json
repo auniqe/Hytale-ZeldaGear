@@ -4,17 +4,17 @@
   },
   "Parent": "Armor_Cloth_Wool_Head",
   "ItemLevel": 200,
-  "Icon": "Icons/Items/HerosHat.png",
+  "Icon": "Icons/ItemsGenerated/HerosHat.png",
   "IconProperties": {
-    "Scale": 0.4,
+    "Scale": 0.5,
     "Rotation": [
       32,
       51,
       15
     ],
     "Translation": [
-      -14,
-      -95
+      -18,
+      -97
     ]
   },
   "Model": "Items/Armor/Hat.blockymodel",
@@ -63,7 +63,10 @@
           "Amount": 3
         }
       ]
-    }
+    },
+    "CosmeticsToHide": [
+      "HeadAccessory"
+    ]
   },
   "Tags": {
     "Type": [

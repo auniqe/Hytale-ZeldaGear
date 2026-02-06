@@ -2,21 +2,9 @@
   "TranslationProperties": {
     "Name": "Purple Cap"
   },
-  "Parent": "Armor_Cloth_Wool_Head",
+  "Parent": "HerosHat",
   "ItemLevel": 200,
-  "Icon": "Icons/Items/PurpleHat.png",
-  "IconProperties": {
-    "Scale": 0.4,
-    "Rotation": [
-      32,
-      51,
-      15
-    ],
-    "Translation": [
-      -14,
-      -95
-    ]
-  },
+  "Icon": "Icons/ItemsGenerated/PurpleHat.png",
   "Model": "Items/Armor/Hat.blockymodel",
   "Texture": "Items/Armor/PurpleTunic/PurpleCap.png",
   "Recipe": {
@@ -47,40 +35,18 @@
     ],
     "KnowledgeRequired": false
   },
-  "Armor": {
-    "ArmorSlot": "Head",
-    "BaseDamageResistance": 7,
-    "DamageResistance": {},
-    "StatModifiers": {
-      "Health": [
-        {
-          "Amount": 8,
-          "CalculationType": "Additive"
-        }
-      ],
-      "Stamina": [
-        {
-          "CalculationType": "Additive",
-          "Amount": 3
-        }
-      ]
-    }
-  },
-  "Tags": {
-    "Type": [
-      "Armor"
-    ],
-    "Family": [
-      "Cloth_Wool"
-    ]
-  },
-  "MaxDurability": 640,
-  "ItemSoundSetId": "ISS_Armor_Cloth",
-  "ClipsGeometry": false,
-  "UsePlayerAnimations": false,
   "Quality": "Epic",
-  "Categories": [
-    "ZeldaGear.Gear"
-  ],
-  "Set": "PurpleSet"
+  "Set": "PurpleSet",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      32,
+      51,
+      15
+    ],
+    "Translation": [
+      -18,
+      -97
+    ]
+  }
 }

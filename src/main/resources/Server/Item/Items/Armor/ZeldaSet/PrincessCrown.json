@@ -2,7 +2,7 @@
   "TranslationProperties": {
     "Name": "Princess Crown"
   },
-  "Parent": "Armor_Cloth_Wool_Head",
+  "Parent": "HerosHat",
   "ItemLevel": 4,
   "Icon": "Icons/Items/PrincessCrown.png",
   "IconProperties": {
@@ -39,35 +39,6 @@
     ],
     "KnowledgeRequired": false
   },
-  "Armor": {
-    "ArmorSlot": "Head",
-    "BaseDamageResistance": 7,
-    "DamageResistance": {},
-    "StatModifiers": {
-      "Health": [
-        {
-          "Amount": 12,
-          "CalculationType": "Additive"
-        }
-      ],
-      "Stamina": []
-    }
-  },
-  "Tags": {
-    "Type": [
-      "Armor"
-    ],
-    "Family": [
-      "Cloth_Wool"
-    ]
-  },
-  "MaxDurability": 640,
-  "ItemSoundSetId": "ISS_Armor_Cloth",
-  "ClipsGeometry": false,
-  "UsePlayerAnimations": false,
   "Quality": "Epic",
-  "Categories": [
-    "ZeldaGear.Gear"
-  ],
   "Set": "PrincessSet"
 }

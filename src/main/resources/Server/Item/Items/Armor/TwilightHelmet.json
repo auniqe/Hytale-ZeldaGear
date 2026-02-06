@@ -1,0 +1,70 @@
+{
+  "TranslationProperties": {
+    "Name": "Twilight Helmet"
+  },
+  "Parent": "HerosHat",
+  "ItemLevel": 4,
+  "Icon": "Icons/ItemsGenerated/TwilightHelmet.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      11,
+      40,
+      15
+    ],
+    "Translation": [
+      0,
+      -15
+    ]
+  },
+  "Model": "Items/Armor/TwilightHelmet.blockymodel",
+  "Texture": "Items/Armor/TwilightHelmet.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Cobalt",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Rock_Stone",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Armor_Bench",
+        "Type": "Crafting",
+        "Categories": [
+          "Armor_Head"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 7,
+    "DamageResistance": {},
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 12,
+          "CalculationType": "Additive"
+        }
+      ],
+      "Stamina": []
+    },
+    "CosmeticsToHide": [
+      "HeadAccessory"
+    ]
+  },
+  "Quality": "Epic",
+  "Set": "PrincessSet",
+  "Scale": 1
+}
