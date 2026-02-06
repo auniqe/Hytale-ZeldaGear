@@ -1,0 +1,20 @@
+{
+  "Type": "Charging",
+  "DisplayProgress": false,
+  "Next": {
+    "0": "MasterSword_Primary_Chain",
+    "0.2": {
+      "Type": "Replace",
+      "Var": "Thrust_Stamina",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          {
+            "Parent": "MasterSwordSpinAttack"
+          }
+        ]
+      }
+    }
+  },
+  "AllowIndefiniteHold": true
+}

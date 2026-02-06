@@ -1,0 +1,22 @@
+{
+  "Type": "StatsCondition",
+  "ValueType": "Percent",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "Replace",
+        "Var": "Vortexstrike_Spin",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "Weapon_Sword_Signature_Vortexstrike_Spin"
+          ]
+        }
+      }
+    ]
+  },
+  "Costs": {
+    "Stamina": 45
+  }
+}

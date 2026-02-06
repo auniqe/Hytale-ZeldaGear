@@ -1,51 +1,27 @@
 {
-  "Parent": "Template_Weapon_Sword",
   "TranslationProperties": {
     "Name": "Master Sword"
   },
   "Model": "Items/Weapons/Sword/MasterSword.blockymodel",
   "Texture": "Items/Weapons/Sword/MasterSword.png",
-  "Quality": "Epic",
   "Icon": "Icons/ItemsGenerated/MasterSword.png",
-  "Recipe": {
-    "TimeSeconds": 5,
-    "KnowledgeRequired": false,
-    "Input": [
-      {
-        "ItemId": "Ingredient_Bar_Adamantite",
-        "Quantity": 20
-      },
-      {
-        "ItemId": "Ingredient_Bar_Thorium",
-        "Quantity": 20
-      },
-      {
-        "ItemId": "Ingredient_Voidheart",
-        "Quantity": 6
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Categories": [
-          "Weapon_Sword"
-        ],
-        "Id": "Weapon_Bench",
-        "RequiredTierLevel": 3
-      }
-    ]
-  },
-  "IconProperties": {
-    "Scale": 0.35,
-    "Rotation": [
-      45,
-      90,
-      0
-    ],
-    "Translation": [
-      -41,
-      -41
-    ]
+  "PlayerAnimationsId": "Sword",
+  "Reticle": "DefaultMelee",
+  "Quality": "Epic",
+  "ItemLevel": 200,
+  "Categories": [
+    "ZeldaGear.Gear",
+    "Items.Weapons"
+  ],
+  "Interactions": {
+    "Primary": {
+      "Parent": "Root_Weapon_Sword_Primary",
+      "Interactions": [
+        "MasterSwordPrimary"
+      ]
+    },
+    "Secondary": "Root_Weapon_Sword_Secondary_Guard",
+    "Ability1": "Root_Weapon_Sword_Signature_Vortexstrike"
   },
   "InteractionVars": {
     "Swing_Left_Damage": {
@@ -164,26 +140,6 @@
       ]
     }
   },
-  "MaxDurability": 220,
-  "DurabilityLossOnHit": 0.21,
-  "Light": {
-    "Color": "#056",
-    "Radius": 1
-  },
-  "ItemLevel": 200,
-  "Categories": [
-    "ZeldaGear.Gear",
-    "Items.Weapons"
-  ],
-  "Set": "A_Sword",
-  "Tags": {
-    "Type": [
-      "Weapon"
-    ],
-    "Family": [
-      "sword"
-    ]
-  },
   "Weapon": {
     "EntityStatsToClear": [
       "SignatureEnergy"
@@ -197,5 +153,64 @@
       ]
     }
   },
-  "Variant": false
+  "Recipe": {
+    "TimeSeconds": 5,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 20
+      },
+      {
+        "ItemId": "Ingredient_Bar_Thorium",
+        "Quantity": 20
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 6
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Weapon_Sword"
+        ],
+        "Id": "Weapon_Bench",
+        "RequiredTierLevel": 3
+      }
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.35,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -41,
+      -41
+    ]
+  },
+  "Light": {
+    "Color": "#056",
+    "Radius": 1
+  },
+  "MaxDurability": 220,
+  "DurabilityLossOnHit": 0.21,
+  "Set": "A_Sword",
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Sword"
+    ]
+  },
+  "Variant": false,
+  "UsePlayerAnimations": false,
+  "Utility": {
+    "Compatible": true
+  }
 }
