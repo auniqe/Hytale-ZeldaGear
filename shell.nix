@@ -4,7 +4,7 @@ mkShell {
   buildInputs = [
     maven
     jdk25_headless
-    jetbrains.idea-community
+    jetbrains.idea-oss
   ];
 
   shellHook = ''

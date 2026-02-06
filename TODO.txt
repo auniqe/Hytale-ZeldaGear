@@ -7,11 +7,13 @@ Content:
     Gilded Sword
     Razor Sword
     Deku Stick
+    Zelda 1 gear
 
     Working sword pedestal
 
     Majoras Mask
     Outset Pajamas
+    Conductors Set
 
     BotW Set
     
@@ -24,6 +26,21 @@ Content:
 Functionality:
     Zora Armor Functionality
     Crafting Table
+    
+    Master Sword Beam
+    Goddess Sword Sky Strike
+    
+    
+    
 
 Other:
-    Fix Models
+    
+
+
+
+
+
+
+
+Finished:
+    Fix armor models
