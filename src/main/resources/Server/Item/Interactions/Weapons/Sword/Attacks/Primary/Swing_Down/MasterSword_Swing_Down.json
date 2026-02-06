@@ -12,7 +12,18 @@
     "DefaultOk": true,
     "DefaultValue": {
       "Interactions": [
-        "Weapon_Sword_Primary_Swing_Down_Selector"
+        {
+          "Type": "Parallel",
+          "Interactions": [
+            "Weapon_Sword_Primary_Swing_Down_Selector",
+            {
+              "Parent": "Sword_Swing_Left_Spin_Jump",
+              "Interactions": [
+                "MasterSwordLaunchBeam"
+              ]
+            }
+          ]
+        }
       ]
     }
   }

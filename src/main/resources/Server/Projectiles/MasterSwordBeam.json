@@ -1,0 +1,25 @@
+{
+  "Appearance": "MasterSwordBeam",
+  "Radius": 0.3,
+  "Height": 0.2,
+  "HorizontalCenterShot": 0.2,
+  "VerticalCenterShot": 0.1,
+  "DepthShot": 1.5,
+  "PitchAdjustShot": true,
+  "MuzzleVelocity": 50,
+  "TerminalVelocity": 50,
+  "Gravity": 0,
+  "TimeToLive": 20,
+  "Damage": 35,
+  "DeathEffectsOnHit": true,
+  "DeathParticles": {
+    "SystemId": "Block_Break_Crystal",
+    "Color": "#35ffff"
+  },
+  "DeathSoundEventId": "SFX_Crystal_Break",
+  "HitSoundEventId": "SFX_Crystal_Hit",
+  "DeadTime": 0,
+  "DeadTimeMiss": 2,
+  "SticksVertically": true,
+  "MissSoundEventId": "SFX_Crystal_Hit"
+}

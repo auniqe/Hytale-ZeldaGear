@@ -1,0 +1,62 @@
+{
+  "Model": "Items/Projectiles/MasterSwordBeam.blockymodel",
+  "Texture": "Items/Projectiles/MasterSwordBeam.png",
+  "HitBox": {
+    "Max": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 0.1
+    },
+    "Min": {
+      "X": -0.1,
+      "Y": -0.1,
+      "Z": -0.1
+    }
+  },
+  "MinScale": 1,
+  "MaxScale": 1,
+  "Trails": [
+    {
+      "TargetNodeName": "BladeTop",
+      "TrailId": "Large_Projectile"
+    }
+  ],
+  "Light": {
+    "Color": "#233",
+    "Radius": 1
+  },
+  "Particles": [
+    {
+      "SystemId": "Fire_Teal",
+      "Color": "#c4dbff",
+      "Scale": 1,
+      "PositionOffset": {
+        "X": 0,
+        "Y": -0.1,
+        "Z": 1.5
+      },
+      "RotationOffset": {
+        "Yaw": 90,
+        "Pitch": 0,
+        "Roll": -90
+      }
+    }
+  ],
+  "PhysicsValues": {
+    "InvertedGravity": false
+  },
+  "Icon": "Icons/ModelsGenerated/MasterSwordBeam.png",
+  "IconProperties": {
+    "Scale": 0.25,
+    "Rotation": [
+      315,
+      90,
+      0
+    ],
+    "Translation": [
+      -24,
+      -43
+    ]
+  },
+  "GradientSet": "Eyes_Gradient"
+}

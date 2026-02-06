@@ -10,7 +10,7 @@
       "DefaultValue": {
         "Interactions": [
           {
-            "Parent": "MasterSwordSpinAttack"
+            "Parent": "MasterSwordSpinAttackCharge"
           }
         ]
       },
