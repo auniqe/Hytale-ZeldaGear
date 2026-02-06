@@ -46,5 +46,31 @@ mkShell {
 
         echo "Debug build complete!"
     }
+
+    pull() {
+        local dest="$(pwd)/src/main/resources"
+        local debugDir="$HOME/.var/app/com.hypixel.HytaleLauncher/data/Hytale/UserData/Mods/DebugAssets"
+
+        if [ ! -d "$debugDir" ]; then
+            echo "No DebugAssets folder found at $debugDir"
+            return 1
+        fi
+
+        echo "Pulling changes from DebugAssets..."
+
+        # Pull Common
+        if [ -d "$debugDir/Common" ]; then
+            mkdir -p "$dest/Common"
+            cp -ru "$debugDir/Common/"* "$dest/Common/"
+        fi
+
+        # Pull Server
+        if [ -d "$debugDir/Server" ]; then
+            mkdir -p "$dest/Server"
+            cp -ru "$debugDir/Server/"* "$dest/Server/"
+        fi
+
+        echo "Changes pulled successfully!"
+    }
   '';
 }

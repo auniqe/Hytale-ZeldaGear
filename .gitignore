@@ -2,6 +2,9 @@
 target/
 deps/HytaleServer.jar
 
+### Backups ###
+*~
+
 ### IntelliJ IDEA ###
 .idea
 .idea/modules.xml
