@@ -1,0 +1,94 @@
+{
+  "TranslationProperties": {
+    "Name": "Wind Tunic"
+  },
+  "Parent": "Armor_Iron_Chest",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bolt_Wool",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 5
+      },
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 15
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Armor_Bench",
+        "Type": "Crafting",
+        "Categories": [
+          "Armor_Chest"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "ItemLevel": 15,
+  "Icon": "Icons/ItemsGenerated/WindTunic.png",
+  "IconProperties": {
+    "Scale": 0.57,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -17
+    ]
+  },
+  "Model": "Items/Armor/WindSet/WindTunic.blockymodel",
+  "Texture": "Items/Armor/WindSet/WindTunic.png",
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 17,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.09,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.09,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "CosmeticsToHide": [
+      "Overtop",
+      "Undertop"
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Kweebec"
+    ]
+  },
+  "MaxDurability": 40,
+  "Quality": "Uncommon",
+  "Categories": [
+    "ZeldaGear.Gear"
+  ],
+  "Set": "WindSet"
+}

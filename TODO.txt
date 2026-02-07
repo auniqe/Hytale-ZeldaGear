@@ -1,5 +1,4 @@
 Content:
-    Midna's Helmet
     Fierce Deity
     Fiece Deity Sword
     Windwaker Heros Sword
@@ -27,7 +26,6 @@ Functionality:
     Zora Armor Functionality
     Crafting Table
     
-    Master Sword Beam
     Goddess Sword Sky Strike
     
     
@@ -43,4 +41,8 @@ Other:
 
 
 Finished:
+    
+    Midna's Helmet
+    Master Sword Beam
+    Master Sword Spin Attack
     Fix armor models
