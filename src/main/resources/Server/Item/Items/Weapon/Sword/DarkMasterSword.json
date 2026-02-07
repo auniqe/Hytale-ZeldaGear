@@ -1,9 +1,5 @@
 {
-  "Parent": "Template_Weapon_Sword",
-  "TranslationProperties": {
-    "Name": "Dark Master Sword"
-  },
-  "Model": "Items/Weapons/Sword/MasterSword.blockymodel",
+  "Parent": "MasterSword",
   "Texture": "Items/Weapons/Sword/DarkMasterSword.png",
   "Quality": "Epic",
   "Icon": "Icons/ItemsGenerated/DarkMasterSword.png",
@@ -35,143 +31,10 @@
       }
     ]
   },
-  "IconProperties": {
-    "Scale": 0.35,
-    "Rotation": [
-      45,
-      90,
-      0
-    ],
-    "Translation": [
-      -41,
-      -41
-    ]
-  },
-  "InteractionVars": {
-    "Swing_Left_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 20
-            }
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
-          }
-        }
-      ]
-    },
-    "Swing_Right_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 22
-            }
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
-          }
-        }
-      ]
-    },
-    "Swing_Down_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 36
-            }
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
-          }
-        }
-      ]
-    },
-    "Thrust_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 52
-            }
-          },
-          "EntityStatsOnHit": [
-            {
-              "EntityStatId": "SignatureEnergy",
-              "Amount": 3
-            }
-          ],
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
-          }
-        }
-      ]
-    },
-    "Vortexstrike_Spin_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 37
-            }
-          },
-          "EntityStatsOnHit": [],
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
-          }
-        }
-      ]
-    },
-    "Vortexstrike_Stab_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 110
-            }
-          },
-          "EntityStatsOnHit": [],
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
-          }
-        }
-      ]
-    },
-    "Guard_Wield": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Secondary_Guard_Wield",
-          "StaminaCost": {
-            "Value": 20,
-            "CostType": "Damage"
-          }
-        }
-      ]
-    }
-  },
-  "MaxDurability": 220,
-  "DurabilityLossOnHit": 0.21,
-  "ItemLevel": 200,
   "Categories": [
     "ZeldaGear.Gear",
     "Items.Weapons"
   ],
-  "Set": "A_Sword",
   "Tags": {
     "Type": [
       "Weapon"
@@ -180,18 +43,8 @@
       "sword"
     ]
   },
-  "Weapon": {
-    "EntityStatsToClear": [
-      "SignatureEnergy"
-    ],
-    "StatModifiers": {
-      "SignatureEnergy": [
-        {
-          "Amount": 5,
-          "CalculationType": "Additive"
-        }
-      ]
-    }
-  },
-  "Variant": true
+  "Variant": true,
+  "TranslationProperties": {
+    "Name": "Dark Master Sword"
+  }
 }
