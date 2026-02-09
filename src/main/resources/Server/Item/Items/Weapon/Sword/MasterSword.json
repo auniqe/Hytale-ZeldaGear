@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Master Sword"
+    "Name": "server.items.Master_Sword.name",
+    "Description": "server.items.Master_Sword.description"
   },
   "Model": "Items/Weapons/Sword/MasterSword.blockymodel",
   "Texture": "Items/Weapons/Sword/MasterSword.png",
@@ -17,11 +18,11 @@
     "Primary": {
       "Parent": "Root_Weapon_Sword_Primary",
       "Interactions": [
-        "MasterSwordPrimary"
+        "MasterSword_Primary"
       ]
     },
     "Secondary": "Root_Weapon_Sword_Secondary_Guard",
-    "Ability1": "Root_Weapon_Sword_Signature_Vortexstrike"
+    "Ability1": "Root_Weapon_Battleaxe_Signature_Whirlwind"
   },
   "InteractionVars": {
     "Swing_Left_Damage": {
@@ -30,7 +31,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 20
+              "Physical": 16
             }
           },
           "DamageEffects": {
@@ -46,7 +47,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 22
+              "Physical": 16
             }
           },
           "DamageEffects": {
@@ -62,7 +63,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 36
+              "Physical": 27
             }
           },
           "DamageEffects": {
@@ -72,29 +73,7 @@
         }
       ]
     },
-    "Thrust_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 52
-            }
-          },
-          "EntityStatsOnHit": [
-            {
-              "EntityStatId": "SignatureEnergy",
-              "Amount": 3
-            }
-          ],
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
-          }
-        }
-      ]
-    },
-    "Vortexstrike_Spin_Damage": {
+    "MasterSword_Spin_Damage": {
       "Interactions": [
         {
           "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
@@ -111,13 +90,30 @@
         }
       ]
     },
-    "Vortexstrike_Stab_Damage": {
+    "MasterSword_Spin_Damage_Weak": {
       "Interactions": [
         {
-          "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 110
+              "Physical": 24.05
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "MasterSword_Spin_Damage_Powered": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 44
             }
           },
           "EntityStatsOnHit": [],
@@ -147,7 +143,7 @@
     "StatModifiers": {
       "SignatureEnergy": [
         {
-          "Amount": 5,
+          "Amount": 2,
           "CalculationType": "Additive"
         }
       ]
@@ -214,5 +210,5 @@
     "Compatible": true
   },
   "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
-  "ItemSoundSetId": "ISS_Weapons_Blade_Large"
+  "Scale": 1
 }

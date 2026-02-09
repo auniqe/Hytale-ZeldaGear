@@ -1,0 +1,76 @@
+{
+  "Type": "Charging",
+  "DisplayProgress": true,
+  "Next": {
+    "0": "MasterSword_Primary_Chain",
+    "0.5": {
+      "Type": "Replace",
+      "Var": "Thrust_Stamina",
+      "DefaultValue": {
+        "Interactions": [
+          "MasterSword_SpinAttack_Weak"
+        ]
+      }
+    },
+    "0.85": {
+      "Type": "Replace",
+      "Var": "Thrust_Stamina",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "MasterSword_SpinAttack"
+        ]
+      }
+    },
+    "2.3": {
+      "Type": "Replace",
+      "Var": "Thrust_Stamina",
+      "DefaultValue": {
+        "Interactions": [
+          {
+            "Parent": "MasterSword_SpinAttack_Powered"
+          }
+        ]
+      },
+      "DefaultOk": true
+    }
+  },
+  "AllowIndefiniteHold": true,
+  "Effects": {
+    "ItemPlayerAnimationsId": "MasterSword",
+    "ItemAnimationId": "SpinReady",
+    "WaitForAnimationToFinish": false,
+    "StartDelay": 0.3,
+    "ClearAnimationOnFinish": false
+  },
+  "Camera": {
+    "ThirdPerson": [
+      {
+        "Position": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Time": 0.5,
+        "Rotation": {
+          "Roll": 0
+        }
+      }
+    ],
+    "FirstPerson": [
+      {
+        "Position": {
+          "Y": 0
+        },
+        "Time": 0.3,
+        "Rotation": {
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 0
+        }
+      }
+    ]
+  },
+  "CancelOnItemChange": true,
+  "HorizontalSpeedMultiplier": 0.65
+}

@@ -1,0 +1,16 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "Particles": [
+      {
+        "SystemId": "MasterSword_Spin_AOE_Particle_Inner_Powered",
+        "TargetNodeName": "Hip",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "Y": 1.0
+        }
+      }
+    ],
+    "CameraEffect": "Sword_Spin"
+  }
+}

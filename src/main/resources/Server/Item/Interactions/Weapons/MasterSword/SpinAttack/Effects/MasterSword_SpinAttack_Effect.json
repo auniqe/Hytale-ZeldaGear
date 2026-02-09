@@ -1,0 +1,43 @@
+{
+  "Type": "Simple",
+  "$Comment": "Length of Effect",
+  "Effects": {
+    "Trails": [
+      {
+        "PositionOffset": {
+          "X": 0.8,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationOffset": {
+          "Pitch": 0,
+          "Roll": 90,
+          "Yaw": 0
+        },
+        "TargetNodeName": "Handle",
+        "TrailId": "Medium_Signature"
+      }
+    ],
+    "WorldSoundEventId": "SFX_Sword_T2_Signature_Part_1",
+    "LocalSoundEventId": "SFX_Sword_T2_Signature_Part_1_Local",
+    "WaitForAnimationToFinish": false,
+    "Particles": [
+      {
+        "SystemId": "MasterSword_Spin_AOE_Effect",
+        "Scale": 1.2,
+        "TargetNodeName": "Hip",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "Y": 1.0
+        },
+        "Color": "#65ff00",
+        "DetachedFromModel": false
+      }
+    ],
+    "CameraEffect": "Sword_Spin",
+    "MovementEffects": {
+      "DisableSprint": false
+    }
+  },
+  "RunTime": 0.583
+}

@@ -1,0 +1,10 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Health": 100
+  },
+  "Next": {
+    "Type": "LaunchProjectile",
+    "ProjectileId": "MasterSwordBeam"
+  }
+}

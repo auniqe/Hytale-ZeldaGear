@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Hookshot"
+    "Name": "server.items.Hookshot.name",
+    "Description": "server.items.Hookshot.description"
   },
   "Quality": "Rare",
   "Model": "Items/Tools/Hookshot.blockymodel",

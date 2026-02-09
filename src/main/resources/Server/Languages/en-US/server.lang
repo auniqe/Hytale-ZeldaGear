@@ -1,0 +1,27 @@
+##QUALITY
+
+##WEAPON
+items.Master_Sword.name=Master Sword
+items.Master_Sword.description=<b>The legendary <color is="#8B339E">Sword that Seals the Darkness</color>, forged by the gods to dispel evil.</b> \n\ \n\
+<b>Ability:</b> Hold Left Click to enter Spin Attack stance, the longer you stay in stance the more powerful the attack is, charge for long enough to unleash a Great Spin. \n\ \n\
+<b>Passive:</b> Projectiles will fire dealing damage when at full health. \n\ \n\
+<b>Signature:</b> hello
+
+
+##TOOLS
+items.Hookshot.name=Hookshot
+
+items.Hookshot.description=<b>A contraption that shoots a chain out at high speeds when triggered, then <color is="#2770B7">pulls the user </color>when hooked onto an object. </b> \n\ \n\
+
+<b>Ability:</b> Right-click to launch out a chain that pulls you to it's location after hitting a surface.
+
+
+items.Longshot.name=Longshot
+
+items.Longshot.description=<b>A contraption that shoots a chain out at high speeds when triggered, then <color is="#8B339E">pulls the user </color>when hooked onto an object.          Now upgraded, it has two rows of chains allowing further      reach and more aggressive retraction.</b>  \n\ \n\
+
+<b>Ability:</b> Right-click to launch out a chain that pulls you to it's location after hitting a surface.
+
+
+
+

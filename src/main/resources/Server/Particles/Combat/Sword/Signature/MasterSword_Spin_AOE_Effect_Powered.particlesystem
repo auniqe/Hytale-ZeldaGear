@@ -1,0 +1,16 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "MasterSword_Spin_AOE_Particle_Powered",
+      "StartDelay": 0,
+      "TotalSpawners": 1,
+      "SpawnRate": {
+        "Min": 0,
+        "Max": 0
+      }
+    }
+  ],
+  "BoundingRadius": 30,
+  "IsImportant": false,
+  "LifeSpan": 2
+}

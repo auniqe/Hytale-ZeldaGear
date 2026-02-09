@@ -1,0 +1,42 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemAnimationId": "SpinReady",
+    "ItemPlayerAnimationsId": "MasterSword"
+  },
+  "RunTime": 0.05,
+  "Next": {
+    "Type": "Parallel",
+    "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "Var": "MasterSword_Spin_Selector_Powered",
+            "DefaultOk": true,
+            "DefaultValue": {
+              "Interactions": [
+                "MasterSword_SpinSelector_Powered"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "Var": "Vortexstrike_Spin_Effect",
+            "DefaultOk": true,
+            "DefaultValue": {
+              "Interactions": [
+                "MasterSword_SpinAttack_Effect_Powered"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

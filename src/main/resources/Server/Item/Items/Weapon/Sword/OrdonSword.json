@@ -208,6 +208,5 @@
   "Utility": {
     "Compatible": true
   },
-  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
-  "ItemSoundSetId": "ISS_Weapons_Blade_Large"
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim"
 }
