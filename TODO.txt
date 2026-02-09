@@ -1,17 +1,15 @@
 Content:
     Fierce Deity
     Fiece Deity Sword
-    Windwaker Heros Sword
-    Ordon Sword
     Gilded Sword
-    Razor Sword
+    Ordon Shield
+    Wind Shield
     Deku Stick
     Zelda 1 gear
 
     Working sword pedestal
 
     Majoras Mask
-    Outset Pajamas
     Conductors Set
 
     BotW Set
@@ -41,8 +39,13 @@ Other:
 
 
 Finished:
-    
+    Outset Pajamas
+    Windwaker Heros Sword
+    Ordon Sword
     Midna's Helmet
     Master Sword Beam
     Master Sword Spin Attack
     Fix armor models
+    Hat physics
+    Razor Sword
+
