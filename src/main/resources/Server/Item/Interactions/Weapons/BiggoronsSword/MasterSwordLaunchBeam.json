@@ -1,0 +1,9 @@
+{
+  "Type": "LaunchProjectile",
+  "ProjectileId": "MasterSwordBeam",
+  "RunTime": 0.3,
+  "Effects": {
+    "WorldSoundEventId": "SFX_Sword_T2_Swing_Down",
+    "LocalSoundEventId": "SFX_Sword_T2_Lunge_Local"
+  }
+}
