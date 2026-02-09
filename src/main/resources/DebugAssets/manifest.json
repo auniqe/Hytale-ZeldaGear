@@ -1,0 +1,17 @@
+{
+  "Group": "LOEVI",
+  "Name": "Zelda Gear Assets",
+  "Version": "0.0",
+  "Description": "Assets",
+  "Authors": [
+    {
+      "Name": "LOEVI",
+      "Email": "lofiloevi@gmail.com"
+    }
+  ],
+  "Website": "loevi.net",
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false
+}
