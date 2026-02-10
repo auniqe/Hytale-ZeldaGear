@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Fairy Bow"
+    "Name": "server.items.Fairy_Bow.name",
+    "Description": "server.items.Fairy_Bow.description"
   },
   "Parent": "Template_Weapon_Shortbow",
   "Quality": "Epic",
@@ -281,7 +282,7 @@
       }
     ]
   },
-  "MaxDurability": 150,
+  "MaxDurability": 225,
   "DurabilityLossOnHit": 0.58,
   "IconProperties": {
     "Scale": 0.37,

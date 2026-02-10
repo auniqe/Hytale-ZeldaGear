@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Wind Tunic"
+    "Name": "server.items.Wind_Tunic.name",
+    "Description": "server.items.Wind_Tunic.description"
   },
   "Parent": "Armor_Iron_Chest",
   "Recipe": {
@@ -90,5 +91,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "WindSet"
+  "Set": "ZZ_Standalone"
 }

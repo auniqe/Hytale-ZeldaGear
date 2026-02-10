@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Goron Tunic"
+    "Name": "server.items.Goron_Tunic.name",
+    "Description": "server.items.Goron_Tunic.description"
   },
   "Parent": "Armor_Iron_Chest",
   "Recipe": {

@@ -1,7 +1,8 @@
 {
   "Parent": "Template_Weapon_Shield",
   "TranslationProperties": {
-    "Name": "Masked Mirror Shield"
+    "Name": "server.items.Masked_Mirror_Shield.name",
+    "Description": "server.items.Masked_Mirror_Shield.description"
   },
   "Categories": [
     "ZeldaGear.Gear",

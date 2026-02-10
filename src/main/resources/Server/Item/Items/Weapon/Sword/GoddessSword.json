@@ -1,7 +1,8 @@
 {
   "Parent": "Template_Weapon_Sword",
   "TranslationProperties": {
-    "Name": "Goddess Sword"
+    "Name": "server.items.Goddess_Sword.name",
+    "Description": "server.items.Goddess_Sword.description"
   },
   "Model": "Items/Weapons/Sword/GoddessSword.blockymodel",
   "Texture": "Items/Weapons/Sword/GoddessSword.png",
@@ -175,7 +176,7 @@
     "ZeldaGear.Gear",
     "Items.Weapons"
   ],
-  "Set": "A_Sword",
+  "Set": "BB_Sword",
   "Weapon": {
     "EntityStatsToClear": [
       "SignatureEnergy"

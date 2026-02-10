@@ -1,14 +1,15 @@
 {
   "Parent": "Template_Weapon_Sword",
   "TranslationProperties": {
-    "Name": "Kokiri Sword"
+    "Name": "server.items.Kokiri_Sword.name",
+    "Description": "server.items.Kokiri_Sword.description"
   },
   "Model": "Items/Weapons/Sword/KokiriSword.blockymodel",
   "Texture": "Items/Weapons/Sword/KokiriSword.png",
   "Icon": "Icons/ItemsGenerated/KokiriSword.png",
-  "Quality": "Rare",
+  "Quality": "Uncommon",
   "ItemLevel": 35,
-  "MaxDurability": 75,
+  "MaxDurability": 125,
   "InteractionVars": {
     "Swing_Left_Damage": {
       "Interactions": [
@@ -159,7 +160,7 @@
       }
     ]
   },
-  "Set": "A_Sword",
+  "Set": "A0_Sword",
   "Weapon": {
     "EntityStatsToClear": [
       "SignatureEnergy"

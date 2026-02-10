@@ -1,14 +1,15 @@
 {
   "Parent": "Template_Weapon_Sword",
   "TranslationProperties": {
-    "Name": "Hero's Sword"
+    "Name": "server.items.Heros_Sword.name",
+    "Description": "server.items.Heros_Sword.description"
   },
   "Model": "Items/Weapons/Sword/HerosSword.blockymodel",
   "Texture": "Items/Weapons/Sword/HerosSword.png",
   "Icon": "Icons/ItemsGenerated/HerosSword.png",
   "Quality": "Rare",
   "ItemLevel": 35,
-  "MaxDurability": 75,
+  "MaxDurability": 170,
   "InteractionVars": {
     "Swing_Left_Damage": {
       "Interactions": [
@@ -159,7 +160,7 @@
       }
     ]
   },
-  "Set": "A_Sword",
+  "Set": "A4_Sword",
   "Weapon": {
     "EntityStatsToClear": [
       "SignatureEnergy"

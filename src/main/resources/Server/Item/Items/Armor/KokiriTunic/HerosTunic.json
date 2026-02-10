@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Hero's Tunic"
+    "Name": "server.items.Heros_Tunic.name",
+    "Description": "server.items.Heros_Tunic.description"
   },
   "Parent": "Armor_Iron_Chest",
   "Recipe": {
@@ -90,5 +91,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "HerosSet"
+  "Set": "EEE_HerosSet"
 }

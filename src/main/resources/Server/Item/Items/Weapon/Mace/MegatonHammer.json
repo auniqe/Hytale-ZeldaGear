@@ -1,7 +1,8 @@
 {
   "Parent": "Template_Weapon_Mace",
   "TranslationProperties": {
-    "Name": "Megaton Hammer"
+    "Name": "server.items.Megaton_Hammer.name",
+    "Description": "server.items.Megaton_Hammer.description"
   },
   "Model": "Items/Weapons/Sword/MegatonHammer.blockymodel",
   "Texture": "Items/Weapons/Sword/MegatonHammer.png",
@@ -187,7 +188,7 @@
       ]
     }
   },
-  "MaxDurability": 150,
+  "MaxDurability": 225,
   "DurabilityLossOnHit": 0.5,
   "IconProperties": {
     "Scale": 0.35,
@@ -205,7 +206,7 @@
     "ZeldaGear.Gear",
     "Items.Weapons"
   ],
-  "Set": "A_Sword",
+  "Set": "A3_Sword",
   "Weapon": {
     "EntityStatsToClear": [
       "SignatureEnergy"

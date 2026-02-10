@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Hero's Boots"
+    "Name": "server.items.Heros_Boots.name"
   },
   "Parent": "Armor_Iron_Legs",
   "Quality": "Rare",
@@ -98,5 +98,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "HerosSet"
+  "Set": "E_HerosSet"
 }

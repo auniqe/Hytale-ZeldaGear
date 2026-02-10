@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Hero's Cap"
+    "Name": "server.items.Heros_Cap.name",
+    "Description": "server.items.Heros_Cap.description"
   },
   "Parent": "Armor_Cloth_Wool_Head",
   "ItemLevel": 200,
@@ -84,5 +85,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "HerosSet"
+  "Set": "EEEE_HerosSet"
 }

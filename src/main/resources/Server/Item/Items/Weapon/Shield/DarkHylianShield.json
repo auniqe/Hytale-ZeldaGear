@@ -1,11 +1,13 @@
 {
   "Parent": "HylianShield",
   "TranslationProperties": {
-    "Name": "Dark Hylian Shield"
+    "Name": "server.items.Dark_HylianShield.name",
+    "Description": "server.items.Dark_HylianShield.description"
   },
   "Model": "Items/Weapons/Shield/HylianShield.blockymodel",
   "Texture": "Items/Weapons/Shield/DarkHylianShield.png",
   "Icon": "Icons/ItemsGenerated/DarkHylianShield.png",
   "Quality": "Epic",
-  "Variant": true
+  "Variant": true,
+  "Set": "D_Shield"
 }

@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Lobster Shirt"
+    "Name": "server.items.Lobster_Shirt.name",
+    "Description": "server.items.Lobster_Shirt.description"
   },
   "Parent": "Armor_Iron_Chest",
   "Recipe": {
@@ -27,7 +28,7 @@
     ],
     "KnowledgeRequired": false
   },
-  "ItemLevel": 15,
+  "ItemLevel": 70,
   "Icon": "Icons/ItemsGenerated/LobsterShirt.png",
   "IconProperties": {
     "Scale": 0.57,
@@ -86,5 +87,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "WindSet"
+  "Set": "Z_Standalone"
 }

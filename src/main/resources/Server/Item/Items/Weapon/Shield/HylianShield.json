@@ -1,7 +1,8 @@
 {
   "Parent": "Template_Weapon_Shield",
   "TranslationProperties": {
-    "Name": "Hylian Shield"
+    "Name": "server.items.Hylian_Shield.name",
+    "Description": "server.items.Hylian_Shield.description"
   },
   "Categories": [
     "ZeldaGear.Gear",
@@ -43,5 +44,5 @@
       }
     ]
   },
-  "Set": "D_Shield"
+  "Set": "DD_Shield"
 }

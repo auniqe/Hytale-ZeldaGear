@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Biggoron's Sword"
+    "Name": "server.items.Biggorons_Sword.name",
+    "Description": "server.items.Biggorons_Sword.description"
   },
   "Categories": [
     "ZeldaGear.Gear",
@@ -10,106 +11,110 @@
   "ItemLevel": 100,
   "Model": "Items/Weapons/Sword/BiggoronsSword.blockymodel",
   "Texture": "Items/Weapons/Sword/BiggoronsSword.png",
-  "PlayerAnimationsId": "Longsword",
+  "PlayerAnimationsId": "Battleaxe",
+  "IdleAnimationId": "Characters/Animations/Items/Dual_Handed/Longsword/Idle_Passive/Idle_Passive.blockyanim",
   "Interactions": {
-    "Primary": "Longsword_Attack"
+    "Secondary": "Root_Weapon_Battleaxe_Secondary_Guard",
+    "Ability1": "Root_Weapon_Battleaxe_Signature_Whirlwind",
+    "Primary": {
+      "Parent": "Root_Weapon_Battleaxe_Primary"
+    }
   },
   "InteractionVars": {
-    "Longsword_Swing_Left_Effect": {
+    "Swing_Down_Damage": {
       "Interactions": [
         {
-          "Parent": "Longsword_Swing_Left_Effect",
-          "Effects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Swing"
-          }
-        }
-      ]
-    },
-    "Longsword_Swing_Left_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Longsword_Swing_Left_Damage",
-          "DamageCalculator": {
-            "Type": "Absolute",
-            "BaseDamage": {
-              "Physical": 16
-            },
-            "RandomPercentageModifier": 0.15
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Impact"
-          }
-        }
-      ]
-    },
-    "Longsword_Swing_Right_Effect": {
-      "Interactions": [
-        {
-          "Parent": "Longsword_Swing_Left_Effect",
-          "Effects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Swing"
-          }
-        }
-      ]
-    },
-    "Longsword_Swing_Right_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Longsword_Swing_Right_Damage",
-          "DamageCalculator": {
-            "Type": "Absolute",
-            "BaseDamage": {
-              "Physical": 16
-            },
-            "RandomPercentageModifier": 0.15
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Impact"
-          }
-        }
-      ]
-    },
-    "Longsword_Swing_Up_Left_Effect": {
-      "Interactions": [
-        {
-          "Parent": "Longsword_Swing_Left_Effect",
-          "Effects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Swing"
-          }
-        }
-      ]
-    },
-    "Longsword_Swing_Up_Left_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Longsword_Swing_Up_Left_Damage",
-          "DamageCalculator": {
-            "Type": "Absolute",
-            "BaseDamage": {
-              "Physical": 17
-            },
-            "RandomPercentageModifier": 0.15
-          },
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Impact"
-          }
-        }
-      ]
-    },
-    "Longsword_Stab_Charged_Effect": "Longsword_Stab_Charged_Effect",
-    "Longsword_Stab_Charged_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Longsword_Stab_Charged_Damage",
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 30
-            },
-            "Type": "Absolute",
-            "RandomPercentageModifier": 0.15
+              "Physical": 53
+            }
           },
           "DamageEffects": {
-            "WorldSoundEventId": "SFX_Longsword_Special_Impact"
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 25
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 33
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Downstrike_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Downstrike_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 41
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Signature_Whirlwind_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Signature_Whirlwind_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 21
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 15.56,
+            "CostType": "Damage"
           }
         }
       ]
@@ -137,7 +142,7 @@
       "Longsword"
     ]
   },
-  "MaxDurability": 150,
+  "MaxDurability": 270,
   "DurabilityLossOnHit": 0.52,
   "ItemSoundSetId": "ISS_Weapons_Blade_Large",
   "Variant": false,
@@ -172,7 +177,7 @@
       }
     ]
   },
-  "Set": "A_Sword",
+  "Set": "A2_Sword",
   "Weapon": {
     "EntityStatsToClear": [
       "SignatureEnergy"
@@ -185,5 +190,6 @@
         }
       ]
     }
-  }
+  },
+  "UsePlayerAnimations": false
 }

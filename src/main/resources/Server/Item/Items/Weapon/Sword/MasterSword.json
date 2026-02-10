@@ -22,7 +22,12 @@
       ]
     },
     "Secondary": "Root_Weapon_Sword_Secondary_Guard",
-    "Ability1": "Root_Weapon_Battleaxe_Signature_Whirlwind"
+    "Ability1": {
+      "Parent": "Root_Weapon_Battleaxe_Signature_Whirlwind",
+      "Interactions": [
+        "MasterSword_Signature"
+      ]
+    }
   },
   "InteractionVars": {
     "Swing_Left_Damage": {
@@ -193,9 +198,9 @@
     "Color": "#056",
     "Radius": 1
   },
-  "MaxDurability": 220,
+  "MaxDurability": 270,
   "DurabilityLossOnHit": 0.21,
-  "Set": "A_Sword",
+  "Set": "A1_Sword",
   "Tags": {
     "Type": [
       "Weapon"

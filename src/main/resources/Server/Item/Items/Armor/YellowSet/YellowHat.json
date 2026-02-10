@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Yellow Cap"
+    "Name": "server.items.Yellow_Cap.name",
+    "Description": "server.items.Yellow_Cap.description"
   },
   "Parent": "HerosHat",
   "ItemLevel": 200,
@@ -35,7 +36,7 @@
     "KnowledgeRequired": false
   },
   "Quality": "Uncommon",
-  "Set": "YellowSet",
+  "Set": "X_YellowSet",
   "IconProperties": {
     "Scale": 0.5,
     "Rotation": [

@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Goron Cap"
+    "Name": "server.items.Goron_Cap.name",
+    "Description": "server.items.Goron_Cap.description"
   },
   "Parent": "HerosHat",
   "ItemLevel": 200,

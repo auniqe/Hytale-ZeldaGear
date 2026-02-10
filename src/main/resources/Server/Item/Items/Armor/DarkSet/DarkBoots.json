@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Dark Boots"
+    "Name": "server.items.Dark_Boots.name"
   },
   "Parent": "Armor_Iron_Legs",
   "Quality": "Epic",
@@ -98,5 +98,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "DarkSet"
+  "Set": "YY_DarkSet"
 }

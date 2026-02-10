@@ -1,7 +1,8 @@
 {
   "Parent": "Template_Weapon_Shield",
   "TranslationProperties": {
-    "Name": "Deku Shield"
+    "Name": "server.items.Deku_Shield.name",
+    "Description": "server.items.Deku_Shield.description"
   },
   "Categories": [
     "ZeldaGear.Gear",
@@ -10,7 +11,7 @@
   "Model": "Items/Weapons/Shield/DekuShield.blockymodel",
   "Texture": "Items/Weapons/Shield/DekuShield.png",
   "Icon": "Icons/ItemsGenerated/DekuShield.png",
-  "Quality": "Common",
+  "Quality": "Uncommon",
   "ItemLevel": 50,
   "Scale": 1.1,
   "IconProperties": {
@@ -95,5 +96,5 @@
       ]
     }
   },
-  "Set": "D_Shield"
+  "Set": "DDD_Shield"
 }

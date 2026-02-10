@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Zora Tunic"
+    "Name": "server.items.Zora_Tunic.name",
+    "Description": "server.items.Zora_Tunic.description"
   },
   "Parent": "Armor_Iron_Chest",
   "Recipe": {
@@ -91,5 +92,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "ZoraSet"
+  "Set": "Tunics"
 }

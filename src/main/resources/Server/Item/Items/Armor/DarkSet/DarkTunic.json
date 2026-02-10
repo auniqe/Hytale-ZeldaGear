@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Dark Tunic"
+    "Name": "server.items.Dark_Tunic.name",
+    "Description": "server.items.Dark_Tunic.description"
   },
   "Parent": "Armor_Iron_Chest",
   "Recipe": {
@@ -90,5 +91,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "DarkSet"
+  "Set": "YYYY_DarkSet"
 }

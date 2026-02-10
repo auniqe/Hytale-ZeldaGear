@@ -1,7 +1,8 @@
 {
   "Parent": "HerosSword",
   "TranslationProperties": {
-    "Name": "Razor Sword"
+    "Name": "server.items.Razor_Sword.name",
+    "Description": "server.items.Razor_Sword.description"
   },
   "Model": "Items/Weapons/Sword/RazorSword.blockymodel",
   "Texture": "Items/Weapons/Sword/RazorSword.png",
@@ -157,7 +158,7 @@
       }
     ]
   },
-  "Set": "A_Sword",
+  "Set": "A5_Sword",
   "Weapon": {
     "EntityStatsToClear": [
       "SignatureEnergy"
@@ -171,5 +172,6 @@
       ]
     }
   },
-  "Scale": 1.2
+  "Scale": 1.2,
+  "MaxDurability": 200
 }

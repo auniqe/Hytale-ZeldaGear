@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Princess Gloves"
+    "Name": "server.items.Princess_Gloves.name"
   },
   "Parent": "Armor_Iron_Hands",
   "Quality": "Epic",
@@ -88,5 +88,5 @@
     "ZeldaGear.Gear"
   ],
   "Variant": false,
-  "Set": "PrincessSet"
+  "Set": "Y_PrincessSet"
 }

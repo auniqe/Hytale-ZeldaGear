@@ -1,5 +1,9 @@
 {
   "Parent": "MasterSword",
+  "TranslationProperties": {
+    "Name": "server.items.Dark_Master_Sword.name",
+    "Description": "server.items.Dark_Master_Sword.description"
+  },
   "Texture": "Items/Weapons/Sword/DarkMasterSword.png",
   "Quality": "Epic",
   "Icon": "Icons/ItemsGenerated/DarkMasterSword.png",
@@ -43,8 +47,5 @@
       "sword"
     ]
   },
-  "Variant": true,
-  "TranslationProperties": {
-    "Name": "Dark Master Sword"
-  }
+  "Variant": true
 }

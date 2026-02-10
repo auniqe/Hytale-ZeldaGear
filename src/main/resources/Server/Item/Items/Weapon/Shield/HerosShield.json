@@ -1,7 +1,8 @@
 {
   "Parent": "Template_Weapon_Shield",
   "TranslationProperties": {
-    "Name": "Hero's Shield"
+    "Name": "server.items.Heros_Shield.name",
+    "Description": "server.items.Heros_Shield.description"
   },
   "Categories": [
     "ZeldaGear.Gear",

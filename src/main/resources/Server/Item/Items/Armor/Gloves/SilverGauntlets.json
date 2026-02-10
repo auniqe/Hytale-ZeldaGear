@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Silver Gauntlets"
+    "Name": "server.items.Silver_Gauntlets.name",
+    "Description": "server.items.Silver_Gauntlets.description"
   },
   "Parent": "Armor_Iron_Hands",
   "Quality": "Epic",
@@ -94,5 +95,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "Gauntlets"
+  "Set": "ZZ_Gauntlets"
 }

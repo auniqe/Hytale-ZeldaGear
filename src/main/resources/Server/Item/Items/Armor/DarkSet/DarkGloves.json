@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Dark Gloves"
+    "Name": "server.items.Dark_Gloves.name",
+    "Description": "server.items.Dark_Gloves.description"
   },
   "Parent": "Armor_Iron_Hands",
   "Quality": "Epic",
@@ -92,5 +93,5 @@
     "ZeldaGear.Gear"
   ],
   "Variant": false,
-  "Set": "DarkSet"
+  "Set": "YYY_DarkSet"
 }

@@ -1,9 +1,10 @@
 {
   "TranslationProperties": {
-    "Name": "Purple Cap"
+    "Name": "server.items.Purple_Cap.name",
+    "Description": "server.items.Purple_Cap.description"
   },
   "Parent": "HerosHat",
-  "ItemLevel": 200,
+  "ItemLevel": 20,
   "Icon": "Icons/ItemsGenerated/PurpleHat.png",
   "Model": "Items/Armor/Hat.blockymodel",
   "Texture": "Items/Armor/PurpleTunic/PurpleCap.png",
@@ -36,7 +37,7 @@
     "KnowledgeRequired": false
   },
   "Quality": "Epic",
-  "Set": "PurpleSet",
+  "Set": "Purple",
   "IconProperties": {
     "Scale": 0.5,
     "Rotation": [

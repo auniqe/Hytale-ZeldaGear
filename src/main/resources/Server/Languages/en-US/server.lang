@@ -1,27 +1,140 @@
-##QUALITY
+
 
 ##WEAPON
 items.Master_Sword.name=Master Sword
-items.Master_Sword.description=<b>The legendary <color is="#8B339E">Sword that Seals the Darkness</color>, forged by the gods to dispel evil.</b> \n\ \n\
-<b>Ability:</b> Hold Left Click to enter Spin Attack stance, the longer you stay in stance the more powerful the attack is, charge for long enough to unleash a Great Spin. \n\ \n\
-<b>Passive:</b> Projectiles will fire dealing damage when at full health. \n\ \n\
-<b>Signature:</b> hello
+items.Master_Sword.description=Hold to charge a Spin Attack.\n\
+Launches projectiles at full health.\n\\n\
+<i>The legendary <color is="#8B339E">Sword that Seals the Darkness</color>, forged by the gods to dispel evil.</i>
 
+items.Dark_Master_Sword.name=Dark Master Sword
+items.Dark_Master_Sword.description=<i>A dark reflection of the Master Sword, wielded by a <color is="#8B339E">hero's shadow</color>.</i>
+
+items.Goddess_Sword.name=Goddess Sword
+items.Goddess_Sword.description=<i>A legendary blade crafted by the <color is="#8B339E">Goddess Hylia</color> to defeat demons.</i>
+
+items.Biggorons_Sword.name=Biggoron's Sword
+items.Biggorons_Sword.description=<i>A massive blade crafted by <color is="#8B339E">Biggoron</color> for the Hero of Time.</i>
+
+items.Megaton_Hammer.name=Megaton Hammer
+items.Megaton_Hammer.description=<i>Dragon-slaying hammer forged by the Gorons.</i>
+
+items.Heros_Sword.name=Hero's Sword
+items.Heros_Sword.description=<i>A reinforced Kokiri sword wielded by a hero that wandered into the lost woods in search of his companion.<i>
+
+items.Kokiri_Sword.name=Kokiri Sword
+items.Kokiri_Sword.description=<i>A shortsword that was once treasured by the Kokiri. </i>
+
+items.Razor_Sword.name=Razor Sword
+items.Razor_Sword.description=<i> A blade crafted by a blacksmith that resided in the mountains of Termina.
+
+items.Lokomo_Sword.name=Lokomo Sword
+items.Lokomo_Sword.description= <i>A powerful blade given by the Spirits of Good to the devoted tribe, the <color is="#8B339E">Lokomo</color>.</i>
+
+items.Phantom_Sword.name=Phantom Sword
+items.Phantom_Sword.description=<i>A blade forged by a master smith to defeat the <color is="#8B339E">Phantoms</color>\n\summoned by the demon Bellum.</i>
+
+items.Wind_Sword.name=Wind Sword
+items.Wind_Sword.description=<i>A sword kept by a swordsman in an island in the <color is="#2770B7">Great Sea</color>. It was given to the Hero of Wind as he left on his journey.</i>
+
+items.Ordon_Sword.name=Ordon Sword
+items.Ordon_Sword.description=<i>A sturdy steel sword from <color is="#2770B7">Ordon Village</color>. Made as a gift to the Royal Family.</i>
+
+items.Fairy_Bow.name=Fairy Bow
+items.Fairy_Bow.description=<i>A bow that was once favored by the <color is="#8B339E">Hero of Time</color>.</i>
 
 ##TOOLS
 items.Hookshot.name=Hookshot
-
-items.Hookshot.description=<b>A contraption that shoots a chain out at high speeds when triggered, then <color is="#2770B7">pulls the user </color>when hooked onto an object. </b> \n\ \n\
-
-<b>Ability:</b> Right-click to launch out a chain that pulls you to it's location after hitting a surface.
+items.Hookshot.description=<i>Shoots a hook at high speed that <color is="#2770B7">pulls the user</color> to it's destination.</i> 
 
 
 items.Longshot.name=Longshot
+items.Longshot.description=<i>Shoots a hook at high speed that <color is="#8B339E">pulls the user</color> to it's destination. Now upgraded to shoot further.</i> 
 
-items.Longshot.description=<b>A contraption that shoots a chain out at high speeds when triggered, then <color is="#8B339E">pulls the user </color>when hooked onto an object.          Now upgraded, it has two rows of chains allowing further      reach and more aggressive retraction.</b>  \n\ \n\
+items.Hylian_Shield.name=Hylian Shield
+items.Hylian_Shield.description=<i>A shield wielded by the <color is="#8B339E">Knights of Hyrule</color>.</i>
 
-<b>Ability:</b> Right-click to launch out a chain that pulls you to it's location after hitting a surface.
+items.Dark_HylianShield.name=Dark Hylian Shield
+items.Dark_HylianShield.description=<i>A dark reflection of the Hylian Shield, wielded by a <color is="#8B339E">hero's shadow</color>.</i>
+
+items.Mirror_Shield.name=Mirror Shield
+items.Mirror_Shield.description=<i>A shield made by the <color is="#8B339E">Gerudo</color> to reflect light and magic.</i>
+
+items.Masked_Mirror_Shield.name=Masked Mirror Shield
+items.Masked_Mirror_Shield.description=<i>An unsettling shield that can reflect light.</i>
+
+items.Heros_Shield.name=Hero's Shield
+items.Heros_Shield.description= <i>A Hylian Shield specially modified for the <color is="#8B339E">Hero of Time</color>.</i>
+ 
+items.Deku_Shield.name=Deku Shield
+items.Deku_Shield.description=<i>A wooden shield crafted from the bark of the <color is="#3E9049">Great Deku Tree</color>.</i>
+
+##HELMET
+items.Twilight_Helmet.name=​Twilight Helmet
+items.Twilight_Helmet.description=<i>A mythical helmet worn by the <color is="#8B339E">Princess of Twilight</color>. </i>
+
+items.Dark_Cap.name=Dark Cap
+
+items.Zora_Cap.name=Zora Cap
+
+items.Purple_Cap.name=Purple Cap
+
+items.Yellow_Cap.name=Yellow Cap
+
+items.Goron_Cap.name=Goron Cap
+
+items.Heros_Cap.name=Hero's Cap
+
+items.Princess_Crown.name=Princess Crown
 
 
+##CHESTPIECE
+items.Heros_Tunic.name=Hero's Tunic
+items.Heros_Tunic.description=<i>A garb seen as a courageous symbol in the land of <color is="#3E9049">Hyrule</color>. </i>
 
+items.Goron_Tunic.name=Goron Tunic
+items.Goron_Tunic.description=Grants the user high <color is="#F82700">fire resistance</color>.\n\\n\ <i>A gift given by the Gorons to Hylians scaling <color is="#BB8A2C">Death Mountain</color>.</i>
 
+items.Zora_Tunic.name=Zora Tunic
+items.Zora_Tunic.description=<i>A blue tunic gifted to Hylians to help <color is="#2770B7">breathe underwater</color>.</i>
+
+items.Purple_Tunic.name=Purple Tunic
+items.Purple_Tunic.description=<i>A tunic resembling one of the <color is="#8B339E">three clones</color> created to the likeness of hero wielding the four sword.</i>
+
+items.Wind_Tunic.name=Wind Tunic
+items.Wind_Tunic.description=<i>A tunic given to the children of <color is="#3E9049">Outset Island</color> as tradition to honor the Hero of Time.</i>
+
+items.Yellow_Tunic.name=Yellow Tunic
+items.Yellow_Tunic.description=<i>A tunic once worn by the seniors of the <color is="#3E9049">Knight Academy</color>.</i>
+
+items.Dark_Tunic.name=Dark Tunic
+items.Dark_Tunic.description=Increased movement speed at night. \n\n\ <i>A tunic worn by the <color is="#8B339E">shadow of a legendary hero</color>.</i>
+
+items.Lobster_Shirt.name=Lobster Shirt
+items.Lobster_Shirt.description=<i>A shirt worn by the <color is="#2770B7">Hero of Wind</color> before his journey.</i>
+
+items.Princess_Dress.name=Princess Dress
+items.Princess_Dress.description=<i>Dress previously worn by the <color is="#8B339E">Princess of Hyrule</color>.</i>
+
+items.Farmer_Dress.name=Farmer Dress
+items.Farmer_Dress.description=<i>A dress previously worn by a ranchhand at Lon-Lon Ranch. </i>
+
+##GLOVES
+items.Heros_Gloves.name=Hero's Gloves
+
+items.Dark_Gloves.name=Dark Gloves
+
+items.Princess_Gloves.name=Princess Gloves
+
+items.Silver_Gauntlets.name=Silver Gauntlets
+items.Silver_Gauntlets.description=Magical gauntlets that give the user <color is="#8B339E">incredible</color> strength.</i>
+
+items.Gold_Gauntlets.name=Gold Gauntlets
+items.Gold_Gauntlets.description= <i>Magical gauntlets that give the user <color is="#BB8A2C">superhuman</color> strength.</i>
+
+items.Goron_Bracelet.name=Goron Bracelet
+items.Goron_Bracelet.description=<i>A bracelet gifted to Hylians to lift heavy objects. It <color is="#2770B7">makes the user feel stronger</color>.</i>
+
+##BOOTS
+items.Heros_Boots.name=Hero's Boots
+
+items.Dark_Boots.name=Dark Boots

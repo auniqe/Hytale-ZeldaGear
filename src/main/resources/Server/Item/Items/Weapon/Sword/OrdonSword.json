@@ -1,13 +1,14 @@
 {
   "TranslationProperties": {
-    "Name": "Ordon Sword"
+    "Name": "server.items.Ordon_Sword.name",
+    "Description": "server.items.Ordon_Sword.description"
   },
   "Model": "Items/Weapons/Sword/OrdonSword.blockymodel",
   "Texture": "Items/Weapons/Sword/OrdonSword.png",
   "Icon": "Icons/ItemsGenerated/OrdonSword.png",
   "PlayerAnimationsId": "Sword",
   "Reticle": "DefaultMelee",
-  "Quality": "Epic",
+  "Quality": "Rare",
   "ItemLevel": 200,
   "Categories": [
     "ZeldaGear.Gear",
@@ -193,9 +194,9 @@
       -41
     ]
   },
-  "MaxDurability": 220,
+  "MaxDurability": 160,
   "DurabilityLossOnHit": 0.21,
-  "Set": "A_Sword",
+  "Set": "AAA_Sword",
   "Tags": {
     "Type": [
       "Weapon"

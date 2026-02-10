@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Farmer Dress"
+    "Name": "server.items.Farmer_Dress.name",
+    "Description": "server.items.Farmer_Dress.description"
   },
   "Parent": "Armor_Iron_Chest",
   "Recipe": {
@@ -87,6 +88,6 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "PrincessSet",
+  "Set": "YY_Standalone",
   "Icon": "Icons/Items/FarmerGirlDress.png"
 }

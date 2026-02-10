@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Princess Dress"
+    "Name": "server.items.Princess_Dress.name",
+    "Description": "server.items.Princess_Dress.description"
   },
   "Parent": "Armor_Iron_Chest",
   "Recipe": {
@@ -88,5 +89,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "PrincessSet"
+  "Set": "Y_PrincessSet"
 }

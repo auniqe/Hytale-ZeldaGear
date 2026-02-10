@@ -1,7 +1,8 @@
 {
   "Parent": "Template_Weapon_Sword",
   "TranslationProperties": {
-    "Name": "Lokomo Sword"
+    "Name": "server.items.Lokomo_Sword.name",
+    "Description": "server.items.Lokomo_Sword.description"
   },
   "Model": "Items/Weapons/Sword/LokomoSword.blockymodel",
   "Texture": "Items/Weapons/Sword/LokomoSword.png",
@@ -44,79 +45,112 @@
     ]
   },
   "InteractionVars": {
-      "Swing_Left_Damage": {
-          "Interactions": [ {
-              "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
-              "DamageCalculator": { "BaseDamage": { "Physical": 17 } },
-              "DamageEffects": {
-                  "WorldSoundEventId": "SFX_Sword_T2_Impact",
-                  "LocalSoundEventId": "SFX_Sword_T2_Impact"
-              }
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 17
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
-          ]
-      },
-      "Swing_Right_Damage": {
-          "Interactions": [ {
-              "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
-              "DamageCalculator": { "BaseDamage": { "Physical": 17 } },
-              "DamageEffects": {
-                  "WorldSoundEventId": "SFX_Sword_T2_Impact",
-                  "LocalSoundEventId": "SFX_Sword_T2_Impact"
-              }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 17
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
-          ]
-      },
-      "Swing_Down_Damage": {
-          "Interactions": [ {
-              "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
-              "DamageCalculator": { "BaseDamage": { "Physical": 25 } },
-              "DamageEffects": {
-                  "WorldSoundEventId": "SFX_Sword_T2_Impact",
-                  "LocalSoundEventId": "SFX_Sword_T2_Impact"
-              }
+        }
+      ]
+    },
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 25
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
-          ]
-      },
-      "Thrust_Damage": {
-          "Interactions": [ {
-              "Parent": "Weapon_Sword_Primary_Thrust_Damage",
-              "DamageCalculator": { "BaseDamage": { "Physical": 43 } },
-              "EntityStatsOnHit": [ { "EntityStatId": "SignatureEnergy", "Amount": 3 } ],
-              "DamageEffects": {
-                  "WorldSoundEventId": "SFX_Sword_T2_Impact",
-                  "LocalSoundEventId": "SFX_Sword_T2_Impact"
-              }
+        }
+      ]
+    },
+    "Thrust_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 43
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 3
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
-          ]
-      },
-      "Vortexstrike_Spin_Damage": {
-          "Interactions": [
-              {
-                  "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
-                  "DamageCalculator": { "BaseDamage": { "Physical": 33 } },
-                  "EntityStatsOnHit": [],
-                  "DamageEffects": {
-                      "WorldSoundEventId": "SFX_Sword_T2_Impact",
-                      "LocalSoundEventId": "SFX_Sword_T2_Impact"
-                  }
-              }
-          ]
-      },
-      "Vortexstrike_Stab_Damage": {
-          "Interactions": [
-              {
-                  "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
-                  "DamageCalculator": { "BaseDamage": { "Physical": 81 } },
-                  "EntityStatsOnHit": [],
-                  "DamageEffects": {
-                      "WorldSoundEventId": "SFX_Sword_T2_Impact",
-                      "LocalSoundEventId": "SFX_Sword_T2_Impact"
-                  }
-              }
-          ]
-      }
+        }
+      ]
+    },
+    "Vortexstrike_Spin_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 33
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Stab_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 81
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    }
   },
-  "MaxDurability": 220,
+  "MaxDurability": 270,
   "DurabilityLossOnHit": 0.21,
   "ItemLevel": 200,
   "Categories": [
@@ -136,6 +170,6 @@
       ]
     }
   },
-  "Set": "A_Sword",
+  "Set": "BBBBB_Sword",
   "Scale": 1
 }

@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Goron Bracelet"
+    "Name": "server.items.Goron_Bracelet.name",
+    "Description": "server.items.Goron_Bracelet.description"
   },
   "Parent": "Armor_Iron_Hands",
   "Quality": "Rare",
@@ -87,5 +88,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "Gauntlets"
+  "Set": "ZZZ_Gauntlets"
 }

@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Yellow Tunic"
+    "Name": "server.items.Yellow_Tunic.name",
+    "Description": "server.items.Yellow_Tunic.description"
   },
   "Parent": "Armor_Iron_Chest",
   "Recipe": {
@@ -90,5 +91,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "YellowSet"
+  "Set": "X_YellowSet"
 }

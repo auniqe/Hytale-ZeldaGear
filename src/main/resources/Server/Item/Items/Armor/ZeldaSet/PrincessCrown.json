@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Princess Crown"
+    "Name": "server.items.Princess_Crown.name",
+    "Description": "server.items.Princess_Crown.description"
   },
   "Parent": "HerosHat",
   "ItemLevel": 4,
@@ -40,5 +41,5 @@
     "KnowledgeRequired": false
   },
   "Quality": "Epic",
-  "Set": "PrincessSet"
+  "Set": "Y_PrincessSet"
 }

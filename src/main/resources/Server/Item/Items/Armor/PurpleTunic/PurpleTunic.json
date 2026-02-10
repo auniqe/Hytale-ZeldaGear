@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Purple Tunic"
+    "Name": "server.items.Purple_Tunic.name",
+    "Description": "server.items.Purple_Tunic.description"
   },
   "Parent": "Armor_Iron_Chest",
   "Recipe": {
@@ -90,5 +91,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "PurpleSet"
+  "Set": "Purple"
 }

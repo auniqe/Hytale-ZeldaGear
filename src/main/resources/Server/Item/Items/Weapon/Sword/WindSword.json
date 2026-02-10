@@ -1,14 +1,15 @@
 {
   "Parent": "Template_Weapon_Sword",
   "TranslationProperties": {
-    "Name": "Wind Sword"
+    "Name": "server.items.Wind_Sword.name",
+    "Description": "server.items.Wind_Sword.description"
   },
   "Model": "Items/Weapons/Sword/WindSword.blockymodel",
   "Texture": "Items/Weapons/Sword/WindSword.png",
   "Icon": "Icons/ItemsGenerated/WindSword.png",
   "Quality": "Rare",
   "ItemLevel": 35,
-  "MaxDurability": 75,
+  "MaxDurability": 160,
   "InteractionVars": {
     "Swing_Left_Damage": {
       "Interactions": [

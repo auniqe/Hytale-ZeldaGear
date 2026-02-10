@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Hero's Gloves"
+    "Name": "server.items.Heros_Gloves.name",
+    "Description": "server.items.Heros_Gloves.description"
   },
   "Parent": "Armor_Iron_Hands",
   "Quality": "Rare",
@@ -91,5 +92,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "HerosSet"
+  "Set": "EE_HerosSet"
 }

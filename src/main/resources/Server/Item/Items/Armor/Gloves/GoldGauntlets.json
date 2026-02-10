@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Gold Gauntlets"
+    "Name": "server.items.Gold_Gauntlets.name",
+    "Description": "server.items.Gold_Gauntlets.description"
   },
   "Parent": "Armor_Iron_Hands",
   "Quality": "Legendary",
@@ -94,5 +95,5 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "Gauntlets"
+  "Set": "ZZ_Gauntlets"
 }

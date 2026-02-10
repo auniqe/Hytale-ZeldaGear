@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Dark Cap"
+    "Name": "server.items.Dark_Cap.name",
+    "Description": "server.items.Dark_Cap.description"
   },
   "Parent": "HerosHat",
   "ItemLevel": 4,
@@ -36,7 +37,7 @@
     "KnowledgeRequired": false
   },
   "Quality": "Epic",
-  "Set": "DarkSet",
+  "Set": "YYYYY_DarkSet",
   "IconProperties": {
     "Scale": 0.5,
     "Rotation": [

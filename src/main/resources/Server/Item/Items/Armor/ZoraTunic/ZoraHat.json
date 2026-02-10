@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Zora Cap"
+    "Name": "server.items.Zora_Cap.name",
+    "Description": "server.items.Zora_Cap.description"
   },
   "Parent": "HerosHat",
   "ItemLevel": 200,
@@ -57,7 +58,7 @@
     ]
   },
   "Quality": "Rare",
-  "Set": "ZoraSet",
+  "Set": "Tunics",
   "IconProperties": {
     "Scale": 0.5,
     "Rotation": [
