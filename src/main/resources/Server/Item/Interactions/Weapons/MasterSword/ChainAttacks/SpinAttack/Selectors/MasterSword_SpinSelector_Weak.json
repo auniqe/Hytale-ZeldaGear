@@ -1,9 +1,6 @@
 {
   "Type": "Selector",
   "RunTime": 0.15,
-  "Effects": {
-    "ItemAnimationId": "SpinRightCharged"
-  },
   "Selector": {
     "Id": "AOECircle",
     "Range": 3
@@ -26,7 +23,6 @@
     "Type": "Simple",
     "RunTime": 0.05,
     "Effects": {
-      "ItemAnimationId": "SpinRightCharged",
       "CameraEffect": "Sword_Swing_Diagonal_Right",
       "Trails": [
         {

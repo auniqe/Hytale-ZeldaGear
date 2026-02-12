@@ -15,7 +15,12 @@
           "Yaw": 0
         },
         "TargetNodeName": "Handle",
-        "TrailId": "Medium_Signature"
+        "TrailId": "Medium_Sword_Basic"
+      },
+      {
+        "TrailId": {
+          "Parent": "Sword_Distortion"
+        }
       }
     ],
     "WorldSoundEventId": "SFX_Battleaxe_T2_Signature_End",
@@ -28,7 +33,7 @@
         "TargetNodeName": "Hip",
         "TargetEntityPart": "Entity",
         "PositionOffset": {
-          "Y": 1.0
+          "Y": 0.8
         },
         "Color": "#e16308",
         "DetachedFromModel": false

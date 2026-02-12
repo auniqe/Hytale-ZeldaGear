@@ -15,7 +15,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 12
+              "Physical": 19
             }
           },
           "DamageEffects": {
@@ -31,7 +31,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 13
+              "Physical": 17
             }
           },
           "DamageEffects": {
@@ -173,5 +173,5 @@
     }
   },
   "Scale": 1.2,
-  "MaxDurability": 200
+  "MaxDurability": 75
 }

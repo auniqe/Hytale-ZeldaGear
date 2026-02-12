@@ -15,7 +15,10 @@
           "Yaw": 0
         },
         "TargetNodeName": "Handle",
-        "TrailId": "Medium_Signature"
+        "TrailId": "Medium_Sword_Basic"
+      },
+      {
+        "TrailId": "Sword_Distortion"
       }
     ],
     "WorldSoundEventId": "SFX_Sword_T2_Signature_Part_1",

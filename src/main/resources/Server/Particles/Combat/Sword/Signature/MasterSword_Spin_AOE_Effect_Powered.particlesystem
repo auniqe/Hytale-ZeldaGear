@@ -12,5 +12,5 @@
   ],
   "BoundingRadius": 30,
   "IsImportant": false,
-  "LifeSpan": 2
+  "LifeSpan": 0.1
 }

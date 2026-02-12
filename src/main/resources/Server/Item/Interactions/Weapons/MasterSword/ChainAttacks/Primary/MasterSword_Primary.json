@@ -72,5 +72,5 @@
     ]
   },
   "CancelOnItemChange": true,
-  "HorizontalSpeedMultiplier": 0.65
+  "HorizontalSpeedMultiplier": 0.9
 }

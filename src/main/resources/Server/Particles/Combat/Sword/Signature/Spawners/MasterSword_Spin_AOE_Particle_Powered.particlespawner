@@ -1,5 +1,5 @@
 {
-  "RenderMode": "Erosion",
+  "RenderMode": "BlendAdd",
   "EmitOffset": {
     "X": {
       "Min": 0,
@@ -22,15 +22,15 @@
   "TrailSpawnerRotationMultiplier": 1.0,
   "MaxConcurrentParticles": 3,
   "ParticleLifeSpan": {
-    "Min": 0.54,
-    "Max": 0.54
+    "Min": 1.1,
+    "Max": 1.1
   },
   "SpawnRate": {
     "Min": 3.0,
     "Max": 3.0
   },
   "Particle": {
-    "Texture": "Particles/Textures/Circles/Signature_Spin7.png",
+    "Texture": "Particles/Textures/Circles/Signature_Spin_GS2.png",
     "FrameSize": {},
     "ScaleRatioConstraint": "OneToOne",
     "SoftParticles": "Disable",
@@ -57,40 +57,46 @@
         },
         "Scale": {
           "X": {
-            "Min": 1,
-            "Max": 1
+            "Min": 0.0,
+            "Max": 0.0
           }
         },
-        "Opacity": 0.788,
-        "Color": "#ff5700"
+        "Opacity": 0.168,
+        "Color": "#5c402e"
       },
-      "10": {
-        "Opacity": 0.604,
-        "Color": "#ff5700"
+      "20": {
+        "Opacity": 0.9,
+        "Color": "#f99b5f"
       },
       "30": {
-        "Opacity": 0.612,
-        "Color": "#ff5700"
+        "Opacity": 0.8,
+        "Color": "#d06e2f"
       },
       "70": {
-        "Color": "#ff5700",
-        "Opacity": 0.712
-      },
-      "100": {
-        "Opacity": 0.12,
+        "Color": "#a02200",
+        "Opacity": 0.6,
         "Scale": {
           "X": {
-            "Min": 2.0,
-            "Max": 2.0
+            "Min": 2.5,
+            "Max": 2.5
+          }
+        }
+      },
+      "100": {
+        "Opacity": 0,
+        "Scale": {
+          "X": {
+            "Min": 3,
+            "Max": 3
           }
         },
         "Rotation": {
           "Z": {
-            "Min": 360,
-            "Max": 360
+            "Min": -720,
+            "Max": -720
           }
         },
-        "Color": "#ff5700"
+        "Color": "#301300"
       }
     },
     "InitialAnimationFrame": {
@@ -104,16 +110,17 @@
         "Min": 0,
         "Max": 0
       },
-      "Opacity": 0.796,
+      "Opacity": 1,
       "Rotation": {
         "X": {
           "Min": 85.0,
           "Max": 95.0
         }
-      }
+      },
+      "Color": "#ffffff"
     }
   },
-  "IsLowRes": true,
+  "IsLowRes": false,
   "SpawnBurst": true,
   "TotalParticles": {
     "Min": 4,

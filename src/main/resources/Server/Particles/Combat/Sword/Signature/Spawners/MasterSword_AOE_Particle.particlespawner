@@ -1,5 +1,5 @@
 {
-  "RenderMode": "Erosion",
+  "RenderMode": "BlendAdd",
   "EmitOffset": {
     "X": {
       "Min": 0,
@@ -30,7 +30,7 @@
     "Max": 3.0
   },
   "Particle": {
-    "Texture": "Particles/Textures/Circles/Signature_Spin7.png",
+    "Texture": "Particles/Textures/Rnd/Portal_Hedera2.png",
     "FrameSize": {},
     "ScaleRatioConstraint": "OneToOne",
     "SoftParticles": "Disable",
@@ -57,40 +57,46 @@
         },
         "Scale": {
           "X": {
-            "Min": 1,
-            "Max": 1
+            "Min": 0.1,
+            "Max": 0.1
           }
         },
-        "Opacity": 0.788,
-        "Color": "#34dfbb"
+        "Opacity": 0,
+        "Color": "#6d96ac"
       },
       "10": {
-        "Opacity": 0.604,
-        "Color": "#34dfbb"
+        "Opacity": 0.876,
+        "Color": "#40bbff"
       },
       "30": {
-        "Opacity": 0.612,
-        "Color": "#34dfbb"
+        "Opacity": 0.788,
+        "Color": "#66bded"
       },
       "70": {
-        "Color": "#34dfbb",
-        "Opacity": 0.712
-      },
-      "100": {
-        "Opacity": 0.12,
+        "Color": "#6ebeeb",
+        "Opacity": 0.616,
         "Scale": {
           "X": {
-            "Min": 2.0,
-            "Max": 2.0
+            "Min": 1.8,
+            "Max": 1.8
+          }
+        }
+      },
+      "100": {
+        "Opacity": 0,
+        "Scale": {
+          "X": {
+            "Min": 2,
+            "Max": 2
           }
         },
         "Rotation": {
           "Z": {
-            "Min": 360,
-            "Max": 360
+            "Min": -360,
+            "Max": -360
           }
         },
-        "Color": "#34dfbb"
+        "Color": "#367090"
       }
     },
     "InitialAnimationFrame": {
@@ -113,7 +119,7 @@
       }
     }
   },
-  "IsLowRes": true,
+  "IsLowRes": false,
   "SpawnBurst": true,
   "TotalParticles": {
     "Min": 4,
