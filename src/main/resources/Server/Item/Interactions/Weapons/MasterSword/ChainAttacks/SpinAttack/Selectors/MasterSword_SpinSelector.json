@@ -1,10 +1,13 @@
 {
   "Type": "Selector",
   "$Comment": "Length of Combat",
-  "RunTime": 0.65,
+  "RunTime": 0.1,
   "Selector": {
     "Id": "AOECircle",
-    "Range": 4
+    "Range": 4,
+    "Offset": {
+      "Y": 1
+    }
   },
   "HitEntity": {
     "Interactions": [
@@ -45,11 +48,12 @@
     "Next": {
       "Type": "Simple",
       "$Comment": "Pad the interaction length",
-      "RunTime": 0.25
+      "RunTime": 0.65
     }
   },
   "Effects": {
     "ItemPlayerAnimationsId": "MasterSword",
-    "ItemAnimationId": "SpinAttack"
+    "ItemAnimationId": "SpinAttack",
+    "WaitForAnimationToFinish": false
   }
 }

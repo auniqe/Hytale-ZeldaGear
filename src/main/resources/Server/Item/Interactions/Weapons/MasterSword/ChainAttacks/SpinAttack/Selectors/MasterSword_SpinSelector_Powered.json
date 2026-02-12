@@ -1,10 +1,17 @@
 {
   "Type": "Selector",
   "$Comment": "Length of Combat",
-  "RunTime": 0.5,
+  "RunTime": 0.4,
   "Selector": {
-    "Id": "AOECircle",
-    "Range": 10
+    "Id": "Horizontal",
+    "Direction": "ToLeft",
+    "Length": 360,
+    "StartDistance": 0.1,
+    "EndDistance": 8,
+    "TestLineOfSight": true,
+    "YawStartOffset": -90,
+    "ExtendTop": 3,
+    "ExtendBottom": 3
   },
   "HitEntity": {
     "Interactions": [
@@ -16,7 +23,8 @@
             "Weapon_Sword_Signature_Vortexstrike_Spin_Damage"
           ]
         },
-        "Var": "MasterSword_Spin_Damage_Powered"
+        "Var": "MasterSword_Spin_Damage_Powered",
+        "RunTime": 0.1
       }
     ]
   },

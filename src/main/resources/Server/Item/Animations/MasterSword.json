@@ -36,7 +36,7 @@
       "FirstPerson": "Characters/Animations/Items/Main_Handed/MasterSword/SpinAttack/Spin_Attack_Heavy_FPS.blockyanim",
       "Speed": 1.1,
       "KeepPreviousFirstPersonAnimation": true,
-      "BlendingDuration": 0.2,
+      "BlendingDuration": 0.05,
       "ThirdPersonFace": "Characters/Animations/Expressions/Rage.blockyanim"
     }
   },

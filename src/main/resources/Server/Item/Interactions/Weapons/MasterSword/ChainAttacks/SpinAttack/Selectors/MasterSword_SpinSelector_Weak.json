@@ -3,7 +3,10 @@
   "RunTime": 0.15,
   "Selector": {
     "Id": "AOECircle",
-    "Range": 3
+    "Range": 3,
+    "Offset": {
+      "Y": 1
+    }
   },
   "HitEntity": {
     "Interactions": [
