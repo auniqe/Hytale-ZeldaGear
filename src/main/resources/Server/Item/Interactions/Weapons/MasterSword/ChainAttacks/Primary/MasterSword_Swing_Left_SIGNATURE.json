@@ -1,0 +1,19 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.077,
+  "Effects": {
+    "ItemAnimationId": "SwingLeft",
+    "WorldSoundEventId": "SFX_Light_Melee_T2_Lunge",
+    "LocalSoundEventId": "SFX_Light_Melee_T2_Lunge"
+  },
+  "Next": {
+    "Type": "Replace",
+    "Var": "MasterSword_Swing_Left_Selector",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "MasterSword_Swing_Left_Selector_SIGNATURE"
+      ]
+    }
+  }
+}

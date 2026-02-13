@@ -1,6 +1,6 @@
 {
   "Type": "Simple",
-  "RunTime": 0.388,
+  "RunTime": 0.3,
   "Effects": {
     "ItemAnimationId": "SwingDownStrong",
     "WorldSoundEventId": "SFX_Sword_T2_Swing_Down",
@@ -17,7 +17,7 @@
           "Interactions": [
             {
               "Interactions": [
-                "MasterSword_Swing_Down_Selector"
+                "MasterSword_Swing_Down_Selector_SIGNATURE"
               ]
             },
             {

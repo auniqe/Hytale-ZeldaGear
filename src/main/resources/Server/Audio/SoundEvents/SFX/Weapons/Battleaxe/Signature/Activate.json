@@ -1,0 +1,14 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/ActivateSignature.ogg"
+      ],
+      "StartDelay": 0.1,
+      "Volume": 8.5
+    }
+  ],
+  "Volume": 0,
+  "PreventSoundInterruption": true,
+  "AudioCategory": "AudioCat_Battleaxe"
+}

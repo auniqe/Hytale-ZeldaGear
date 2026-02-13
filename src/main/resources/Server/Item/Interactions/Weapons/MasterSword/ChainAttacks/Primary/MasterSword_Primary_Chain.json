@@ -1,47 +1,101 @@
 {
-  "Type": "Chaining",
-  "ChainingAllowance": 1.2,
-  "ChainId": "Sword_Swings",
-  "Next": [
-    {
-      "Type": "Replace",
-      "DefaultOk": true,
-      "Var": "Swing_Right",
-      "DefaultValue": {
-        "Interactions": [
-          "MasterSword_Swing_Right"
-        ]
+  "Type": "StatsCondition",
+  "Costs": {
+    "MasterSwordSignatureReady": 1
+  },
+  "Next": {
+    "Type": "Chaining",
+    "ChainingAllowance": 1.2,
+    "ChainId": "Sword_Swings",
+    "Next": [
+      {
+        "Type": "Replace",
+        "DefaultOk": true,
+        "Var": "Swing_Right",
+        "DefaultValue": {
+          "Interactions": [
+            "MasterSword_Swing_Right_SIGNATURE"
+          ]
+        }
+      },
+      {
+        "Type": "Replace",
+        "DefaultOk": true,
+        "Var": "Swing_Left",
+        "DefaultValue": {
+          "Interactions": [
+            "MasterSword_Swing_Left_SIGNATURE"
+          ]
+        }
+      },
+      {
+        "Type": "Replace",
+        "DefaultOk": true,
+        "Var": "Swing_Right",
+        "DefaultValue": {
+          "Interactions": [
+            "MasterSword_Swing_Right_SIGNATURE"
+          ]
+        }
+      },
+      {
+        "Type": "Replace",
+        "DefaultOk": true,
+        "Var": "Swing_Down",
+        "DefaultValue": {
+          "Interactions": [
+            "MasterSword_Swing_Down_SIGNATURE"
+          ]
+        }
       }
-    },
-    {
-      "Type": "Replace",
-      "DefaultOk": true,
-      "Var": "Swing_Left",
-      "DefaultValue": {
-        "Interactions": [
-          "MasterSword_Swing_Left"
-        ]
+    ]
+  },
+  "Failed": {
+    "Type": "Chaining",
+    "ChainingAllowance": 1.2,
+    "ChainId": "Sword_Swings",
+    "Next": [
+      {
+        "Type": "Replace",
+        "DefaultOk": true,
+        "Var": "Swing_Right",
+        "DefaultValue": {
+          "Interactions": [
+            "MasterSword_Swing_Right"
+          ]
+        }
+      },
+      {
+        "Type": "Replace",
+        "DefaultOk": true,
+        "Var": "Swing_Left",
+        "DefaultValue": {
+          "Interactions": [
+            "MasterSword_Swing_Left"
+          ]
+        }
+      },
+      {
+        "Type": "Replace",
+        "DefaultOk": true,
+        "Var": "Swing_Down",
+        "DefaultValue": {
+          "Interactions": [
+            "MasterSword_Swing_Right"
+          ]
+        }
+      },
+      {
+        "Type": "Replace",
+        "DefaultOk": true,
+        "Var": "Swing_Down",
+        "DefaultValue": {
+          "Interactions": [
+            "MasterSword_Swing_Down"
+          ]
+        }
       }
-    },
-    {
-      "Type": "Replace",
-      "DefaultOk": true,
-      "Var": "Swing_Right",
-      "DefaultValue": {
-        "Interactions": [
-          "MasterSword_Swing_Right"
-        ]
-      }
-    },
-    {
-      "Type": "Replace",
-      "DefaultOk": true,
-      "Var": "Swing_Down",
-      "DefaultValue": {
-        "Interactions": [
-          "MasterSword_Swing_Down"
-        ]
-      }
-    }
-  ]
+    ]
+  },
+  "LessThan": false
 }

@@ -1,85 +1,36 @@
 {
   "Type": "StatsCondition",
+  "ValueType": "Percent",
+  "Next": {
+    "Type": "ChangeStat",
+    "StatModifiers": {
+      "SignatureEnergy": -100,
+      "MasterSwordSignatureReady": 100
+    },
+    "ValueType": "Percent",
+    "Next": {
+      "Type": "Replace",
+      "Var": "Signature_Activate_Effects",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "Effects": {
+              "ClearSoundEventOnFinish": true,
+              "WorldSoundEventId": "SFX_Bow_T2_Signature_Nock",
+              "LocalSoundEventId": "SFX_Bow_T2_Signature_Nock_Local"
+            }
+          }
+        ]
+      }
+    }
+  },
   "Costs": {
     "SignatureEnergy": 1
   },
-  "ValueType": "Percent",
-  "Next": {
-    "Type": "Serial",
-    "Interactions": [
-      {
-        "Type": "ApplyEffect",
-        "EffectId": "Battleaxe_Whirlwind",
-        "Effects": {
-          "ItemAnimationId": "Whirlwind",
-          "ClearAnimationOnFinish": true
-        }
-      },
-      {
-        "Type": "Replace",
-        "Var": "Signature_Whirlwind_Windup",
-        "DefaultOk": true,
-        "DefaultValue": {
-          "Interactions": [
-            "Weapon_Battleaxe_Signature_Whirlwind_Windup"
-          ]
-        },
-        "Effects": {
-          "ItemPlayerAnimationsId": "Battleaxe",
-          "ItemAnimationId": "Whirlwind",
-          "ClearAnimationOnFinish": true
-        }
-      },
-      {
-        "Type": "Replace",
-        "Var": "Signature_Whirlwind_Spin_Repeat",
-        "DefaultOk": true,
-        "DefaultValue": {
-          "Interactions": [
-            "Weapon_Battleaxe_Signature_Whirlwind_Spin_Repeat"
-          ]
-        },
-        "Effects": {
-          "ItemPlayerAnimationsId": "Battleaxe",
-          "ItemAnimationId": "Whirlwind_Charged",
-          "ClearAnimationOnFinish": false
-        }
-      },
-      {
-        "Type": "Replace",
-        "Var": "Signature_Whirlwind_End",
-        "DefaultOk": true,
-        "DefaultValue": {
-          "Interactions": [
-            "Weapon_Battleaxe_Signature_Whirlwind_End"
-          ]
-        },
-        "Effects": {
-          "ItemPlayerAnimationsId": "Battleaxe",
-          "ItemAnimationId": "Whirlwind"
-        }
-      },
-      {
-        "Type": "ClearEntityEffect",
-        "EntityEffectId": "Battleaxe_Whirlwind",
-        "Effects": {
-          "ItemPlayerAnimationsId": "Battleaxe",
-          "ItemAnimationId": ""
-        }
-      },
-      {
-        "Type": "ChangeStat",
-        "StatModifiers": {
-          "SignatureEnergy": -100
-        },
-        "ValueType": "Percent"
-      }
-    ]
-  },
   "Effects": {
-    "ItemAnimationId": "Whirlwind_Charged",
-    "ClearAnimationOnFinish": false,
-    "ClearSoundEventOnFinish": false,
-    "ItemPlayerAnimationsId": "Battleaxe"
+    "WorldSoundEventId": "Activate",
+    "LocalSoundEventId": "Activate"
   }
 }

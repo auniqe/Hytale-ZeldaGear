@@ -215,5 +215,17 @@
     "Compatible": true
   },
   "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
-  "Scale": 1
+  "Scale": 1,
+  "ItemAppearanceConditions": {
+    "MasterSwordSignatureReady": [
+      {
+        "ModelVFXId": "Drop_Rare",
+        "Condition": [
+          50,
+          100
+        ],
+        "ConditionValueType": "Percent"
+      }
+    ]
+  }
 }
