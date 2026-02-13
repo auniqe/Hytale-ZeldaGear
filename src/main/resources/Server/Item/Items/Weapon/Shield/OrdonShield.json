@@ -1,18 +1,18 @@
 {
   "Parent": "Template_Weapon_Shield",
   "TranslationProperties": {
-    "Name": "server.items.Hylian_Shield.name",
-    "Description": "server.items.Hylian_Shield.description"
+    "Name": "server.items.Ordon_Shield.name",
+    "Description": "server.items.Ordon_Shield.description"
   },
   "Categories": [
     "ZeldaGear.Gear",
     "Items.Weapons"
   ],
-  "Model": "Items/Weapons/Shield/HylianShield.blockymodel",
-  "Texture": "Items/Weapons/Shield/HylianShield.png",
-  "Icon": "Icons/ItemsGenerated/HylianShield.png",
+  "Model": "Items/Weapons/Shield/OrdonShield.blockymodel",
+  "Texture": "Items/Weapons/Shield/OrdonShield.png",
+  "Icon": "Icons/ItemsGenerated/OrdonShield.png",
   "Quality": "Epic",
-  "ItemLevel": 100,
+  "ItemLevel": 2,
   "Scale": 1.1,
   "IconProperties": {
     "Scale": 0.5,
@@ -34,15 +34,19 @@
         "Categories": [
           "Weapon_Shield"
         ],
-        "RequiredTierLevel": 2
+        "RequiredTierLevel": 1
       }
     ],
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Cobalt",
-        "Quantity": 10
+        "ResourceTypeId": "Wood_Trunk",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 3
       }
     ]
   },
-  "Set": "D1_Shield"
+  "Set": "D6_Shield"
 }

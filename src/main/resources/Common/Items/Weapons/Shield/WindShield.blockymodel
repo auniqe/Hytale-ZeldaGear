@@ -83,25 +83,25 @@
                       "orientation": {"x": -0.38268, "y": 0, "z": 0, "w": 0.92388},
                       "shape": {
                         "type": "box",
-                        "offset": {"x": -3.5, "y": 2.5, "z": 0},
+                        "offset": {"x": -3.5, "y": 0.025, "z": 0},
                         "stretch": {"x": 1, "y": 1, "z": 1},
                         "settings": {
                           "isPiece": false,
-                          "size": {"x": 3, "y": 32, "z": 16}
+                          "size": {"x": 3, "y": 35, "z": 16}
                         },
                         "textureLayout": {
                           "back": {
-                            "offset": {"x": 38, "y": 0},
+                            "offset": {"x": 40, "y": 0},
                             "mirror": {"x": true, "y": false},
                             "angle": 0
                           },
                           "right": {
-                            "offset": {"x": 17, "y": 0},
+                            "offset": {"x": 21, "y": 0},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "front": {
-                            "offset": {"x": 35, "y": 0},
+                            "offset": {"x": 18, "y": 0},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
@@ -111,14 +111,14 @@
                             "angle": 0
                           },
                           "top": {
-                            "offset": {"x": 5, "y": 38},
+                            "offset": {"x": 21, "y": 56},
                             "mirror": {"x": false, "y": false},
-                            "angle": 0
+                            "angle": 270
                           },
                           "bottom": {
-                            "offset": {"x": 5, "y": 38},
+                            "offset": {"x": 21, "y": 38},
                             "mirror": {"x": false, "y": false},
-                            "angle": 0
+                            "angle": 270
                           }
                         },
                         "unwrapMode": "custom",
@@ -130,47 +130,47 @@
                         {
                           "id": "6",
                           "name": "Shield2--C1",
-                          "position": {"x": 1.5, "y": 0.16195, "z": -7.94914},
+                          "position": {"x": 1.5, "y": 2.63695, "z": -7.94914},
                           "orientation": {"x": 0, "y": 0.10887, "z": 0, "w": 0.99406},
                           "shape": {
                             "type": "box",
-                            "offset": {"x": -1.5, "y": -0.16195, "z": -4.55086},
+                            "offset": {"x": -1.5, "y": -2.66195, "z": -5.05086},
                             "stretch": {"x": 1, "y": 1, "z": 1},
                             "settings": {
                               "isPiece": false,
-                              "size": {"x": 3, "y": 32, "z": 9},
+                              "size": {"x": 3, "y": 35, "z": 10},
                               "isStaticBox": true
                             },
                             "textureLayout": {
                               "back": {
-                                "offset": {"x": 38, "y": 0},
-                                "mirror": {"x": true, "y": false},
+                                "offset": {"x": 7, "y": 0},
+                                "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "right": {
-                                "offset": {"x": 29, "y": 0},
+                                "offset": {"x": 37, "y": 0},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "front": {
-                                "offset": {"x": 35, "y": 0},
+                                "offset": {"x": 34, "y": 0},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "left": {
-                                "offset": {"x": 67, "y": 0},
+                                "offset": {"x": 50, "y": 0},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "top": {
-                                "offset": {"x": 5, "y": 45},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 0
+                                "offset": {"x": 47, "y": 56},
+                                "mirror": {"x": true, "y": false},
+                                "angle": 90
                               },
                               "bottom": {
-                                "offset": {"x": 5, "y": 38},
+                                "offset": {"x": 37, "y": 37},
                                 "mirror": {"x": false, "y": false},
-                                "angle": 0
+                                "angle": 270
                               }
                             },
                             "unwrapMode": "custom",
@@ -182,47 +182,47 @@
                         {
                           "id": "7",
                           "name": "Shield2--C2",
-                          "position": {"x": 1.4, "y": -3.5, "z": 8},
+                          "position": {"x": 1.4, "y": -1.025, "z": 8},
                           "orientation": {"x": 0, "y": -0.10887, "z": 0, "w": 0.99406},
                           "shape": {
                             "type": "box",
-                            "offset": {"x": -1.4, "y": 3.5, "z": 4.5},
+                            "offset": {"x": -1.4, "y": 1, "z": 5},
                             "stretch": {"x": 1, "y": 1, "z": 1},
                             "settings": {
                               "isPiece": false,
-                              "size": {"x": 3, "y": 32, "z": 9},
+                              "size": {"x": 3, "y": 35, "z": 10},
                               "isStaticBox": true
                             },
                             "textureLayout": {
                               "back": {
-                                "offset": {"x": 38, "y": 0},
+                                "offset": {"x": 21, "y": 0},
                                 "mirror": {"x": true, "y": false},
                                 "angle": 0
                               },
                               "right": {
-                                "offset": {"x": 12, "y": 0},
+                                "offset": {"x": 11, "y": 0},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "front": {
-                                "offset": {"x": 35, "y": 0},
-                                "mirror": {"x": false, "y": false},
+                                "offset": {"x": 10, "y": 0},
+                                "mirror": {"x": true, "y": false},
                                 "angle": 0
                               },
                               "left": {
-                                "offset": {"x": 60, "y": 0},
+                                "offset": {"x": 76, "y": 0},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "top": {
-                                "offset": {"x": 5, "y": 38},
-                                "mirror": {"x": false, "y": false},
-                                "angle": 0
+                                "offset": {"x": 21, "y": 56},
+                                "mirror": {"x": true, "y": false},
+                                "angle": 90
                               },
                               "bottom": {
-                                "offset": {"x": 5, "y": 45},
+                                "offset": {"x": 11, "y": 37},
                                 "mirror": {"x": false, "y": false},
-                                "angle": 0
+                                "angle": 270
                               }
                             },
                             "unwrapMode": "custom",
@@ -234,7 +234,7 @@
                         {
                           "id": "8",
                           "name": "Handle2",
-                          "position": {"x": -1.5, "y": -5.5, "z": 0},
+                          "position": {"x": -1.5, "y": -3.025, "z": 0},
                           "orientation": {"x": -0.38268, "y": 0, "z": 0, "w": 0.92388},
                           "shape": {
                             "type": "none",
@@ -253,149 +253,45 @@
                             {
                               "id": "9",
                               "name": "Handle2--C1",
-                              "position": {"x": -24, "y": 0, "z": 0},
-                              "orientation": {"x": 0.36964, "y": 0.09904, "z": -0.23912, "w": 0.8924},
-                              "shape": {
-                                "type": "box",
-                                "offset": {"x": -2.9675, "y": 0.06184, "z": -8},
-                                "stretch": {"x": 1.5, "y": 1, "z": 1},
-                                "settings": {
-                                  "isPiece": false,
-                                  "size": {"x": 2, "y": 12, "z": 6},
-                                  "isStaticBox": true
-                                },
-                                "textureLayout": {
-                                  "back": {
-                                    "offset": {"x": 89, "y": 6},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 0
-                                  },
-                                  "right": {
-                                    "offset": {"x": 89, "y": 0},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  },
-                                  "front": {
-                                    "offset": {"x": 87, "y": 6},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  },
-                                  "left": {
-                                    "offset": {"x": 89, "y": 0},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  },
-                                  "top": {
-                                    "offset": {"x": 87, "y": 0},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  },
-                                  "bottom": {
-                                    "offset": {"x": 87, "y": 0},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  }
-                                },
-                                "unwrapMode": "custom",
-                                "visible": true,
-                                "doubleSided": false,
-                                "shadingMode": "flat"
-                              }
-                            },
-                            {
-                              "id": "10",
-                              "name": "Handle2--C2",
-                              "position": {"x": -24, "y": 0, "z": 0},
-                              "orientation": {"x": 0.36498, "y": -0.11508, "z": 0.27781, "w": 0.88112},
-                              "shape": {
-                                "type": "box",
-                                "offset": {"x": -5.77883, "y": -3.44555, "z": -8.00001},
-                                "stretch": {"x": 1.5, "y": 1, "z": 1},
-                                "settings": {
-                                  "isPiece": false,
-                                  "size": {"x": 2, "y": 10, "z": 6},
-                                  "isStaticBox": true
-                                },
-                                "textureLayout": {
-                                  "back": {
-                                    "offset": {"x": 88, "y": 17},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 0
-                                  },
-                                  "right": {
-                                    "offset": {"x": 89, "y": 11},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  },
-                                  "front": {
-                                    "offset": {"x": 86, "y": 17},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  },
-                                  "left": {
-                                    "offset": {"x": 89, "y": 11},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  },
-                                  "top": {
-                                    "offset": {"x": 86, "y": 0},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  },
-                                  "bottom": {
-                                    "offset": {"x": 86, "y": 0},
-                                    "mirror": {"x": false, "y": false},
-                                    "angle": 0
-                                  }
-                                },
-                                "unwrapMode": "custom",
-                                "visible": true,
-                                "doubleSided": false,
-                                "shadingMode": "flat"
-                              }
-                            },
-                            {
-                              "id": "11",
-                              "name": "Handle2--C3",
-                              "position": {"x": -24, "y": 0, "z": 0},
+                              "position": {"x": -1.5, "y": 0, "z": 0},
                               "orientation": {"x": 0.38268, "y": 0, "z": 0, "w": 0.92388},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 0, "y": -3.5, "z": 6},
+                                "offset": {"x": 0, "y": -3, "z": 6},
                                 "stretch": {"x": 1.5, "y": 1, "z": 1},
                                 "settings": {
                                   "isPiece": false,
-                                  "size": {"x": 3, "y": 13, "z": 4},
+                                  "size": {"x": 3, "y": 20, "z": 4},
                                   "isStaticBox": true
                                 },
                                 "textureLayout": {
                                   "back": {
-                                    "offset": {"x": 89, "y": 12},
+                                    "offset": {"x": 95, "y": 7},
                                     "mirror": {"x": true, "y": false},
                                     "angle": 0
                                   },
                                   "right": {
-                                    "offset": {"x": 89, "y": 6},
+                                    "offset": {"x": 89, "y": 7},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "front": {
-                                    "offset": {"x": 86, "y": 12},
+                                    "offset": {"x": 92, "y": 7},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "left": {
-                                    "offset": {"x": 91, "y": 6},
+                                    "offset": {"x": 91, "y": 7},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "top": {
-                                    "offset": {"x": 86, "y": 2},
+                                    "offset": {"x": 92, "y": 9},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "bottom": {
-                                    "offset": {"x": 86, "y": 0},
+                                    "offset": {"x": 92, "y": 7},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   }
@@ -409,9 +305,9 @@
                           ]
                         },
                         {
-                          "id": "12",
+                          "id": "10",
                           "name": "Shield3",
-                          "position": {"x": 6.4, "y": -6.5, "z": 11.5},
+                          "position": {"x": 6.4, "y": -4.025, "z": 11.5},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
                             "type": "none",
@@ -428,9 +324,9 @@
                           }
                         },
                         {
-                          "id": "13",
+                          "id": "11",
                           "name": "ShieldBot",
-                          "position": {"x": 1.5, "y": -35.5, "z": 0},
+                          "position": {"x": 1.5, "y": -33.025, "z": 0},
                           "orientation": {"x": 0.0923, "y": 0.70106, "z": -0.0923, "w": 0.70106},
                           "shape": {
                             "type": "none",
@@ -447,27 +343,27 @@
                           },
                           "children": [
                             {
-                              "id": "14",
+                              "id": "12",
                               "name": "ShieldBot--C1",
-                              "position": {"x": 0, "y": -0.33805, "z": -6.94914},
-                              "orientation": {"x": -0.02177, "y": -0.06103, "z": 0.00133, "w": 0.9979},
+                              "position": {"x": 0, "y": 18.91195, "z": -5.19914},
+                              "orientation": {"x": -0.04781, "y": -0.08271, "z": 0.00397, "w": 0.99542},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": -8.73057, "y": 9.00179, "z": 1.66481},
+                                "offset": {"x": -8.8331, "y": -12.38807, "z": 0.5982},
                                 "stretch": {"x": 1, "y": 1, "z": 0.1},
                                 "settings": {
                                   "isPiece": false,
-                                  "size": {"x": 18, "y": 20, "z": 1},
+                                  "size": {"x": 18, "y": 17, "z": 1},
                                   "isStaticBox": true
                                 },
                                 "textureLayout": {
                                   "back": {
-                                    "offset": {"x": 72, "y": 91},
+                                    "offset": {"x": 68, "y": 35},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "front": {
-                                    "offset": {"x": 7, "y": 91},
+                                    "offset": {"x": 11, "y": 35},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   }
@@ -479,27 +375,27 @@
                               }
                             },
                             {
-                              "id": "15",
+                              "id": "13",
                               "name": "ShieldBot--C2",
-                              "position": {"x": 0, "y": -0.33805, "z": -1.94914},
-                              "orientation": {"x": -0.02177, "y": 0.06103, "z": -0.00133, "w": 0.9979},
+                              "position": {"x": 0, "y": 18.91195, "z": -5.19914},
+                              "orientation": {"x": -0.04781, "y": 0.08271, "z": -0.00397, "w": 0.99542},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 9.43859, "y": 9.21976, "z": -3.28096},
+                                "offset": {"x": 8.86464, "y": -12.38813, "z": 0.60393},
                                 "stretch": {"x": 1, "y": 1, "z": 0.1},
                                 "settings": {
                                   "isPiece": false,
-                                  "size": {"x": 18, "y": 20, "z": 1},
+                                  "size": {"x": 18, "y": 17, "z": 1},
                                   "isStaticBox": true
                                 },
                                 "textureLayout": {
                                   "back": {
-                                    "offset": {"x": 54, "y": 91},
+                                    "offset": {"x": 50, "y": 35},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "front": {
-                                    "offset": {"x": 25, "y": 91},
+                                    "offset": {"x": 29, "y": 35},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   }
@@ -513,9 +409,9 @@
                           ]
                         },
                         {
-                          "id": "16",
+                          "id": "14",
                           "name": "Shield3",
-                          "position": {"x": 6.4, "y": -6.5, "z": -11.5},
+                          "position": {"x": 6.4, "y": -4.025, "z": -11.5},
                           "orientation": {"x": 0.97607, "y": -0.0038, "z": -0.21619, "w": 0.02318},
                           "shape": {
                             "type": "none",

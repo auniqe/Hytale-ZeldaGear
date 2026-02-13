@@ -1,6 +1,7 @@
+####################
+#   SWORD
+####################
 
-
-##WEAPON
 items.Master_Sword.name=Master Sword
 items.Master_Sword.description=Hold to charge a Spin Attack.\n\
 Launches projectiles at full health.\n\\n\
@@ -39,16 +40,16 @@ items.Wind_Sword.description=<i>A sword kept by a swordsman in an island in the 
 items.Ordon_Sword.name=Ordon Sword
 items.Ordon_Sword.description=<i>A sturdy steel sword from <color is="#2770B7">Ordon Village</color>. Made as a gift to the Royal Family.</i>
 
+####################
+#   BOW
+####################
+
 items.Fairy_Bow.name=Fairy Bow
 items.Fairy_Bow.description=<i>A bow that was once favored by the <color is="#8B339E">Hero of Time</color>.</i>
 
-##TOOLS
-items.Hookshot.name=Hookshot
-items.Hookshot.description=<i>Shoots a hook at high speed that <color is="#2770B7">pulls the user</color> to it's destination.</i> 
-
-
-items.Longshot.name=Longshot
-items.Longshot.description=<i>Shoots a hook at high speed that <color is="#8B339E">pulls the user</color> to it's destination. Now upgraded to shoot further.</i> 
+####################
+#   SHIELD
+####################
 
 items.Hylian_Shield.name=Hylian Shield
 items.Hylian_Shield.description=<i>A shield wielded by the <color is="#8B339E">Knights of Hyrule</color>.</i>
@@ -68,62 +69,83 @@ items.Heros_Shield.description= <i>A Hylian Shield specially modified for the <c
 items.Deku_Shield.name=Deku Shield
 items.Deku_Shield.description=<i>A wooden shield crafted from the bark of the <color is="#3E9049">Great Deku Tree</color>.</i>
 
-##HELMET
-items.Twilight_Helmet.name=​Twilight Helmet
-items.Twilight_Helmet.description=<i>A mythical helmet worn by the <color is="#8B339E">Princess of Twilight</color>. </i>
+items.Wind_Shield.name=Wind Shield
+items.Wind_Shield.description=<i>A family heirloom, passed down through generations and used by the <color is="#8B339E">Hero of Winds</color>.</i>
 
-items.Dark_Cap.name=Dark Cap
+items.Ordon_Shield.name=Ordon Shield
+items.Ordon_Shield.description=<i>A wooden shield, local to the <color is="#8B339E">Ordon Village</color>.</i>
 
-items.Zora_Cap.name=Zora Cap
+####################
+#   EQUIPMENT
+####################
 
-items.Purple_Cap.name=Purple Cap
+items.Hookshot.name=Hookshot
+items.Hookshot.description=<i>Shoots a hook at high speed that <color is="#2770B7">pulls the user</color> to it's destination.</i> 
 
-items.Yellow_Cap.name=Yellow Cap
+items.Longshot.name=Longshot
+items.Longshot.description=<i>Shoots a hook at high speed that <color is="#8B339E">pulls the user</color> to it's destination. Now upgraded to shoot further.</i> 
 
-items.Goron_Cap.name=Goron Cap
+####################
+#   SETS
+####################
 
+#heros set
 items.Heros_Cap.name=Hero's Cap
-
-items.Princess_Crown.name=Princess Crown
-
-
-##CHESTPIECE
 items.Heros_Tunic.name=Hero's Tunic
 items.Heros_Tunic.description=<i>A garb seen as a courageous symbol in the land of <color is="#3E9049">Hyrule</color>. </i>
+items.Heros_Gloves.name=Hero's Gloves
+items.Heros_Boots.name=Hero's Boots
 
-items.Goron_Tunic.name=Goron Tunic
-items.Goron_Tunic.description=Grants the user high <color is="#F82700">fire resistance</color>.\n\\n\ <i>A gift given by the Gorons to Hylians scaling <color is="#BB8A2C">Death Mountain</color>.</i>
-
-items.Zora_Tunic.name=Zora Tunic
-items.Zora_Tunic.description=<i>A blue tunic gifted to Hylians to help <color is="#2770B7">breathe underwater</color>.</i>
-
-items.Purple_Tunic.name=Purple Tunic
-items.Purple_Tunic.description=<i>A tunic resembling one of the <color is="#8B339E">three clones</color> created to the likeness of hero wielding the four sword.</i>
-
+#wind set
 items.Wind_Tunic.name=Wind Tunic
 items.Wind_Tunic.description=<i>A tunic given to the children of <color is="#3E9049">Outset Island</color> as tradition to honor the Hero of Time.</i>
-
-items.Yellow_Tunic.name=Yellow Tunic
-items.Yellow_Tunic.description=<i>A tunic once worn by the seniors of the <color is="#3E9049">Knight Academy</color>.</i>
-
-items.Dark_Tunic.name=Dark Tunic
-items.Dark_Tunic.description=Increased movement speed at night. \n\n\ <i>A tunic worn by the <color is="#8B339E">shadow of a legendary hero</color>.</i>
-
 items.Lobster_Shirt.name=Lobster Shirt
 items.Lobster_Shirt.description=<i>A shirt worn by the <color is="#2770B7">Hero of Wind</color> before his journey.</i>
 
+#twilight
+items.Twilight_Helmet.name=​Twilight Helmet
+items.Twilight_Helmet.description=<i>A mythical helmet worn by the <color is="#8B339E">Princess of Twilight</color>. </i>
+
+#dark set
+items.Dark_Cap.name=Dark Cap
+items.Dark_Tunic.name=Dark Tunic
+items.Dark_Tunic.description=Increased movement speed at night.\n\n\ <i>A tunic worn by the <color is="#8B339E">shadow of a legendary hero</color>.</i>
+items.Dark_Gloves.name=Dark Gloves
+items.Dark_Boots.name=Dark Boots
+
+#zora set
+items.Zora_Cap.name=Zora Cap
+items.Zora_Tunic.name=Zora Tunic
+items.Zora_Tunic.description=<i>A blue tunic gifted to Hylians to help <color is="#2770B7">breathe underwater</color>.</i>
+
+#goron set
+items.Goron_Cap.name=Goron Cap
+items.Goron_Tunic.name=Goron Tunic
+items.Goron_Tunic.description=Grants the user high <color is="#F82700">fire resistance</color>.\n\\n\ <i>A gift given by the Gorons to Hylians scaling <color is="#BB8A2C">Death Mountain</color>.</i>
+
+#purple set
+items.Purple_Cap.name=Purple Cap
+items.Purple_Tunic.name=Purple Tunic
+items.Purple_Tunic.description=<i>A tunic resembling one of the <color is="#8B339E">three clones</color> created to the likeness of hero wielding the four sword.</i>
+
+#yellow set
+items.Yellow_Cap.name=Yellow Cap
+items.Yellow_Tunic.name=Yellow Tunic
+items.Yellow_Tunic.description=<i>A tunic once worn by the seniors of the <color is="#3E9049">Knight Academy</color>.</i>
+
+#princess set
+items.Princess_Crown.name=Princess Crown
 items.Princess_Dress.name=Princess Dress
 items.Princess_Dress.description=<i>Dress previously worn by the <color is="#8B339E">Princess of Hyrule</color>.</i>
-
-items.Farmer_Dress.name=Farmer Dress
-items.Farmer_Dress.description=<i>A dress previously worn by a ranchhand at Lon-Lon Ranch. </i>
-
-##GLOVES
-items.Heros_Gloves.name=Hero's Gloves
-
-items.Dark_Gloves.name=Dark Gloves
-
 items.Princess_Gloves.name=Princess Gloves
+
+#farmer set
+items.Farmer_Dress.name=Farmer Dress
+items.Farmer_Dress.description=<i>A dress previously worn by a ranchhand at Lon-Lon Ranch.</i>
+
+####################
+#   GAUNTLETS
+####################
 
 items.Silver_Gauntlets.name=Silver Gauntlets
 items.Silver_Gauntlets.description=Magical gauntlets that give the user <color is="#8B339E">incredible</color> strength.</i>
@@ -134,7 +156,22 @@ items.Gold_Gauntlets.description= <i>Magical gauntlets that give the user <color
 items.Goron_Bracelet.name=Goron Bracelet
 items.Goron_Bracelet.description=<i>A bracelet gifted to Hylians to lift heavy objects. It <color is="#2770B7">makes the user feel stronger</color>.</i>
 
-##BOOTS
-items.Heros_Boots.name=Hero's Boots
+####################
+#   BLOCKS
+####################
 
-items.Dark_Boots.name=Dark Boots
+items.Gossip_Stone.name=Gossip Stone
+items.Gossip_Stone.description=<i>"They say that <color is="#AADAFF">Hytale</color> is on the way of the hero."</i>
+items.Zelda_Bench.name=Hylian Forge
+items.Zelda_Bench.description=Used to forge ancient equipment from the <color is="#BB8A2C">Land of Hyrule</color>
+
+####################
+#   USER INTERFACE
+####################
+
+bench_category.sword=Sword
+bench_category.bow=Bow
+bench_category.shield=Shield
+bench_category.armor=Armor
+bench_category.equipment=Equipment
+bench_category.other=Other

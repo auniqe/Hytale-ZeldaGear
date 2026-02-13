@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Gossip Stone"
+    "Name": "server.items.Gossip_Stone.name",
+    "Description": "server.items.Gossip_Stone.description"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [

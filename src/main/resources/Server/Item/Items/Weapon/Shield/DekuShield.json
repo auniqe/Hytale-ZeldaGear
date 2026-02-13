@@ -12,7 +12,7 @@
   "Texture": "Items/Weapons/Shield/DekuShield.png",
   "Icon": "Icons/ItemsGenerated/DekuShield.png",
   "Quality": "Uncommon",
-  "ItemLevel": 50,
+  "ItemLevel": 0,
   "Scale": 1.1,
   "IconProperties": {
     "Scale": 0.5,
@@ -96,5 +96,5 @@
       ]
     }
   },
-  "Set": "DDD_Shield"
+  "Set": "D0_Shield"
 }

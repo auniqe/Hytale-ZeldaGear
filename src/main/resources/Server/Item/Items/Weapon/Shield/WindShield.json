@@ -1,18 +1,18 @@
 {
   "Parent": "Template_Weapon_Shield",
   "TranslationProperties": {
-    "Name": "server.items.Hylian_Shield.name",
-    "Description": "server.items.Hylian_Shield.description"
+    "Name": "server.items.Wind_Shield.name",
+    "Description": "server.items.Wind_Shield.description"
   },
   "Categories": [
     "ZeldaGear.Gear",
     "Items.Weapons"
   ],
-  "Model": "Items/Weapons/Shield/HylianShield.blockymodel",
-  "Texture": "Items/Weapons/Shield/HylianShield.png",
-  "Icon": "Icons/ItemsGenerated/HylianShield.png",
+  "Model": "Items/Weapons/Shield/WindShield.blockymodel",
+  "Texture": "Items/Weapons/Shield/WindShield.png",
+  "Icon": "Icons/ItemsGenerated/WindShield.png",
   "Quality": "Epic",
-  "ItemLevel": 100,
+  "ItemLevel": 1,
   "Scale": 1.1,
   "IconProperties": {
     "Scale": 0.5,
@@ -34,15 +34,23 @@
         "Categories": [
           "Weapon_Shield"
         ],
-        "RequiredTierLevel": 2
+        "RequiredTierLevel": 1
       }
     ],
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Cobalt",
+        "ResourceTypeId": "Wood_Trunk",
         "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 2
       }
     ]
   },
-  "Set": "D1_Shield"
+  "Set": "D5_Shield"
 }

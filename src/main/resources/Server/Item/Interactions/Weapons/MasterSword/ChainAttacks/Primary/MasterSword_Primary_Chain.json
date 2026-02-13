@@ -10,8 +10,7 @@
       "DefaultValue": {
         "Interactions": [
           "MasterSword_Swing_Right"
-        ],
-        "RequireNewClick": true
+        ]
       }
     },
     {
@@ -21,8 +20,7 @@
       "DefaultValue": {
         "Interactions": [
           "MasterSword_Swing_Left"
-        ],
-        "RequireNewClick": true
+        ]
       }
     },
     {
@@ -32,10 +30,8 @@
       "DefaultValue": {
         "Interactions": [
           "MasterSword_Swing_Right"
-        ],
-        "RequireNewClick": true
-      },
-      "CancelOnItemChange": false
+        ]
+      }
     },
     {
       "Type": "Replace",

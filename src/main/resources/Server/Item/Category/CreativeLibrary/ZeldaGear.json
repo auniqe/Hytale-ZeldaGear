@@ -11,8 +11,8 @@
     },
     {
       "Id": "Misc",
-      "Name": "Misc",
-      "Icon": "Icons/ItemCategories/Items-Tools.png"
+      "Icon": "Icons/ItemCategories/Items-Tools.png",
+      "Name": "Misc"
     },
     {
       "Id": "Cosmetics",

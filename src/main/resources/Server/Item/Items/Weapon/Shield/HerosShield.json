@@ -8,7 +8,7 @@
   "Texture": "Items/Weapons/Shield/HerosShield.png",
   "Icon": "Icons/ItemsGenerated/HerosShield.png",
   "Quality": "Epic",
-  "Set": "D_Shield",
+  "Set": "D3_Shield",
   "Recipe": {
     "BenchRequirement": [
       {
@@ -26,5 +26,6 @@
         "Quantity": 10
       }
     ]
-  }
+  },
+  "ItemLevel": 110
 }

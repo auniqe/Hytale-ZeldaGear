@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Bench_Weapon.name",
-    "Description": "server.items.Bench_Weapon.description"
+    "Name": "server.items.Zelda_Bench.name",
+    "Description": "server.items.Zelda_Bench.description"
   },
   "Icon": "Icons/ItemsGenerated/Bench_Weapon.png",
   "Categories": [
@@ -37,10 +37,10 @@
     "Material": "Solid",
     "DrawType": "Model",
     "Opacity": "Transparent",
-    "CustomModel": "Blocks/Benches/Weapon.blockymodel",
+    "CustomModel": "Blocks/Benches/ZeldaBench.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Benches/Weapon_Texture.png",
+        "Texture": "Blocks/Benches/ZeldaBench_Texture.png",
         "Weight": 1
       }
     ],
@@ -74,32 +74,32 @@
         {
           "Id": "Weapon_Sword",
           "Icon": "Icons/CraftingCategories/Weapon.png",
-          "Name": "server.benchCategories.sword"
+          "Name": "server.bench_category.sword"
         },
         {
           "Id": "Weapon_Bow",
           "Icon": "Icons/CraftingCategories/Bow.png",
-          "Name": "server.benchCategories.sword"
+          "Name": "server.bench_category.bow"
         },
         {
           "Id": "Weapon_Shield",
           "Icon": "Icons/CraftingCategories/Shield.png",
-          "Name": "server.benchCategories.shield"
+          "Name": "server.bench_category.shield"
         },
         {
           "Id": "Zelda_Armor",
           "Icon": "Icons/CraftingCategories/Armor.png",
-          "Name": "server.benchCategories.sword"
+          "Name": "server.bench_category.armor"
         },
         {
           "Id": "Zelda_Equipment",
           "Icon": "Icons/CraftingCategories/Equipment.png",
-          "Name": "server.benchCategories.sword"
+          "Name": "server.bench_category.equipment"
         },
         {
           "Id": "Zelda_Other",
           "Icon": "Icons/CraftingCategories/Other.png",
-          "Name": "server.benchCategories.sword"
+          "Name": "server.bench_category.other"
         }
       ],
       "Id": "Zelda_Bench",
