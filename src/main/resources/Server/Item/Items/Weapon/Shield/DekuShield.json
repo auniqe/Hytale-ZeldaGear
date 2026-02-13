@@ -30,7 +30,7 @@
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Armor_Bench",
+        "Id": "Zelda_Bench",
         "Categories": [
           "Weapon_Shield"
         ],

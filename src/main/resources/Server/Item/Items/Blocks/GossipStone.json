@@ -77,9 +77,9 @@
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Furniture_Bench",
+        "Id": "Zelda_Bench",
         "Categories": [
-          "Furniture_Misc"
+          "Zelda_Other"
         ]
       }
     ]

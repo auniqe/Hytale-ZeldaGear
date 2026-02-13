@@ -8,7 +8,7 @@
   "Texture": "Items/Weapons/Sword/WindSword.png",
   "Icon": "Icons/ItemsGenerated/WindSword.png",
   "Quality": "Rare",
-  "ItemLevel": 35,
+  "ItemLevel": 2,
   "MaxDurability": 160,
   "InteractionVars": {
     "Swing_Left_Damage": {
@@ -155,12 +155,12 @@
         "Categories": [
           "Weapon_Sword"
         ],
-        "Id": "Weapon_Bench",
-        "RequiredTierLevel": 2
+        "Id": "Zelda_Bench",
+        "RequiredTierLevel": 1
       }
     ]
   },
-  "Set": "A_Sword",
+  "Set": "A7_Sword",
   "Weapon": {
     "EntityStatsToClear": [
       "SignatureEnergy"

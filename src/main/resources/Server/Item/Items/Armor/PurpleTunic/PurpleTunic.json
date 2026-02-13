@@ -22,17 +22,17 @@
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Zelda_Bench",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Chest"
+          "Zelda_Armor"
         ],
         "RequiredTierLevel": 1
       }
     ],
     "KnowledgeRequired": false
   },
-  "ItemLevel": 15,
+  "ItemLevel": 33,
   "Icon": "Icons/Items/PurpleTunic.png",
   "IconProperties": {
     "Rotation": [

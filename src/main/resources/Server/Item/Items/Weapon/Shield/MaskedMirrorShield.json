@@ -1,19 +1,13 @@
 {
-  "Parent": "Template_Weapon_Shield",
+  "Parent": "HylianShield",
   "TranslationProperties": {
     "Name": "server.items.Masked_Mirror_Shield.name",
     "Description": "server.items.Masked_Mirror_Shield.description"
   },
-  "Categories": [
-    "ZeldaGear.Gear",
-    "Items.Weapons"
-  ],
   "Model": "Items/Weapons/Shield/MaskedMirrorShield.blockymodel",
   "Texture": "Items/Weapons/Shield/MaskedMirrorShield.png",
   "Icon": "Icons/Items/MaskedMirrorShield.png",
   "Quality": "Epic",
-  "ItemLevel": 200,
-  "Scale": 1.1,
   "IconProperties": {
     "Scale": 0.55,
     "Rotation": [
@@ -30,7 +24,7 @@
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Armor_Bench",
+        "Id": "Zelda_Bench",
         "Categories": [
           "Weapon_Shield"
         ],

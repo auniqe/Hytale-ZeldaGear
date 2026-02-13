@@ -4,7 +4,7 @@
   },
   "Parent": "Armor_Iron_Legs",
   "Quality": "Rare",
-  "ItemLevel": 20,
+  "ItemLevel": 3,
   "Icon": "Icons/Items/HerosBoots.png",
   "IconProperties": {
     "Rotation": [
@@ -37,10 +37,10 @@
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Zelda_Bench",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Legs"
+          "Zelda_Armor"
         ],
         "RequiredTierLevel": 1
       }

@@ -9,5 +9,23 @@
   "Icon": "Icons/ItemsGenerated/DarkHylianShield.png",
   "Quality": "Epic",
   "Variant": true,
-  "Set": "D_Shield"
+  "Set": "D_Shield",
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Zelda_Bench",
+        "Categories": [
+          "Weapon_Shield"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Cobalt",
+        "Quantity": 10
+      }
+    ]
+  }
 }

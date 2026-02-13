@@ -18,17 +18,17 @@
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Zelda_Bench",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Chest"
+          "Zelda_Armor"
         ],
         "RequiredTierLevel": 1
       }
     ],
     "KnowledgeRequired": false
   },
-  "ItemLevel": 70,
+  "ItemLevel": 29,
   "Icon": "Icons/ItemsGenerated/LobsterShirt.png",
   "IconProperties": {
     "Scale": 0.57,

@@ -4,7 +4,7 @@
     "Description": "server.items.Dark_Cap.description"
   },
   "Parent": "HerosHat",
-  "ItemLevel": 4,
+  "ItemLevel": 100,
   "Icon": "Icons/ItemsGenerated/DarkHat.png",
   "Model": "Items/Armor/Hat.blockymodel",
   "Texture": "Items/Armor/DarkSet/DarkCap.png",
@@ -26,10 +26,10 @@
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Zelda_Bench",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Head"
+          "Zelda_Armor"
         ],
         "RequiredTierLevel": 2
       }

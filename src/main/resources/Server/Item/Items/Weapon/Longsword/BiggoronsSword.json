@@ -8,7 +8,7 @@
     "Items.Weapons"
   ],
   "Quality": "Epic",
-  "ItemLevel": 100,
+  "ItemLevel": 110,
   "Model": "Items/Weapons/Sword/BiggoronsSword.blockymodel",
   "Texture": "Items/Weapons/Sword/BiggoronsSword.png",
   "PlayerAnimationsId": "Battleaxe",
@@ -172,7 +172,7 @@
         "Categories": [
           "Weapon_Sword"
         ],
-        "Id": "Weapon_Bench",
+        "Id": "Zelda_Bench",
         "RequiredTierLevel": 2
       }
     ]

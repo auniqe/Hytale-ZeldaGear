@@ -38,10 +38,10 @@
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Zelda_Bench",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Head"
+          "Zelda_Armor"
         ],
         "RequiredTierLevel": 2
       }

@@ -31,7 +31,7 @@
         "Categories": [
           "Weapon_Sword"
         ],
-        "Id": "Weapon_Bench",
+        "Id": "Zelda_Bench",
         "RequiredTierLevel": 2
       }
     ]
@@ -171,7 +171,7 @@
     "Color": "#467",
     "Radius": 1
   },
-  "ItemLevel": 1,
+  "ItemLevel": 120,
   "Categories": [
     "ZeldaGear.Gear",
     "Items.Weapons"

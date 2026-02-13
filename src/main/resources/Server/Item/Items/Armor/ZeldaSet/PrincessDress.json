@@ -18,17 +18,17 @@
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Zelda_Bench",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Chest"
+          "Zelda_Armor"
         ],
         "RequiredTierLevel": 2
       }
     ],
     "KnowledgeRequired": false
   },
-  "ItemLevel": 3,
+  "ItemLevel": 51,
   "Icon": "Icons/Items/PrincessDress.png",
   "IconProperties": {
     "Rotation": [

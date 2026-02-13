@@ -5,7 +5,7 @@
   },
   "Parent": "Armor_Iron_Hands",
   "Quality": "Epic",
-  "ItemLevel": 2,
+  "ItemLevel": 102,
   "Icon": "Icons/Items/DarkGloves.png",
   "IconProperties": {
     "Rotation": [
@@ -38,10 +38,10 @@
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Zelda_Bench",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Hands"
+          "Zelda_Armor"
         ],
         "RequiredTierLevel": 1
       }

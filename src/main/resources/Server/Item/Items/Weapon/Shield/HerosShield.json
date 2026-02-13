@@ -1,36 +1,19 @@
 {
-  "Parent": "Template_Weapon_Shield",
+  "Parent": "HylianShield",
   "TranslationProperties": {
     "Name": "server.items.Heros_Shield.name",
     "Description": "server.items.Heros_Shield.description"
   },
-  "Categories": [
-    "ZeldaGear.Gear",
-    "Items.Weapons"
-  ],
   "Model": "Items/Weapons/Shield/HerosShield.blockymodel",
   "Texture": "Items/Weapons/Shield/HerosShield.png",
   "Icon": "Icons/ItemsGenerated/HerosShield.png",
   "Quality": "Epic",
-  "ItemLevel": 200,
-  "Scale": 1.1,
-  "IconProperties": {
-    "Scale": 0.5,
-    "Rotation": [
-      315,
-      270,
-      0
-    ],
-    "Translation": [
-      -26,
-      -27
-    ]
-  },
+  "Set": "D_Shield",
   "Recipe": {
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Armor_Bench",
+        "Id": "Zelda_Bench",
         "Categories": [
           "Weapon_Shield"
         ],
@@ -43,6 +26,5 @@
         "Quantity": 10
       }
     ]
-  },
-  "Set": "D_Shield"
+  }
 }

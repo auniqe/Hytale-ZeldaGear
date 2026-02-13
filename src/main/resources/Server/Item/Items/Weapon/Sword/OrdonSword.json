@@ -9,7 +9,7 @@
   "PlayerAnimationsId": "Sword",
   "Reticle": "DefaultMelee",
   "Quality": "Rare",
-  "ItemLevel": 200,
+  "ItemLevel": 3,
   "Categories": [
     "ZeldaGear.Gear",
     "Items.Weapons"
@@ -177,8 +177,8 @@
         "Categories": [
           "Weapon_Sword"
         ],
-        "Id": "Weapon_Bench",
-        "RequiredTierLevel": 3
+        "Id": "Zelda_Bench",
+        "RequiredTierLevel": 1
       }
     ]
   },
@@ -196,7 +196,7 @@
   },
   "MaxDurability": 160,
   "DurabilityLossOnHit": 0.21,
-  "Set": "AAA_Sword",
+  "Set": "A6_Sword",
   "Tags": {
     "Type": [
       "Weapon"

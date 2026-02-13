@@ -28,17 +28,9 @@
       {
         "Type": "Crafting",
         "Categories": [
-          "Weapon_Bow"
+          "Zelda_Equipment"
         ],
-        "Id": "Weapon_Bench",
-        "RequiredTierLevel": 3
-      },
-      {
-        "Type": "DiagramCrafting",
-        "Categories": [
-          "Weapons.Bow"
-        ],
-        "Id": "Armory",
+        "Id": "Zelda_Bench",
         "RequiredTierLevel": 3
       }
     ]

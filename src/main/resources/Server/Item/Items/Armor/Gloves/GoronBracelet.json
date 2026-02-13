@@ -5,7 +5,7 @@
   },
   "Parent": "Armor_Iron_Hands",
   "Quality": "Rare",
-  "ItemLevel": 30,
+  "ItemLevel": 300,
   "Icon": "Icons/Items/GoronBracelet.png",
   "IconProperties": {
     "Rotation": [
@@ -34,10 +34,10 @@
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Zelda_Bench",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Hands"
+          "Zelda_Armor"
         ],
         "RequiredTierLevel": 1
       }

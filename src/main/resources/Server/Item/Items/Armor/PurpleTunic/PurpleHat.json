@@ -4,7 +4,7 @@
     "Description": "server.items.Purple_Cap.description"
   },
   "Parent": "HerosHat",
-  "ItemLevel": 20,
+  "ItemLevel": 32,
   "Icon": "Icons/ItemsGenerated/PurpleHat.png",
   "Model": "Items/Armor/Hat.blockymodel",
   "Texture": "Items/Armor/PurpleTunic/PurpleCap.png",
@@ -26,10 +26,10 @@
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Zelda_Bench",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Head"
+          "Zelda_Armor"
         ],
         "RequiredTierLevel": 1
       }

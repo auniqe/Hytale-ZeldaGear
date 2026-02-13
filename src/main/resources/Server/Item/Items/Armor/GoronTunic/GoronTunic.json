@@ -22,17 +22,17 @@
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Zelda_Bench",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Chest"
+          "Zelda_Armor"
         ],
         "RequiredTierLevel": 2
       }
     ],
     "KnowledgeRequired": false
   },
-  "ItemLevel": 15,
+  "ItemLevel": 203,
   "Icon": "Icons/Items/GoronTunic.png",
   "IconProperties": {
     "Rotation": [
