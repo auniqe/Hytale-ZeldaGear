@@ -1,0 +1,15 @@
+{
+  "AudioCategory": "AudioCat_Weapons",
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/SpinAttackFull.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -1,
+        "MaxPitch": 1
+      }
+    }
+  ],
+  "PreventSoundInterruption": true
+}

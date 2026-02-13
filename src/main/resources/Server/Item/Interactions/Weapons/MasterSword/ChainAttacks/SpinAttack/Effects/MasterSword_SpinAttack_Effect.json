@@ -21,8 +21,6 @@
         "TrailId": "Sword_Distortion"
       }
     ],
-    "WorldSoundEventId": "SFX_Sword_T2_Signature_Part_1",
-    "LocalSoundEventId": "SFX_Sword_T2_Signature_Part_1_Local",
     "WaitForAnimationToFinish": false,
     "Particles": [
       {
@@ -40,7 +38,9 @@
     "CameraEffect": "Sword_Spin",
     "MovementEffects": {
       "DisableSprint": false
-    }
+    },
+    "ItemPlayerAnimationsId": "MasterSword",
+    "ItemAnimationId": "SpinAttack"
   },
   "RunTime": 0.583
 }

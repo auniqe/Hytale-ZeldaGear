@@ -1,5 +1,6 @@
 package net.loevi;
 
+import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.Interaction;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
@@ -16,6 +17,9 @@ public class ZeldaGear extends JavaPlugin {
         super(init);
         instance = this;
     }
+
+
+    public static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
 
     public static ZeldaGear get() {
         return instance;

@@ -16,7 +16,6 @@
   ],
   "Interactions": {
     "Primary": {
-      "Parent": "Root_Weapon_Sword_Primary",
       "Interactions": [
         "MasterSword_Primary"
       ]
@@ -215,5 +214,17 @@
     "Compatible": true
   },
   "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
-  "Scale": 1
+  "Scale": 1,
+  "ItemAppearanceConditions": {
+    "Health": [
+      {
+        "Condition": [
+          100,
+          100
+        ],
+        "ConditionValueType": "Percent",
+        "Texture": "Items/Weapons/Sword/MasterSwordFullHealth.png"
+      }
+    ]
+  }
 }

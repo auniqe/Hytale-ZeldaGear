@@ -23,8 +23,6 @@
         }
       }
     ],
-    "WorldSoundEventId": "SFX_Battleaxe_T2_Signature_End",
-    "LocalSoundEventId": "SFX_Battleaxe_T2_Signature_End_Local",
     "WaitForAnimationToFinish": false,
     "Particles": [
       {
@@ -39,7 +37,9 @@
         "DetachedFromModel": false
       }
     ],
-    "CameraEffect": "Sword_Spin"
+    "CameraEffect": "Sword_Spin",
+    "ItemPlayerAnimationsId": "MasterSword",
+    "ItemAnimationId": "SpinAttackHeavy"
   },
   "RunTime": 0.583
 }

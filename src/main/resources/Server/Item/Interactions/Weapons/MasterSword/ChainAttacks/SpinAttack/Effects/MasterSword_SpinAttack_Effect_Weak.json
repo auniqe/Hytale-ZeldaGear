@@ -2,18 +2,17 @@
   "Type": "Simple",
   "$Comment": "Length of Effect",
   "Effects": {
-    "WorldSoundEventId": "SFX_Sword_T2_Signature_Part_1",
-    "LocalSoundEventId": "SFX_Sword_T2_Signature_Part_1_Local",
-    "WaitForAnimationToFinish": false,
     "CameraEffect": "Sword_Spin",
     "MovementEffects": {
       "DisableSprint": false
     },
+    "ItemPlayerAnimationsId": "MasterSword",
+    "ItemAnimationId": "SpinAttack",
     "Trails": [
       {
         "TargetNodeName": ""
       }
     ]
   },
-  "RunTime": 0.583
+  "RunTime": 0.56
 }

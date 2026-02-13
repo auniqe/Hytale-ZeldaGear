@@ -56,7 +56,7 @@
     },
     "Next": {
       "Type": "Simple",
-      "RunTime": 0.2
+      "RunTime": 0.4
     }
   }
 }

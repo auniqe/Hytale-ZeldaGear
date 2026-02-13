@@ -1,0 +1,17 @@
+{
+  "AudioCategory": "AudioCat_Weapons",
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/SpinAttackWeak.ogg"
+      ],
+      "Volume": -0.56,
+      "Looping": false,
+      "RandomSettings": {
+        "MinPitch": -1,
+        "MaxPitch": 1
+      }
+    }
+  ],
+  "PreventSoundInterruption": true
+}

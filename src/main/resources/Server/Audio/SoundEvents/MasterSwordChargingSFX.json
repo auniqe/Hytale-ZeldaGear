@@ -1,0 +1,19 @@
+{
+  "AudioCategory": "AudioCat_Weapons",
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/MasterSwordCharge.ogg"
+      ]
+    },
+    {
+      "Looping": true,
+      "StartDelay": 2.5,
+      "Volume": -10.24,
+      "Files": [
+        "Sounds/SpinAttackIdle.ogg"
+      ]
+    }
+  ],
+  "PreventSoundInterruption": false
+}

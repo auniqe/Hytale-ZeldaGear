@@ -10,8 +10,7 @@
       "Speed": 2,
       "Looping": false,
       "BlendingDuration": 0.4,
-      "ClipsGeometry": false,
-      "KeepPreviousFirstPersonAnimation": false
+      "ClipsGeometry": false
     },
     "SwingRight": {
       "ThirdPerson": "Characters/Animations/Items/Main_Handed/MasterSword/Swing_Right/SwingRight.blockyanim",

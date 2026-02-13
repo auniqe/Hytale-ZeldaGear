@@ -6,5 +6,8 @@
   "Next": {
     "Type": "LaunchProjectile",
     "ProjectileId": "MasterSwordBeam"
+  },
+  "Effects": {
+    "LocalSoundEventId": "SFX_Staff_Flame_Fireball_Impact"
   }
 }

@@ -47,5 +47,17 @@
       "sword"
     ]
   },
-  "Variant": true
+  "Variant": true,
+  "ItemAppearanceConditions": {
+    "Health": [
+      {
+        "Condition": [
+          100,
+          100
+        ],
+        "ConditionValueType": "Percent",
+        "ModelVFXId": "DarkMasterSwordVFX"
+      }
+    ]
+  }
 }

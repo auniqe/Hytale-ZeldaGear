@@ -1,0 +1,149 @@
+{
+  "RenderMode": "BlendAdd",
+  "ParticleRotationInfluence": "BillboardVelocity",
+  "LinearFiltering": true,
+  "LightInfluence": 0,
+  "ParticleRotateWithSpawner": false,
+  "TrailSpawnerPositionMultiplier": 1.0,
+  "TrailSpawnerRotationMultiplier": 1.0,
+  "MaxConcurrentParticles": 50,
+  "ParticleLifeSpan": {
+    "Min": 0.1,
+    "Max": 0.3
+  },
+  "SpawnRate": {
+    "Min": 40,
+    "Max": 60
+  },
+  "Attractors": [
+    {
+      "TrailPositionMultiplier": 1,
+      "Radius": 5,
+      "RadialAxis": {
+        "Y": 1
+      },
+      "RadialAcceleration": 1,
+      "RadialTangentImpulse": 1
+    }
+  ],
+  "Particle": {
+    "Texture": "Particles/Textures/Smoke/SmokeRound2.png",
+    "ScaleRatioConstraint": "None",
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Scale": {
+          "X": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Y": {
+            "Min": 0,
+            "Max": 0
+          }
+        },
+        "Rotation": {
+          "X": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Y": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Z": {
+            "Min": 0,
+            "Max": 0
+          }
+        },
+        "Opacity": 0,
+        "Color": "#7be7ff"
+      },
+      "30": {
+        "Opacity": 1.0,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          }
+        }
+      },
+      "80": {},
+      "90": {
+        "Opacity": 1
+      },
+      "100": {
+        "Opacity": 0,
+        "Scale": {
+          "Y": {
+            "Max": 2,
+            "Min": 2
+          },
+          "X": {
+            "Min": 0,
+            "Max": 0
+          }
+        },
+        "Color": "#0085ff"
+      }
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.1,
+          "Max": 0.1
+        },
+        "Y": {
+          "Min": 0.1,
+          "Max": 0.1
+        }
+      },
+      "Opacity": 1,
+      "Color": "#f99b5f",
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      }
+    },
+    "UseSpriteBlending": true,
+    "SoftParticlesFadeFactor": 2
+  },
+  "SpawnBurst": true,
+  "VelocityStretchMultiplier": 5,
+  "EmitOffset": {
+    "X": {
+      "Min": -0.1,
+      "Max": 0.1
+    },
+    "Z": {
+      "Min": -0.1,
+      "Max": 0.1
+    },
+    "Y": {
+      "Min": -1,
+      "Max": 0.2
+    }
+  },
+  "UseEmitDirection": false,
+  "InitialVelocity": {
+    "Yaw": {
+      "Min": 0
+    },
+    "Speed": {
+      "Min": 5,
+      "Max": 1
+    },
+    "Pitch": {
+      "Min": 90,
+      "Max": 90
+    }
+  },
+  "Shape": "Sphere",
+  "IsLowRes": true,
+  "ParticleCollision": {
+    "ParticleRotationInfluence": "Velocity"
+  }
+}

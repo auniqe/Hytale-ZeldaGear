@@ -55,9 +55,5 @@
       "$Comment": "Pad the interaction length",
       "RunTime": 0.25
     }
-  },
-  "Effects": {
-    "ItemAnimationId": "SpinAttackHeavy",
-    "ItemPlayerAnimationsId": "MasterSword"
   }
 }

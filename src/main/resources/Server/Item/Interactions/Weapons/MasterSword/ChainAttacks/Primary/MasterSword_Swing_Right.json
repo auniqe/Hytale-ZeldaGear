@@ -5,7 +5,8 @@
     "ItemPlayerAnimationsId": "MasterSword",
     "ItemAnimationId": "SwingRight",
     "WorldSoundEventId": "SFX_Light_Melee_T2_Swing",
-    "LocalSoundEventId": "SFX_Light_Melee_T2_Swing"
+    "LocalSoundEventId": "SFX_Light_Melee_T2_Swing",
+    "WaitForAnimationToFinish": false
   },
   "Next": {
     "Type": "Replace",
@@ -16,5 +17,6 @@
         "MasterSword_Swing_Right_Selector"
       ]
     }
-  }
+  },
+  "CancelOnItemChange": false
 }

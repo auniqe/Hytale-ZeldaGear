@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "R-Attachment",
-      "position": {"x": 0, "y": 17, "z": 0},
+      "position": {"x": 0, "y": 0, "z": 0},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -773,17 +773,18 @@
                       "children": [
                         {
                           "id": "22",
-                          "name": "Pommel",
-                          "position": {"x": 0, "y": 0, "z": 0},
+                          "name": "Pommel--C1",
+                          "position": {"x": 0, "y": 0, "z": -5},
                           "orientation": {"x": 0.5, "y": -0.5, "z": -0.5, "w": 0.5},
                           "shape": {
                             "type": "quad",
-                            "offset": {"x": 0, "y": -5, "z": 0},
+                            "offset": {"x": 0, "y": 0, "z": 0},
                             "stretch": {"x": 1, "y": 1, "z": 1},
                             "settings": {
                               "isPiece": false,
                               "size": {"x": 11, "y": 10},
-                              "normal": "+Z"
+                              "normal": "+Z",
+                              "isStaticBox": true
                             },
                             "textureLayout": {
                               "front": {
@@ -800,17 +801,18 @@
                         },
                         {
                           "id": "23",
-                          "name": "Pommel",
-                          "position": {"x": 0, "y": 0, "z": 0},
+                          "name": "Pommel--C2",
+                          "position": {"x": 0, "y": 0, "z": -5},
                           "orientation": {"x": 0.70711, "y": 0, "z": 0, "w": 0.70711},
                           "shape": {
                             "type": "quad",
-                            "offset": {"x": 0, "y": -5, "z": 0},
+                            "offset": {"x": 0, "y": 0, "z": 0},
                             "stretch": {"x": 1, "y": 1, "z": 1},
                             "settings": {
                               "isPiece": false,
                               "size": {"x": 11, "y": 10},
-                              "normal": "-Z"
+                              "normal": "-Z",
+                              "isStaticBox": true
                             },
                             "textureLayout": {
                               "front": {
@@ -875,16 +877,45 @@
                       "children": [
                         {
                           "id": "25",
-                          "name": "BladeMiddle",
-                          "position": {"x": 0, "y": 13.5, "z": 0},
+                          "name": "BladeCrest--C1",
+                          "position": {"x": 0, "y": 57.5, "z": 0},
+                          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                          "shape": {
+                            "type": "quad",
+                            "offset": {"x": 0, "y": -46, "z": 0},
+                            "stretch": {"x": 1, "y": 1, "z": 1},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 14, "y": 9},
+                              "normal": "+X",
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "front": {
+                                "offset": {"x": 61, "y": 48},
+                                "mirror": {"x": true, "y": false},
+                                "angle": 0
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": true,
+                            "shadingMode": "flat"
+                          }
+                        },
+                        {
+                          "id": "26",
+                          "name": "BladeMiddle--C2",
+                          "position": {"x": 0, "y": 36.5, "z": 0},
                           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                           "shape": {
                             "type": "box",
-                            "offset": {"x": 0, "y": 23, "z": 0},
+                            "offset": {"x": 0, "y": 0, "z": 0},
                             "stretch": {"x": 0.575, "y": 1, "z": 1},
                             "settings": {
                               "isPiece": false,
-                              "size": {"x": 2, "y": 61, "z": 10}
+                              "size": {"x": 2, "y": 61, "z": 10},
+                              "isStaticBox": true
                             },
                             "textureLayout": {
                               "back": {
@@ -917,66 +948,35 @@
                             "visible": true,
                             "doubleSided": false,
                             "shadingMode": "flat"
-                          },
-                          "children": [
-                            {
-                              "id": "26",
-                              "name": "BladeTop",
-                              "position": {"x": 0, "y": 16, "z": 0},
-                              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                              "shape": {
-                                "type": "quad",
-                                "offset": {"x": 0, "y": 20, "z": 0},
-                                "stretch": {"x": 1, "y": 1.125, "z": 1},
-                                "settings": {
-                                  "isPiece": false,
-                                  "size": {"x": 10, "y": 11},
-                                  "normal": "+X"
-                                },
-                                "textureLayout": {
-                                  "front": {
-                                    "offset": {"x": 11, "y": 0},
-                                    "mirror": {"x": true, "y": false},
-                                    "angle": 0
-                                  }
-                                },
-                                "unwrapMode": "custom",
-                                "visible": true,
-                                "doubleSided": true,
-                                "shadingMode": "flat"
-                              },
-                              "children": [
-                                {
-                                  "id": "27",
-                                  "name": "BladeTop--C1",
-                                  "position": {"x": 0, "y": -15, "z": 0},
-                                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                                  "shape": {
-                                    "type": "quad",
-                                    "offset": {"x": 0, "y": -46, "z": 0},
-                                    "stretch": {"x": 1, "y": 1, "z": 1},
-                                    "settings": {
-                                      "isPiece": false,
-                                      "size": {"x": 14, "y": 9},
-                                      "normal": "+X",
-                                      "isStaticBox": true
-                                    },
-                                    "textureLayout": {
-                                      "front": {
-                                        "offset": {"x": 61, "y": 48},
-                                        "mirror": {"x": true, "y": false},
-                                        "angle": 0
-                                      }
-                                    },
-                                    "unwrapMode": "custom",
-                                    "visible": true,
-                                    "doubleSided": true,
-                                    "shadingMode": "flat"
-                                  }
-                                }
-                              ]
-                            }
-                          ]
+                          }
+                        },
+                        {
+                          "id": "27",
+                          "name": "BladeTop--C3",
+                          "position": {"x": 0, "y": 72.5, "z": 0},
+                          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                          "shape": {
+                            "type": "quad",
+                            "offset": {"x": 0, "y": 0, "z": 0},
+                            "stretch": {"x": 1, "y": 1.125, "z": 1},
+                            "settings": {
+                              "isPiece": false,
+                              "size": {"x": 10, "y": 11},
+                              "normal": "+X",
+                              "isStaticBox": true
+                            },
+                            "textureLayout": {
+                              "front": {
+                                "offset": {"x": 11, "y": 0},
+                                "mirror": {"x": true, "y": false},
+                                "angle": 0
+                              }
+                            },
+                            "unwrapMode": "custom",
+                            "visible": true,
+                            "doubleSided": true,
+                            "shadingMode": "flat"
+                          }
                         }
                       ]
                     }

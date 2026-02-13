@@ -1,0 +1,100 @@
+{
+  "$Comment": "Particle delays are tuned to appear at max charge (1.2s). StartDelay accounts for ~0.45s built-in particle spawn delay. If max charge time changes, adjust: NewDelay = NewMaxCharge - 0.45",
+  "Spawners": [
+    {
+      "SpawnerId": "MasterSwordChargingFlash",
+      "StartDelay": 0.95,
+      "MaxConcurrent": 1,
+      "SpawnRate": {
+        "Min": 1,
+        "Max": 1
+      },
+      "TotalSpawners": 1,
+      "PositionOffset": {
+        "Y": 0.7
+      },
+      "LifeSpan": {
+        "Min": 0.1,
+        "Max": 0.1
+      }
+    },
+    {
+      "SpawnerId": "MasterSwordChargingSparks",
+      "StartDelay": 0.95,
+      "MaxConcurrent": 1,
+      "SpawnRate": {
+        "Min": 1,
+        "Max": 1
+      },
+      "TotalSpawners": 1,
+      "LifeSpan": {
+        "Min": 1.55,
+        "Max": 1.55
+      },
+      "PositionOffset": {
+        "Y": 0.7
+      }
+    },
+    {
+      "SpawnerId": "MasterSwordChargingAura",
+      "StartDelay": 0.95,
+      "MaxConcurrent": 1,
+      "SpawnRate": {
+        "Min": 1,
+        "Max": 1
+      },
+      "TotalSpawners": 1,
+      "LifeSpan": {
+        "Min": 1.55,
+        "Max": 1.55
+      },
+      "PositionOffset": {
+        "Y": 0.7
+      }
+    },
+    {
+      "SpawnerId": "MasterSwordChargingFlashFull",
+      "StartDelay": 2.5,
+      "MaxConcurrent": 1,
+      "SpawnRate": {
+        "Min": 1,
+        "Max": 1
+      },
+      "TotalSpawners": 1,
+      "PositionOffset": {
+        "Y": 0.7
+      },
+      "LifeSpan": {
+        "Min": 0.1,
+        "Max": 0.1
+      }
+    },
+    {
+      "SpawnerId": "MasterSwordChargingSparksFull",
+      "StartDelay": 2.5,
+      "MaxConcurrent": 1,
+      "SpawnRate": {
+        "Min": 1,
+        "Max": 1
+      },
+      "TotalSpawners": 1,
+      "PositionOffset": {
+        "Y": 0.7
+      }
+    },
+    {
+      "SpawnerId": "MasterSwordChargingAuraFull",
+      "StartDelay": 2.5,
+      "MaxConcurrent": 1,
+      "SpawnRate": {
+        "Min": 1,
+        "Max": 1
+      },
+      "TotalSpawners": 1,
+      "PositionOffset": {
+        "Y": 0.5
+      }
+    }
+  ],
+  "BoundingRadius": 1
+}
