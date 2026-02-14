@@ -35,6 +35,19 @@
             }
           }
         ]
+      },
+      {
+        "Stamina": -5.2,
+        "StaminaRegenDelay": -2.8,
+        "Interactions": [
+          {
+            "Type": "ChangeStat",
+            "StatModifiers": {
+              "Stamina": -2.3,
+              "StaminaRegenDelay": -2.5
+            }
+          }
+        ]
       }
     ]
   },

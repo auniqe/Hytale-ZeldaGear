@@ -1,94 +1,101 @@
 {
-  "Type": "Charging",
-  "DisplayProgress": false,
+  "Type": "StatsCondition",
+  "Costs": {
+    "Stamina": 0.3
+  },
+  "Failed": "MasterSword_Primary_Chain",
   "Next": {
-    "0": "MasterSword_Primary_Chain",
-    "0.5": {
-      "Type": "Replace",
-      "Var": "Thrust_Stamina",
-      "DefaultValue": {
-        "Interactions": [
-          "MasterSword_SpinAttack_Weak"
-        ]
+    "Type": "Charging",
+    "DisplayProgress": false,
+    "Next": {
+      "0": "MasterSword_Primary_Chain",
+      "0.5": {
+        "Type": "Replace",
+        "Var": "Thrust_Stamina",
+        "DefaultValue": {
+          "Interactions": [
+            "MasterSword_SpinAttack_Weak"
+          ]
+        },
+        "Effects": {
+          "LocalSoundEventId": "MasterSwordSpinAttackWeakSFX"
+        }
       },
-      "Effects": {
-        "LocalSoundEventId": "MasterSwordSpinAttackWeakSFX"
+      "0.95": {
+        "Type": "Replace",
+        "Var": "Thrust_Stamina",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "MasterSword_SpinAttack"
+          ]
+        },
+        "Effects": {
+          "LocalSoundEventId": "MasterSwordSpinAttackSFX"
+        }
+      },
+      "2.5": {
+        "Type": "Replace",
+        "Var": "Thrust_Stamina",
+        "DefaultValue": {
+          "Interactions": [
+            {
+              "Parent": "MasterSword_SpinAttack_Powered"
+            }
+          ]
+        },
+        "DefaultOk": true,
+        "Effects": {
+          "LocalSoundEventId": "MasterSwordSpinAttackFullSFX"
+        }
       }
     },
-    "0.95": {
-      "Type": "Replace",
-      "Var": "Thrust_Stamina",
-      "DefaultOk": true,
-      "DefaultValue": {
-        "Interactions": [
-          "MasterSword_SpinAttack"
-        ]
-      },
-      "Effects": {
-        "LocalSoundEventId": "MasterSwordSpinAttackSFX"
-      }
+    "AllowIndefiniteHold": true,
+    "Effects": {
+      "ItemPlayerAnimationsId": "MasterSword",
+      "ItemAnimationId": "SpinReady",
+      "WaitForAnimationToFinish": false,
+      "StartDelay": 0.3,
+      "ClearAnimationOnFinish": false,
+      "Particles": [
+        {
+          "SystemId": "MasterSwordCharging",
+          "DetachedFromModel": false,
+          "TargetEntityPart": "PrimaryItem"
+        }
+      ],
+      "ClearSoundEventOnFinish": true,
+      "LocalSoundEventId": "MasterSwordChargingSFX"
     },
-    "2.5": {
-      "Type": "Replace",
-      "Var": "Thrust_Stamina",
-      "DefaultValue": {
-        "Interactions": [
-          {
-            "Parent": "MasterSword_SpinAttack_Powered"
+    "Camera": {
+      "ThirdPerson": [
+        {
+          "Position": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0
+          },
+          "Time": 0.5,
+          "Rotation": {
+            "Roll": 0
           }
-        ]
-      },
-      "DefaultOk": true,
-      "Effects": {
-        "LocalSoundEventId": "MasterSwordSpinAttackFullSFX"
-      }
-    }
-  },
-  "AllowIndefiniteHold": true,
-  "Effects": {
-    "ItemPlayerAnimationsId": "MasterSword",
-    "ItemAnimationId": "SpinReady",
-    "WaitForAnimationToFinish": false,
-    "StartDelay": 0.3,
-    "ClearAnimationOnFinish": false,
-    "Particles": [
-      {
-        "SystemId": "MasterSwordCharging",
-        "DetachedFromModel": false,
-        "TargetEntityPart": "PrimaryItem"
-      }
-    ],
-    "ClearSoundEventOnFinish": true,
-    "LocalSoundEventId": "MasterSwordChargingSFX"
-  },
-  "Camera": {
-    "ThirdPerson": [
-      {
-        "Position": {
-          "X": 0,
-          "Y": 0,
-          "Z": 0
-        },
-        "Time": 0.5,
-        "Rotation": {
-          "Roll": 0
         }
-      }
-    ],
-    "FirstPerson": [
-      {
-        "Position": {
-          "Y": 0
-        },
-        "Time": 0.3,
-        "Rotation": {
-          "Pitch": 0,
-          "Roll": 0,
-          "Yaw": 0
+      ],
+      "FirstPerson": [
+        {
+          "Position": {
+            "Y": 0
+          },
+          "Time": 0.3,
+          "Rotation": {
+            "Pitch": 0,
+            "Roll": 0,
+            "Yaw": 0
+          }
         }
-      }
-    ]
-  },
-  "CancelOnItemChange": true,
-  "HorizontalSpeedMultiplier": 0.9
+      ]
+    },
+    "CancelOnItemChange": true,
+    "HorizontalSpeedMultiplier": 0.9
+  }
 }
