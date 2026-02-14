@@ -77,9 +77,6 @@
   "Next": {
     "Type": "Replace",
     "Var": "Groundslam_Explosion",
-    "DefaultOk": true,
-    "DefaultValue": {
-      "Interactions": []
-    }
+    "DefaultOk": true
   }
 }

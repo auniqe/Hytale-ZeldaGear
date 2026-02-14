@@ -13,12 +13,6 @@
       "Id": "Misc",
       "Icon": "Icons/ItemCategories/Items-Tools.png",
       "Name": "Misc"
-    },
-    {
-      "Id": "Cosmetics",
-      "Name": "Cosmetics",
-      "Icon": "Icons/ItemCategories/Items-Clothes.png",
-      "InfoDisplayMode": "Tooltip"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "Effects": {
     "Particles": [
       {
-        "SystemId": "MasterSword_Spin_AOE_Particle_Inner_Powered",
+        "SystemId": "MasterSword_Spin_AOE_Effect_Powered",
         "TargetNodeName": "Hip",
         "TargetEntityPart": "Entity",
         "PositionOffset": {

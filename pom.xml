@@ -14,13 +14,13 @@
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <hytale.version>2026.01.28-87d03be09</hytale.version>
+        <hytale.version>2026.02.11-255364b8e</hytale.version>
     </properties>
 
     <repositories>
         <repository>
-            <id>hytale-release</id>
-            <url>https://maven.hytale.com/release</url>
+            <id>hytale-pre-release</id>
+            <url>https://maven.hytale.com/pre-release</url>
         </repository>
     </repositories>
 
@@ -56,11 +56,18 @@
                         <directory>src/main/resources</directory>
                         <includes>
                             <include>manifest.json</include>
-                            <include>Common/**</include>
-                            <include>Server/**</include>
                         </includes>
                         <filtering>true</filtering>
                     </resource>
+                    <resource>
+                        <directory>src/main/resources</directory>
+                        <includes>
+                            <include>Common/**</include>
+                            <include>Server/**</include>
+                        </includes>
+                        <filtering>false</filtering>
+                    </resource>
+
                 </resources>
             </build>
         </profile>

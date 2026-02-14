@@ -70,10 +70,7 @@
             "ClearAnimationOnFinish": true,
             "ClearSoundEventOnFinish": true,
             "WorldSoundEventId": "SFX_Daggers_T2_Guard",
-            "LocalSoundEventId": "SFX_Daggers_T2_Guard_Local",
-            "ItemPlayerAnimationsId": {
-              "UseFirstPersonOverrides": false
-            }
+            "LocalSoundEventId": "SFX_Daggers_T2_Guard_Local"
           },
           "Next": {
             "0.01": {
