@@ -70,7 +70,7 @@ items.Deku_Shield.name=Deku Shield
 items.Deku_Shield.description=<i>A wooden shield crafted from the bark of the <color is="#3E9049">Great Deku Tree</color>.</i>
 
 items.Wind_Shield.name=Wind Shield
-items.Wind_Shield.description=<i>A family heirloom, passed down through generations and used by the <color is="#8B339E">Hero of Winds</color>.</i>
+items.Wind_Shield.description=<i>A family heirloom, passed down through generations and used by the <color is="#8B339E">Hero of Wind</color>.</i>
 
 items.Ordon_Shield.name=Ordon Shield
 items.Ordon_Shield.description=<i>A wooden shield, local to the <color is="#8B339E">Ordon Village</color>.</i>
@@ -162,6 +162,7 @@ items.Goron_Bracelet.description=<i>A bracelet gifted to Hylians to lift heavy o
 
 items.Gossip_Stone.name=Gossip Stone
 items.Gossip_Stone.description=<i>"They say that <color is="#AADAFF">Hytale</color> is on the way of the hero."</i>
+
 items.Zelda_Bench.name=Hylian Forge
 items.Zelda_Bench.description=Used to forge ancient equipment from the <color is="#BB8A2C">Land of Hyrule</color>
 

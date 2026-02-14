@@ -3,9 +3,10 @@
     "Name": "server.items.Zelda_Bench.name",
     "Description": "server.items.Zelda_Bench.description"
   },
-  "Icon": "Icons/ItemsGenerated/Bench_Weapon.png",
+  "Icon": "Icons/ItemsGenerated/Bench_Zelda.png",
   "Categories": [
-    "Furniture.Benches"
+    "Furniture.Benches",
+    "ZeldaGear.Misc"
   ],
   "Recipe": {
     "TimeSeconds": 3,
@@ -175,14 +176,14 @@
   "PlayerAnimationsId": "Block",
   "IconProperties": {
     "Scale": 0.37,
-    "Translation": [
-      18.7,
-      -15
-    ],
     "Rotation": [
       22.5,
       45,
       22.5
+    ],
+    "Translation": [
+      13,
+      -24
     ]
   },
   "Tags": {
