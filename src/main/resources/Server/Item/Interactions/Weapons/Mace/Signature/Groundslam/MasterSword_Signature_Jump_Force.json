@@ -33,11 +33,11 @@
     ],
     "ItemPlayerAnimationsId": "MasterSword"
   },
-  "Force": 23,
+  "Force": 20,
   "Direction": {
     "X": 0,
     "Y": 3.7,
-    "Z": -2.5
+    "Z": -1
   },
   "AdjustVertical": false,
   "WaitForGround": true,

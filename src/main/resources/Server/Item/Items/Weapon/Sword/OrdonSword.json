@@ -15,12 +15,7 @@
     "Items.Weapons"
   ],
   "Interactions": {
-    "Primary": {
-      "Parent": "Root_Weapon_Sword_Primary",
-      "Interactions": [
-        "MasterSwordPrimary"
-      ]
-    },
+    "Primary": "Root_Weapon_Sword_Primary",
     "Secondary": "Root_Weapon_Sword_Secondary_Guard",
     "Ability1": "Root_Weapon_Sword_Signature_Vortexstrike"
   },
@@ -47,7 +42,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 22
+              "Physical": 13
             }
           },
           "DamageEffects": {
@@ -63,7 +58,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 36
+              "Physical": 20
             }
           },
           "DamageEffects": {
@@ -79,7 +74,7 @@
           "Parent": "Weapon_Sword_Primary_Thrust_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 52
+              "Physical": 30
             }
           },
           "EntityStatsOnHit": [
@@ -101,7 +96,7 @@
           "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 37
+              "Physical": 29
             }
           },
           "EntityStatsOnHit": [],
@@ -118,7 +113,7 @@
           "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 110
+              "Physical": 80
             }
           },
           "EntityStatsOnHit": [],
@@ -134,7 +129,7 @@
         {
           "Parent": "Weapon_Sword_Secondary_Guard_Wield",
           "StaminaCost": {
-            "Value": 20,
+            "Value": 15,
             "CostType": "Damage"
           }
         }
@@ -159,16 +154,13 @@
     "KnowledgeRequired": false,
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Adamantite",
+        "ItemId": "Ingredient_Bar_Iron",
         "Quantity": 20
       },
       {
-        "ItemId": "Ingredient_Bar_Thorium",
-        "Quantity": 20
-      },
-      {
-        "ItemId": "Ingredient_Voidheart",
-        "Quantity": 6
+        "ItemId": "",
+        "Quantity": 5,
+        "ResourceTypeId": "Wood_Trunk"
       }
     ],
     "BenchRequirement": [

@@ -8,6 +8,6 @@
     "ProjectileId": "MasterSwordBeam"
   },
   "Effects": {
-    "LocalSoundEventId": "SFX_Staff_Flame_Fireball_Impact"
+    "LocalSoundEventId": "SFX_Staff_Flame_Flamethrower_Impact"
   }
 }
