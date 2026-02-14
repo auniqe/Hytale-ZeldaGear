@@ -3,7 +3,7 @@
   "RunTime": 0.388,
   "Effects": {
     "ItemAnimationId": "SwingDownStrong",
-    "WorldSoundEventId": "SFX_Sword_T2_Swing_Down",
+    "WorldSoundEventId": "SFX_Longsword_Steel_Swing",
     "LocalSoundEventId": "SFX_Sword_T2_Swing_Down_Local"
   },
   "Next": {
@@ -21,7 +21,6 @@
               ]
             },
             {
-              "Parent": "Melee_Root",
               "Interactions": [
                 {
                   "Type": "StatsCondition",

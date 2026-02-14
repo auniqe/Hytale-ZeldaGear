@@ -9,7 +9,7 @@
       "Url": "loevi.net"
     }
   ],
-  "ServerVersion": "${hytale.version}",
+  "ServerVersion": "",
   "Dependencies": {},
   "OptionalDependencies": {},
   "DisabledByDefault": false,

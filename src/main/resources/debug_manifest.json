@@ -10,7 +10,7 @@
     }
   ],
   "Website": "loevi.net",
-  "ServerVersion": "*",
+  "ServerVersion": "",
   "Dependencies": {},
   "OptionalDependencies": {},
   "DisabledByDefault": false

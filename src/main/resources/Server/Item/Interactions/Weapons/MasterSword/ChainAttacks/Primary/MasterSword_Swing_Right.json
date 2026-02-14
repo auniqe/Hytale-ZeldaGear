@@ -1,11 +1,11 @@
 {
   "Type": "Simple",
-  "RunTime": 0.116,
+  "RunTime": 0.1,
   "Effects": {
     "ItemPlayerAnimationsId": "MasterSword",
     "ItemAnimationId": "SwingRight",
-    "WorldSoundEventId": "SFX_Light_Melee_T2_Swing",
-    "LocalSoundEventId": "SFX_Light_Melee_T2_Swing",
+    "WorldSoundEventId": "SFX_Light_Melee_T2_Lunge",
+    "LocalSoundEventId": "SFX_Light_Melee_T2_Lunge",
     "WaitForAnimationToFinish": false
   },
   "Next": {

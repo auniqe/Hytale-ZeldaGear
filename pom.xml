@@ -14,13 +14,13 @@
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <hytale.version>2026.02.11-255364b8e</hytale.version>
+        <hytale.version>2026.02.06-aa1b071c2</hytale.version>
     </properties>
 
     <repositories>
         <repository>
-            <id>hytale-pre-release</id>
-            <url>https://maven.hytale.com/pre-release</url>
+            <id>hytale-release</id>
+            <url>https://maven.hytale.com/release</url>
         </repository>
     </repositories>
 
