@@ -1,0 +1,54 @@
+{
+  "Type": "ApplyForce",
+  "Effects": {
+    "ItemAnimationId": "SignatureLeap",
+    "WorldSoundEventId": "SFX_Daggers_T2_Signature_P3",
+    "LocalSoundEventId": "SFX_Daggers_T2_Signature_P3_Local",
+    "CameraEffect": "Mace_Jump",
+    "Trails": [
+      {
+        "TrailId": "Sword_Distortion",
+        "TargetEntityPart": "PrimaryItem",
+        "TargetNodeName": "Handle",
+        "PositionOffset": {
+          "Y": 0,
+          "X": 1.3
+        },
+        "RotationOffset": {
+          "Roll": 90
+        }
+      },
+      {
+        "TrailId": "Medium_Sword_Strong",
+        "RotationOffset": {
+          "Roll": 90
+        },
+        "TargetEntityPart": "PrimaryItem",
+        "TargetNodeName": "Handle",
+        "PositionOffset": {
+          "Y": 0,
+          "X": 1.3
+        }
+      }
+    ],
+    "ItemPlayerAnimationsId": "MasterSword"
+  },
+  "Force": 23,
+  "Direction": {
+    "X": 0,
+    "Y": 3.7,
+    "Z": -2.5
+  },
+  "AdjustVertical": false,
+  "WaitForGround": true,
+  "ChangeVelocityType": "Set",
+  "VelocityConfig": {
+    "AirResistance": 0.988,
+    "AirResistanceMax": 0.96,
+    "GroundResistance": 0.94,
+    "GroundResistanceMax": 0.82,
+    "Threshold": 3.0,
+    "Style": "Exp"
+  },
+  "RaycastMode": "FollowLook"
+}

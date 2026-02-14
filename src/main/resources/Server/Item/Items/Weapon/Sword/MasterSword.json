@@ -22,7 +22,7 @@
     },
     "Secondary": "Root_Weapon_Sword_Secondary_Guard",
     "Ability1": {
-      "Parent": "Root_Weapon_Battleaxe_Signature_Whirlwind",
+      "Parent": "Root_Weapon_Mace_Signature_Groundslam",
       "Interactions": [
         "MasterSword_Signature"
       ]
@@ -135,6 +135,18 @@
           "StaminaCost": {
             "Value": 20,
             "CostType": "Damage"
+          }
+        }
+      ]
+    },
+    "Groundslam_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Signature_Groundslam_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 146
+            }
           }
         }
       ]

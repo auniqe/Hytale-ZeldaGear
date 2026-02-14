@@ -1,70 +1,34 @@
 {
   "Type": "StatsCondition",
   "Costs": {
-    "SignatureEnergy": 1
+    "SignatureEnergy": 100
   },
   "ValueType": "Percent",
   "Next": {
     "Type": "Serial",
     "Interactions": [
       {
-        "Type": "ApplyEffect",
-        "EffectId": "Battleaxe_Whirlwind",
-        "Effects": {
-          "ItemAnimationId": "Whirlwind",
-          "ClearAnimationOnFinish": true
-        }
-      },
-      {
         "Type": "Replace",
-        "Var": "Signature_Whirlwind_Windup",
+        "Var": "Groundslam_Jump_Force",
         "DefaultOk": true,
         "DefaultValue": {
           "Interactions": [
-            "Weapon_Battleaxe_Signature_Whirlwind_Windup"
+            "MasterSword_Signature_Jump_Force"
           ]
-        },
-        "Effects": {
-          "ItemPlayerAnimationsId": "Battleaxe",
-          "ItemAnimationId": "Whirlwind",
-          "ClearAnimationOnFinish": true
         }
+      },
+      {
+        "Type": "Simple",
+        "RunTime": 0.05
       },
       {
         "Type": "Replace",
-        "Var": "Signature_Whirlwind_Spin_Repeat",
+        "Var": "Groundslam_Swing_Selector",
         "DefaultOk": true,
         "DefaultValue": {
           "Interactions": [
-            "Weapon_Battleaxe_Signature_Whirlwind_Spin_Repeat"
+            "MasterSword_Signature_Selector"
           ]
-        },
-        "Effects": {
-          "ItemPlayerAnimationsId": "Battleaxe",
-          "ItemAnimationId": "Whirlwind_Charged",
-          "ClearAnimationOnFinish": false
-        }
-      },
-      {
-        "Type": "Replace",
-        "Var": "Signature_Whirlwind_End",
-        "DefaultOk": true,
-        "DefaultValue": {
-          "Interactions": [
-            "Weapon_Battleaxe_Signature_Whirlwind_End"
-          ]
-        },
-        "Effects": {
-          "ItemPlayerAnimationsId": "Battleaxe",
-          "ItemAnimationId": "Whirlwind"
-        }
-      },
-      {
-        "Type": "ClearEntityEffect",
-        "EntityEffectId": "Battleaxe_Whirlwind",
-        "Effects": {
-          "ItemPlayerAnimationsId": "Battleaxe",
-          "ItemAnimationId": ""
         }
       },
       {
@@ -77,9 +41,7 @@
     ]
   },
   "Effects": {
-    "ItemAnimationId": "Whirlwind_Charged",
-    "ClearAnimationOnFinish": false,
-    "ClearSoundEventOnFinish": false,
-    "ItemPlayerAnimationsId": "Battleaxe"
+    "ItemPlayerAnimationsId": "Mace",
+    "ItemAnimationId": "Swing_Down_Charged"
   }
 }

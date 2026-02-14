@@ -37,6 +37,22 @@
       "KeepPreviousFirstPersonAnimation": true,
       "BlendingDuration": 0.05,
       "ThirdPersonFace": "Characters/Animations/Expressions/Rage.blockyanim"
+    },
+    "SignatureLeap": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Mace/Attacks/Swing_Down_Charged/Swing_Down_Falling.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Mace/Attacks/Swing_Down_Charged/Swing_Down_Falling_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Rage.blockyanim",
+      "Looping": true,
+      "BlendingDuration": 0.3
+    },
+    "SignatureHit": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Mace/Attacks/Swing_Down_Charged/Swing_Down_Charged.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Mace/Attacks/Swing_Down_Charged/Swing_Down_Charged_Moving.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Rage.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Mace/Attacks/Swing_Down_Charged/Swing_Down_Charged_FPS.blockyanim",
+      "KeepPreviousFirstPersonAnimation": true,
+      "Speed": 1,
+      "BlendingDuration": 0
     }
   },
   "WiggleWeights": {
