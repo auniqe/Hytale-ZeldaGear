@@ -1,18 +1,18 @@
 {
   "Parent": "Template_Weapon_Shield",
   "TranslationProperties": {
-    "Name": "server.items.Wind_Shield.name",
-    "Description": "server.items.Wind_Shield.description"
+    "Name": "server.items.Spirit_Shield.name",
+    "Description": "server.items.Spirit_Shield.description"
   },
   "Categories": [
     "ZeldaGear.Gear",
     "Items.Weapons"
   ],
   "Model": "Items/Weapons/Shield/ToonShield.blockymodel",
-  "Texture": "Items/Weapons/Shield/WindShield.png",
-  "Icon": "Icons/ItemsGenerated/WindShield.png",
+  "Texture": "Items/Weapons/Shield/SpiritShield.png",
+  "Icon": "Icons/ItemsGenerated/SpiritShield.png",
   "Quality": "Epic",
-  "ItemLevel": 1,
+  "ItemLevel": 3,
   "Scale": 1.1,
   "IconProperties": {
     "Scale": 0.5,
@@ -52,5 +52,5 @@
       }
     ]
   },
-  "Set": "D5_Shield"
+  "Set": "D7_Shield"
 }
