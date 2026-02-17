@@ -38,7 +38,7 @@
         "GatherType": "Woods"
       }
     },
-    "HitboxType": "Block_Vertical_Three_Quarter",
+    "HitboxType": "GossipStone",
     "Material": "Solid",
     "Opacity": "Transparent",
     "Support": {

@@ -46,7 +46,7 @@
       }
     ],
     "VariantRotation": "NESW",
-    "HitboxType": "Bench_Weapon",
+    "HitboxType": "Bench_Cooking",
     "State": {
       "Id": "crafting",
       "Definitions": {
