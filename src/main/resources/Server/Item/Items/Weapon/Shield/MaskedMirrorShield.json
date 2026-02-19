@@ -6,7 +6,7 @@
   },
   "Model": "Items/Weapons/Shield/MaskedMirrorShield.blockymodel",
   "Texture": "Items/Weapons/Shield/MaskedMirrorShield.png",
-  "Icon": "Icons/Items/MaskedMirrorShield.png",
+  "Icon": "Icons/ItemsGenerated/MaskedMirrorShield.png",
   "Quality": "Epic",
   "IconProperties": {
     "Scale": 0.55,
@@ -16,8 +16,8 @@
       0
     ],
     "Translation": [
-      -26,
-      -26
+      -25,
+      -25
     ]
   },
   "Recipe": {

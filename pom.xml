@@ -8,13 +8,13 @@
 
     <groupId>net.loevi</groupId>
     <artifactId>ZeldaGear</artifactId>
-    <version>1.8</version>
+    <version>1.9</version>
 
     <properties>
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <hytale.version>2026.02.06-aa1b071c2</hytale.version>
+        <hytale.version>2026.02.18-f3b8fff95</hytale.version>
     </properties>
 
     <repositories>

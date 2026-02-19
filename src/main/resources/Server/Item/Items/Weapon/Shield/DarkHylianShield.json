@@ -27,5 +27,17 @@
         "Quantity": 10
       }
     ]
+  },
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      315,
+      270,
+      0
+    ],
+    "Translation": [
+      -28,
+      -28
+    ]
   }
 }

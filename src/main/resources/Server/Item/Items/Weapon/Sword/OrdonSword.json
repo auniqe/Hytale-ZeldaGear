@@ -8,7 +8,7 @@
   "Icon": "Icons/ItemsGenerated/OrdonSword.png",
   "PlayerAnimationsId": "Sword",
   "Reticle": "DefaultMelee",
-  "Quality": "Rare",
+  "Quality": "Uncommon",
   "ItemLevel": 3,
   "Categories": [
     "ZeldaGear.Gear",

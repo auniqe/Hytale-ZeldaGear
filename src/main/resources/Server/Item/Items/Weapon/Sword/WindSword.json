@@ -7,7 +7,7 @@
   "Model": "Items/Weapons/Sword/WindSword.blockymodel",
   "Texture": "Items/Weapons/Sword/WindSword.png",
   "Icon": "Icons/ItemsGenerated/WindSword.png",
-  "Quality": "Rare",
+  "Quality": "Uncommon",
   "ItemLevel": 2,
   "MaxDurability": 160,
   "InteractionVars": {

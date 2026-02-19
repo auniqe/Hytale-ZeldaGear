@@ -11,7 +11,7 @@
   "Model": "Items/Weapons/Shield/ToonShield.blockymodel",
   "Texture": "Items/Weapons/Shield/PhantomShield.png",
   "Icon": "Icons/ItemsGenerated/PhantomShield.png",
-  "Quality": "Epic",
+  "Quality": "Uncommon",
   "ItemLevel": 2,
   "Scale": 1.1,
   "IconProperties": {
@@ -22,7 +22,7 @@
       0
     ],
     "Translation": [
-      -26,
+      -27,
       -27
     ]
   },

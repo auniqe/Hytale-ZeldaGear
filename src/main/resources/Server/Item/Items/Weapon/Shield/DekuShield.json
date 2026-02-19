@@ -15,15 +15,15 @@
   "ItemLevel": 0,
   "Scale": 1.1,
   "IconProperties": {
-    "Scale": 0.5,
+    "Scale": 0.55,
     "Rotation": [
       315,
       270,
       0
     ],
     "Translation": [
-      -26,
-      -27
+      -27.5,
+      -27.5
     ]
   },
   "Recipe": {

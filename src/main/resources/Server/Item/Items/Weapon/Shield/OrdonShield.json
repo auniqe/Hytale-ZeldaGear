@@ -1,29 +1,29 @@
 {
   "Parent": "Template_Weapon_Shield",
   "TranslationProperties": {
-    "Name": "server.items.Spirit_Shield.name",
-    "Description": "server.items.Spirit_Shield.description"
+    "Name": "server.items.Ordon_Shield.name",
+    "Description": "server.items.Ordon_Shield.description"
   },
   "Categories": [
     "ZeldaGear.Gear",
     "Items.Weapons"
   ],
-  "Model": "Items/Weapons/Shield/ToonShield.blockymodel",
-  "Texture": "Items/Weapons/Shield/SpiritShield.png",
-  "Icon": "Icons/ItemsGenerated/SpiritShield.png",
+  "Model": "Items/Weapons/Shield/OrdonShield.blockymodel",
+  "Texture": "Items/Weapons/Shield/OrdonShield.png",
+  "Icon": "Icons/ItemsGenerated/OrdonShield.png",
   "Quality": "Uncommon",
-  "ItemLevel": 3,
+  "ItemLevel": 60,
   "Scale": 1.1,
   "IconProperties": {
-    "Scale": 0.5,
+    "Scale": 0.54,
     "Rotation": [
       315,
       270,
       0
     ],
     "Translation": [
-      -27,
-      -27
+      -28.5,
+      -28.5
     ]
   },
   "Recipe": {
@@ -34,7 +34,7 @@
         "Categories": [
           "Weapon_Shield"
         ],
-        "RequiredTierLevel": 1
+        "RequiredTierLevel": 2
       }
     ],
     "Input": [
@@ -52,5 +52,5 @@
       }
     ]
   },
-  "Set": "D7_Shield"
+  "Set": "D8_Shield"
 }
