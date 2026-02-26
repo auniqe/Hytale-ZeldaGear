@@ -1,5 +1,5 @@
 {
-  "Parent": "HylianShield",
+  "Parent": "MirrorShield",
   "TranslationProperties": {
     "Name": "server.items.Masked_Mirror_Shield.name",
     "Description": "server.items.Masked_Mirror_Shield.description"
@@ -28,16 +28,32 @@
         "Categories": [
           "Weapon_Shield"
         ],
-        "RequiredTierLevel": 2
+        "RequiredTierLevel": 3
       }
     ],
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Adamantite",
-        "Quantity": 10
+        "ItemId": "Ingredient_Bar_Gold",
+        "Quantity": 20
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 15
       }
     ]
   },
   "Set": "D4_Shield",
-  "ItemLevel": 300
+  "ItemLevel": 300,
+  "Utility": {
+    "Usable": true,
+    "Compatible": false,
+    "StatModifiers": {
+      "Health": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 13
+        }
+      ]
+    }
+  }
 }

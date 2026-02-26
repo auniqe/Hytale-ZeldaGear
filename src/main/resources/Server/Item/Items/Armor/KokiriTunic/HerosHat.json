@@ -50,24 +50,38 @@
   },
   "Armor": {
     "ArmorSlot": "Head",
-    "BaseDamageResistance": 7,
+    "BaseDamageResistance": 0,
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 8,
+          "Amount": 6,
           "CalculationType": "Additive"
         }
       ],
       "Stamina": [
         {
           "CalculationType": "Additive",
-          "Amount": 3
+          "Amount": 2
         }
       ]
     },
     "CosmeticsToHide": [
       "HeadAccessory"
-    ]
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.07,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.07,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    }
   },
   "Tags": {
     "Type": [

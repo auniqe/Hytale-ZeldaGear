@@ -38,24 +38,39 @@
   },
   "Armor": {
     "ArmorSlot": "Head",
-    "BaseDamageResistance": 7,
+    "BaseDamageResistance": 0,
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 8,
+          "Amount": 17,
           "CalculationType": "Additive"
         }
       ],
-      "Stamina": [
+      "Stamina": [],
+      "Oxygen": [
         {
           "CalculationType": "Additive",
-          "Amount": 3
+          "Amount": 200
         }
       ]
     },
     "CosmeticsToHide": [
       "HeadAccessory"
-    ]
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.09,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.09,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    }
   },
   "Quality": "Rare",
   "Set": "Tunics",

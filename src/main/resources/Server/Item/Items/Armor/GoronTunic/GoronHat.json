@@ -38,11 +38,22 @@
   },
   "Armor": {
     "ArmorSlot": "Head",
-    "BaseDamageResistance": 7,
+    "BaseDamageResistance": 0,
     "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.1,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.1,
+          "CalculationType": "Multiplicative"
+        }
+      ],
       "Fire": [
         {
-          "Target": "Max",
           "CalculationType": "Multiplicative",
           "Amount": 0.4
         }
@@ -51,14 +62,8 @@
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 8,
+          "Amount": 9,
           "CalculationType": "Additive"
-        }
-      ],
-      "Stamina": [
-        {
-          "CalculationType": "Additive",
-          "Amount": 3
         }
       ]
     },

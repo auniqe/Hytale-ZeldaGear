@@ -91,6 +91,9 @@ items.Hookshot.description=<i>Shoots a hook at high speed that <color is="#2770B
 items.Longshot.name=Longshot
 items.Longshot.description=<i>Shoots a hook at high speed that <color is="#8B339E">pulls the user</color> to it's destination. Now upgraded to shoot further.</i> 
 
+items.BunnyHood.name=Bunny Hood
+items.BunnyHood.description=<i>Kept by a man who wished to see his cuccos become adults. </i>
+
 ####################
 #   SETS
 ####################
@@ -115,7 +118,7 @@ items.Twilight_Helmet.description=<i>A mythical helmet worn by the <color is="#8
 #dark set
 items.Dark_Cap.name=Dark Cap
 items.Dark_Tunic.name=Dark Tunic
-items.Dark_Tunic.description=Increased movement speed at night.\n\n\ <i>A tunic worn by the <color is="#8B339E">shadow of a legendary hero</color>.</i>
+items.Dark_Tunic.description=<i>A tunic worn by the <color is="#8B339E">shadow of a legendary hero</color>.</i>
 items.Dark_Gloves.name=Dark Gloves
 items.Dark_Boots.name=Dark Boots
 
@@ -127,7 +130,7 @@ items.Zora_Tunic.description=<i>A blue tunic gifted to Hylians to help <color is
 #goron set
 items.Goron_Cap.name=Goron Cap
 items.Goron_Tunic.name=Goron Tunic
-items.Goron_Tunic.description=Grants the user high <color is="#F82700">fire resistance</color>.\n\\n\ <i>A gift given by the Gorons to Hylians scaling <color is="#BB8A2C">Death Mountain</color>.</i>
+items.Goron_Tunic.description=<i>A gift given by the Gorons to Hylians scaling <color is="#BB8A2C">Death Mountain</color>.</i>
 
 #purple set
 items.Purple_Cap.name=Purple Cap

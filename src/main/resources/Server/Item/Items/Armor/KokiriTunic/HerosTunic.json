@@ -54,7 +54,7 @@
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 17,
+          "Amount": 13,
           "CalculationType": "Additive"
         }
       ]
@@ -62,13 +62,13 @@
     "DamageResistance": {
       "Physical": [
         {
-          "Amount": 0.09,
+          "Amount": 0.07,
           "CalculationType": "Multiplicative"
         }
       ],
       "Projectile": [
         {
-          "Amount": 0.09,
+          "Amount": 0.07,
           "CalculationType": "Multiplicative"
         }
       ]
@@ -76,7 +76,15 @@
     "CosmeticsToHide": [
       "Overtop",
       "Undertop"
-    ]
+    ],
+    "DamageClassEnhancement": {
+      "Signature": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.1
+        }
+      ]
+    }
   },
   "Tags": {
     "Type": [

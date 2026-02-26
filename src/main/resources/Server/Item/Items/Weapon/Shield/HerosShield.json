@@ -39,5 +39,16 @@
       -28,
       -28
     ]
+  },
+  "Utility": {
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 5,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "Usable": true
   }
 }

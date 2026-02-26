@@ -34,7 +34,7 @@
         "Categories": [
           "Weapon_Shield"
         ],
-        "RequiredTierLevel": 2
+        "RequiredTierLevel": 1
       }
     ],
     "Input": [
@@ -52,5 +52,16 @@
       }
     ]
   },
-  "Set": "D8_Shield"
+  "Set": "D8_Shield",
+  "Utility": {
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 2,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "Usable": true
+  }
 }

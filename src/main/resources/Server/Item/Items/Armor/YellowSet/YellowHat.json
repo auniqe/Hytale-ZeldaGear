@@ -49,5 +49,29 @@
       -11
     ]
   },
-  "Icon": "Icons/ItemsGenerated/YellowHat.png"
+  "Icon": "Icons/ItemsGenerated/YellowHat.png",
+  "Armor": {
+    "StatModifiers": {
+      "Health": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 9
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.1
+        }
+      ],
+      "Projectile": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.1
+        }
+      ]
+    }
+  }
 }

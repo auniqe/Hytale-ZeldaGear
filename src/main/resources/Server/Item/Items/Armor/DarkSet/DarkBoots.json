@@ -33,6 +33,10 @@
       {
         "ItemId": "Ingredient_Fabric_Scrap_Shadoweave",
         "Quantity": 5
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 2
       }
     ],
     "BenchRequirement": [
@@ -42,7 +46,7 @@
         "Categories": [
           "Zelda_Armor"
         ],
-        "RequiredTierLevel": 1
+        "RequiredTierLevel": 3
       }
     ],
     "KnowledgeRequired": false,
@@ -58,28 +62,28 @@
     "DamageResistance": {
       "Physical": [
         {
-          "Amount": 0.0504,
+          "Amount": 0.08,
           "CalculationType": "Multiplicative"
         }
       ],
       "Projectile": [
         {
-          "Amount": 0.0504,
+          "Amount": 0.08,
           "CalculationType": "Multiplicative"
-        }
-      ],
-      "Fall": [
-        {
-          "CalculationType": "Multiplicative",
-          "Amount": 0.5
         }
       ]
     },
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 7,
+          "Amount": 9,
           "CalculationType": "Additive"
+        }
+      ],
+      "Speed": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.12
         }
       ]
     }
@@ -98,5 +102,16 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "YY_DarkSet"
+  "Set": "YY_DarkSet",
+  "Interactions": {
+    "Equipped": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 0.3,
+          "HorizontalSpeedMultiplier": 1.12
+        }
+      ]
+    }
+  }
 }

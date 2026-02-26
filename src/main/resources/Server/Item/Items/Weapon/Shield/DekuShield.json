@@ -96,5 +96,16 @@
       ]
     }
   },
-  "Set": "D0_Shield"
+  "Set": "D0_Shield",
+  "Utility": {
+    "Usable": true,
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 2,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  }
 }

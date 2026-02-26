@@ -34,15 +34,35 @@
         "Categories": [
           "Weapon_Shield"
         ],
-        "RequiredTierLevel": 2
+        "RequiredTierLevel": 3
       }
     ],
     "Input": [
       {
         "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 20
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Cindercloth",
+        "Quantity": 10,
+        "ResourceTypeId": ""
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
         "Quantity": 10
       }
     ]
   },
-  "Set": "D2_Shield"
+  "Set": "D2_Shield",
+  "Utility": {
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 13,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "Usable": true
+  }
 }

@@ -52,5 +52,16 @@
       }
     ]
   },
-  "Set": "D6_Shield"
+  "Set": "D6_Shield",
+  "Utility": {
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 4,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "Usable": true
+  }
 }

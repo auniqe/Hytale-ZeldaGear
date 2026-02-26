@@ -18,6 +18,10 @@
       {
         "ItemId": "Ingredient_Bar_Iron",
         "Quantity": 15
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 2
       }
     ],
     "BenchRequirement": [
@@ -27,7 +31,7 @@
         "Categories": [
           "Zelda_Armor"
         ],
-        "RequiredTierLevel": 2
+        "RequiredTierLevel": 3
       }
     ],
     "KnowledgeRequired": false
@@ -57,18 +61,24 @@
           "Amount": 17,
           "CalculationType": "Additive"
         }
+      ],
+      "Speed": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.12
+        }
       ]
     },
     "DamageResistance": {
       "Physical": [
         {
-          "Amount": 0.09,
+          "Amount": 0.1,
           "CalculationType": "Multiplicative"
         }
       ],
       "Projectile": [
         {
-          "Amount": 0.09,
+          "Amount": 0.1,
           "CalculationType": "Multiplicative"
         }
       ]
@@ -91,5 +101,16 @@
   "Categories": [
     "ZeldaGear.Gear"
   ],
-  "Set": "YYYY_DarkSet"
+  "Set": "YYYY_DarkSet",
+  "Interactions": {
+    "Equipped": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 0.3,
+          "HorizontalSpeedMultiplier": 1.15
+        }
+      ]
+    }
+  }
 }

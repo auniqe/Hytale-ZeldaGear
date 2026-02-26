@@ -22,6 +22,10 @@
       {
         "ItemId": "Ingredient_Leather_Heavy",
         "Quantity": 5
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 2
       }
     ],
     "BenchRequirement": [
@@ -31,7 +35,7 @@
         "Categories": [
           "Zelda_Armor"
         ],
-        "RequiredTierLevel": 2
+        "RequiredTierLevel": 3
       }
     ],
     "KnowledgeRequired": false
@@ -49,5 +53,46 @@
       12,
       -11
     ]
+  },
+  "Interactions": {
+    "Equipped": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 0.3,
+          "HorizontalSpeedMultiplier": 1.15
+        }
+      ]
+    }
+  },
+  "Armor": {
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 11,
+          "CalculationType": "Additive"
+        }
+      ],
+      "Speed": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.12
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Projectile": [
+        {
+          "Amount": 0.08,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Physical": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.08
+        }
+      ]
+    }
   }
 }

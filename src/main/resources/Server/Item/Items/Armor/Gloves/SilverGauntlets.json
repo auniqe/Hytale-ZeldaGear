@@ -25,15 +25,15 @@
     "Input": [
       {
         "ItemId": "Ingredient_Bar_Silver",
-        "Quantity": 10
+        "Quantity": 20
       },
       {
         "ItemId": "Ingredient_Leather_Medium",
-        "Quantity": 5
+        "Quantity": 10
       },
       {
         "ItemId": "Ingredient_Fabric_Scrap_Linen",
-        "Quantity": 3
+        "Quantity": 10
       }
     ],
     "BenchRequirement": [
@@ -64,19 +64,21 @@
           "Amount": 0.0512,
           "CalculationType": "Multiplicative"
         }
-      ],
-      "Poison": [
-        {
-          "Amount": 0.12,
-          "CalculationType": "Multiplicative"
-        }
       ]
     },
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 10,
+          "Amount": 8,
           "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageEnhancement": {
+      "Physical": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.13
         }
       ]
     }

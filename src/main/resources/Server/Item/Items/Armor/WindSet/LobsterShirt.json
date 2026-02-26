@@ -50,8 +50,15 @@
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 17,
+          "Amount": 13,
           "CalculationType": "Additive"
+        }
+      ],
+      "Stamina": [],
+      "Oxygen": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 100
         }
       ]
     },

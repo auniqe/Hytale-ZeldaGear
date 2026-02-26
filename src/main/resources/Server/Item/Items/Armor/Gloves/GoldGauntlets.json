@@ -25,15 +25,19 @@
     "Input": [
       {
         "ItemId": "Ingredient_Bar_Gold",
+        "Quantity": 25
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
         "Quantity": 15
       },
       {
-        "ItemId": "Ingredient_Leather_Medium",
-        "Quantity": 5
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 6
       },
       {
-        "ItemId": "Ingredient_Voidheart",
-        "Quantity": 3
+        "ItemId": "Ingredient_Fabric_Scrap_Linen",
+        "Quantity": 15
       }
     ],
     "BenchRequirement": [
@@ -43,7 +47,7 @@
         "Categories": [
           "Zelda_Armor"
         ],
-        "RequiredTierLevel": 2
+        "RequiredTierLevel": 3
       }
     ],
     "KnowledgeRequired": false,
@@ -55,19 +59,13 @@
     "DamageResistance": {
       "Physical": [
         {
-          "Amount": 0.0512,
+          "Amount": 0.08,
           "CalculationType": "Multiplicative"
         }
       ],
       "Projectile": [
         {
-          "Amount": 0.0512,
-          "CalculationType": "Multiplicative"
-        }
-      ],
-      "Poison": [
-        {
-          "Amount": 0.12,
+          "Amount": 0.08,
           "CalculationType": "Multiplicative"
         }
       ]
@@ -75,8 +73,16 @@
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 10,
+          "Amount": 12,
           "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageEnhancement": {
+      "Physical": [
+        {
+          "Amount": 0.26,
+          "CalculationType": "Multiplicative"
         }
       ]
     }

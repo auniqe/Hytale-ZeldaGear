@@ -72,6 +72,14 @@
     },
     "KnockbackEnhancements": {
       "Physical": 2
+    },
+    "DamageEnhancement": {
+      "Physical": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.08
+        }
+      ]
     }
   },
   "MaxDurability": 120,
